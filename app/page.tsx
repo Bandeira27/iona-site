@@ -9,6 +9,7 @@ import { Details3Section } from "./components/landing/details-3-section";
 import Details4Section from "./components/landing/details-4-section";
 import { ExpertiseSection } from "./components/landing/expertise-section";
 import { FeedbackSection } from "./components/landing/feedback-section";
+import { FeedbackSectionMobile } from "./components/landing/feedback-section-mobile";
 import { Footer } from "./components/landing/footer";
 import { FutureSection } from "./components/landing/future-section";
 import { LandingHeader } from "./components/landing/header";
@@ -37,7 +38,12 @@ export default function Landing() {
         <Details3Section />
         <BrandSection />
         <Details4Section />
-        <FeedbackSection />
+       <div className="hidden md:block">
+          <FeedbackSection />
+        </div>
+        <div className="block md:hidden">
+          <FeedbackSectionMobile />
+        </div>
         <Team1Section />
         <Team2Section />
         <Footer />
