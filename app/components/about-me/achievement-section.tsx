@@ -2,6 +2,7 @@
 
 import React, { useMemo, useEffect, useRef } from 'react';
 import { ScrollReveal } from '../scroll-reveal';
+import Image from 'next/image';
 
 const AchievementSection = () => {
   const scrollRef = useRef(null);
@@ -71,7 +72,23 @@ const AchievementSection = () => {
       <div className="ssr-variant hidden-xme965 hidden-p0mfc">
         <div className="framer-1oe5aw3" style={{ transform: "translateY(-50%)" }}>
           <div data-framer-background-image-wrapper="true" style={{ position: "absolute", borderRadius: "inherit", inset: "0px" }}>
-            <img decoding="async" loading="lazy" width="3240" height="3240" sizes="650px" srcSet="https://framerusercontent.com/images/vGP2zN6QN2xO3iJrtmUCtXAdZ1Y.png?scale-down-to=512 512w, https://framerusercontent.com/images/vGP2zN6QN2xO3iJrtmUCtXAdZ1Y.png?scale-down-to=1024 1024w, https://framerusercontent.com/images/vGP2zN6QN2xO3iJrtmUCtXAdZ1Y.png?scale-down-to=2048 2048w, https://framerusercontent.com/images/vGP2zN6QN2xO3iJrtmUCtXAdZ1Y.png 3240w" src="https://framerusercontent.com/images/vGP2zN6QN2xO3iJrtmUCtXAdZ1Y.png" alt="Image" style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", objectPosition: "center bottom", objectFit: "cover" }} />
+         <Image
+  src="https://framerusercontent.com/images/vGP2zN6QN2xO3iJrtmUCtXAdZ1Y.png"
+  alt="Image"
+  width={3240} // número, não string
+  height={3240}
+  sizes="650px"
+  style={{
+    display: "block",
+    width: "100%",
+    height: "100%",
+    borderRadius: "inherit",
+    objectPosition: "center bottom",
+    objectFit: "cover",
+  }}
+  priority={false} // lazy-loading padrão
+/>
+
           </div>
         </div>
       </div>
