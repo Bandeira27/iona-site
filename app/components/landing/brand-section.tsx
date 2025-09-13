@@ -33,7 +33,7 @@ export function BrandSection() {
                 ["--framer-text-alignment"]: "center",
                 ["--framer-text-color"]:
                   "var(--token-e413ec2b-a081-46f6-82ec-10d3d46359a9, rgb(173, 173, 174))",
-              }}
+              } as React.CSSProperties}
             >
               Organizações que buscaram mais do que conteúdo.{" "}
               <span
@@ -41,7 +41,7 @@ export function BrandSection() {
                 style={{
                   ["--framer-text-color"]:
                     "var(--token-ae325ebd-12af-4f1b-9546-d54d17049faf, rgb(255, 255, 255))",
-                }}
+                } as React.CSSProperties}
               >
                 Buscaram transformação.
               </span>
