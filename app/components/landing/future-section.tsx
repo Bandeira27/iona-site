@@ -30,7 +30,7 @@ export function FutureSection() {
                     style={{
                       "--framer-text-color":
                         "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(0, 0, 0))",
-                    }}
+                    } as React.CSSProperties}
                   >
                     Da visão à virada: os pontos de ação
                   </h2>

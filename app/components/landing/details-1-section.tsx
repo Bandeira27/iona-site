@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
+import ImageIonaApresentation from '@/app/assets/image-iona-apresentation.png'
 
 export function Details1Section() {
   return (
@@ -23,14 +25,13 @@ export function Details1Section() {
                   }}
                   data-framer-background-image-wrapper="true"
                 >
-                  <img
+                  <Image
                     decoding="async"
                     loading="lazy"
                     width="5196"
                     height="4000"
                     sizes="500px"
-                    srcSet="https://framerusercontent.com/images/ETgHVVRsLTa5XfUiOiil5uwCNY.png?scale-down-to=512 512w,https://framerusercontent.com/images/ETgHVVRsLTa5XfUiOiil5uwCNY.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/ETgHVVRsLTa5XfUiOiil5uwCNY.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/ETgHVVRsLTa5XfUiOiil5uwCNY.png?scale-down-to=4096 4096w,https://framerusercontent.com/images/ETgHVVRsLTa5XfUiOiil5uwCNY.png 5196w"
-                    src="https://framerusercontent.com/images/ETgHVVRsLTa5XfUiOiil5uwCNY.png"
+                    src={ImageIonaApresentation}
                     alt=""
                     style={{
                       display: "block",
@@ -86,7 +87,7 @@ export function Details1Section() {
                             ["--framer-text-alignment"]: "left",
                             ["--framer-text-color"]:
                               "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                          }}
+                          } as React.CSSProperties}
                         >
                           A Catalisadora da Cultura do Futuro
                         </h2>
@@ -112,7 +113,7 @@ export function Details1Section() {
                       style={{
                         ["--framer-text-color"]:
                           "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      }}
+                      } as React.CSSProperties}
                     >
                       Em tempos de medo do futuro, quem está preparando o
                       presente?
@@ -137,7 +138,7 @@ export function Details1Section() {
                       style={{
                         ["--framer-text-color"]:
                           "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      }}
+                      } as React.CSSProperties}
                     >
                       A inteligência artificial acelerou o tempo, mas a maioria
                       das empresas ainda tenta operar com os códigos do passado.
@@ -165,7 +166,7 @@ export function Details1Section() {
                       style={{
                         ["--framer-text-color"]:
                           "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      }}
+                      } as React.CSSProperties}
                     >
                       Enquanto muitos falam sobre o que vem por aí, Iona atua no
                       agora: acelerando a transição entre a disrupção
