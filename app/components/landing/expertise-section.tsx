@@ -1,5 +1,11 @@
+import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
-
+import ImageLeman from '@/app/assets/image-lemann.png'
+import ImageStanford from '@/app/assets/image-stanford.png'
+import ImageBrazilValley from '@/app/assets/image-brazil-valley.svg'
+import ImageForbes from '@/app/assets/image-forbes.png'
+import ImageGsv from '@/app/assets/image-gsv.png'
+import ImageTopVoice from '@/app/assets/image-top-voice.png'
 export function ExpertiseSection() {
   return (
     <section className="framer-16apv0y" data-framer-name="Expertise Section">
@@ -46,14 +52,13 @@ export function ExpertiseSection() {
                             }}
                             data-framer-background-image-wrapper="true"
                           >
-                            <img
+                            <Image
                               decoding="async"
                               loading="lazy"
                               width="516"
                               height="192"
                               sizes="136px"
-                              srcSet="https://framerusercontent.com/images/08IPOcgtgGITlGInF5GvwqVdB88.png?scale-down-to=512 512w,https://framerusercontent.com/images/08IPOcgtgGITlGInF5GvwqVdB88.png 516w"
-                              src="https://framerusercontent.com/images/08IPOcgtgGITlGInF5GvwqVdB88.png"
+                              src={ImageLeman}
                               alt=""
                               style={{
                                 display: "block",
@@ -83,7 +88,7 @@ export function ExpertiseSection() {
                         ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      } as React.CSSProperties}
                     >
                       <h5
                         className="framer-text"
@@ -96,7 +101,7 @@ export function ExpertiseSection() {
                           ["--framer-text-alignment"]: "center",
                           ["--framer-text-color"]:
                             "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
-                        }}
+                        } as React.CSSProperties}
                       >
                         Lemann Fellow
                       </h5>
@@ -137,13 +142,13 @@ export function ExpertiseSection() {
                             }}
                             data-framer-background-image-wrapper="true"
                           >
-                            <img
+                            <Image
                               decoding="async"
                               loading="lazy"
                               width="412"
                               height="192"
                               sizes="136px"
-                              src="https://framerusercontent.com/images/hyn0AKVsDdwAkhtZbsjj75l21I.png"
+                              src={ImageStanford}
                               alt=""
                               style={{
                                 display: "block",
@@ -173,7 +178,7 @@ export function ExpertiseSection() {
                         ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      } as React.CSSProperties}
                     >
                       <h5
                         className="framer-text"
@@ -186,7 +191,7 @@ export function ExpertiseSection() {
                           ["--framer-text-alignment"]: "center",
                           ["--framer-text-color"]:
                             "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
-                        }}
+                        } as React.CSSProperties}
                       >
                         Mestre por Stanford
                       </h5>
@@ -227,13 +232,13 @@ export function ExpertiseSection() {
                             }}
                             data-framer-background-image-wrapper="true"
                           >
-                            <img
+                            <Image
                               decoding="async"
                               loading="lazy"
                               width="428"
                               height="192"
                               sizes="136px"
-                              src="https://framerusercontent.com/images/5hNXPhd2EKOCjv2LF5tu34J4Kc.png"
+                              src={ImageBrazilValley}
                               alt=""
                               style={{
                                 display: "block",
@@ -263,7 +268,7 @@ export function ExpertiseSection() {
                         ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      } as React.CSSProperties}
                     >
                       <h5
                         className="framer-text"
@@ -276,7 +281,7 @@ export function ExpertiseSection() {
                           ["--framer-text-alignment"]: "center",
                           ["--framer-text-color"]:
                             "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
-                        }}
+                        } as React.CSSProperties}
                       >
                         Co-founder do Brazil at Silicon Valley
                       </h5>
@@ -317,13 +322,13 @@ export function ExpertiseSection() {
                             }}
                             data-framer-background-image-wrapper="true"
                           >
-                            <img
+                            <Image
                               decoding="async"
                               loading="lazy"
                               width="396"
                               height="192"
                               sizes="136px"
-                              src="https://framerusercontent.com/images/sfLbjqc7hN7VgcdUFrIC5LlBcc8.png"
+                              src={ImageForbes}
                               alt=""
                               style={{
                                 display: "block",
@@ -353,7 +358,7 @@ export function ExpertiseSection() {
                         ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      } as React.CSSProperties}
                     >
                       <h5
                         className="framer-text"
@@ -366,7 +371,7 @@ export function ExpertiseSection() {
                           ["--framer-text-alignment"]: "center",
                           ["--framer-text-color"]:
                             "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
-                        }}
+                        } as React.CSSProperties}
                       >
                         Colunista da Forbes Tech
                       </h5>
@@ -407,13 +412,13 @@ export function ExpertiseSection() {
                             }}
                             data-framer-background-image-wrapper="true"
                           >
-                            <img
+                            <Image
                               decoding="async"
                               loading="lazy"
                               width="212"
                               height="192"
                               sizes="136px"
-                              src="https://framerusercontent.com/images/BTkQYWS3ult4OKrqTZUlzfYWpQ.png"
+                              src={ImageGsv}
                               alt=""
                               style={{
                                 display: "block",
@@ -443,7 +448,7 @@ export function ExpertiseSection() {
                         ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      } as React.CSSProperties}
                     >
                       <h5
                         className="framer-text"
@@ -456,7 +461,7 @@ export function ExpertiseSection() {
                           ["--framer-text-alignment"]: "center",
                           ["--framer-text-color"]:
                             "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
-                        }}
+                        } as React.CSSProperties}
                       >
                         Top 3 Edtechs - GSV Cup
                       </h5>
@@ -497,14 +502,13 @@ export function ExpertiseSection() {
                             }}
                             data-framer-background-image-wrapper="true"
                           >
-                            <img
+                            <Image
                               decoding="async"
                               loading="lazy"
                               width="1003"
                               height="321"
                               sizes="136px"
-                              srcSet="https://framerusercontent.com/images/9WOBHkYqixW9WmUOe92AVLOWhZ4.png?scale-down-to=512 512w,https://framerusercontent.com/images/9WOBHkYqixW9WmUOe92AVLOWhZ4.png 1003w"
-                              src="https://framerusercontent.com/images/9WOBHkYqixW9WmUOe92AVLOWhZ4.png"
+                              src={ImageTopVoice}
                               alt=""
                               style={{
                                 display: "block",
@@ -534,7 +538,7 @@ export function ExpertiseSection() {
                         ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      } as React.CSSProperties}
                     >
                       <h5
                         className="framer-text"
@@ -547,7 +551,7 @@ export function ExpertiseSection() {
                           ["--framer-text-alignment"]: "center",
                           ["--framer-text-color"]:
                             "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
-                        }}
+                        } as React.CSSProperties}
                       >
                         LinkedIn Top Voices
                       </h5>
