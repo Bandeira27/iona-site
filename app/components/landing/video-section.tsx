@@ -1,6 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
+import PlayIcon from '@/app/assets/play-icon.svg'
+import ImageIonaStarse from '@/app/assets/image-iona-startse.png'
 
 export function VideoSection() {
   const [previewVideo, setPreviewVideo] = useState(false);
@@ -20,14 +23,13 @@ export function VideoSection() {
           }}
           data-framer-background-image-wrapper="true"
         >
-          <img
+          <Image
             decoding="async"
             loading="lazy"
             width="4800"
             height="2100"
             sizes="100vw"
-            srcSet="https://framerusercontent.com/images/kBXikWZdcGKqT6F32bIjGCPonsw.png?scale-down-to=512 512w,https://framerusercontent.com/images/kBXikWZdcGKqT6F32bIjGCPonsw.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/kBXikWZdcGKqT6F32bIjGCPonsw.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/kBXikWZdcGKqT6F32bIjGCPonsw.png?scale-down-to=4096 4096w,https://framerusercontent.com/images/kBXikWZdcGKqT6F32bIjGCPonsw.png 4800w"
-            src="https://framerusercontent.com/images/kBXikWZdcGKqT6F32bIjGCPonsw.png"
+            src={ImageIonaStarse}
             alt="Image"
             style={{
               display: "block",
@@ -114,12 +116,12 @@ export function VideoSection() {
                 }}
                 data-framer-background-image-wrapper="true"
               >
-                <img
+                <Image
                   decoding="async"
                   loading="lazy"
                   width="120"
                   height="120"
-                  src="https://framerusercontent.com/images/GoSvPoIqKABS8wS2lAbJBpfeks.svg"
+                  src={PlayIcon}
                   alt="play icon"
                   style={{
                     display: "block",
@@ -162,7 +164,7 @@ export function VideoSection() {
                   ["--framer-line-height"]: "64px",
                   ["--framer-text-alignment"]: "center",
                   ["--framer-text-color"]: "rgb(255, 255, 255)",
-                }}
+                } as React.CSSProperties}
               >
                 Se você não vai até o Vale do Silício, <br />
                 Iona leva ele até você
@@ -205,13 +207,13 @@ export function VideoSection() {
                   title="Youtube Video"
                   allow="presentation; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   src="https://www.youtube.com/embed/7SvI40zVRAQ?feature=share&amp;iv_load_policy=3&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;autoplay=1"
-                  frameBorder="0"
                   style={{
                     position: "absolute",
                     top: 0,
                     left: 0,
                     height: "100%",
                     width: "100%",
+                    border: '0',
                   }}
                 />
               </article>
@@ -240,7 +242,7 @@ export function VideoSection() {
                 >
                   <g
                     color="var(--token-ae325ebd-12af-4f1b-9546-d54d17049faf, rgb(255, 255, 255))"
-                    weight="bold"
+                    height="bold"
                   >
                     <path d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z" />
                   </g>
