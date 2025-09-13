@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
+import ImageWorkshopBanner from "@/app/assets/image-workshop-banner.png";
 
 export function Details3Section() {
   return (
@@ -23,14 +25,13 @@ export function Details3Section() {
                   }}
                   data-framer-background-image-wrapper="true"
                 >
-                  <img
+                  <Image
                     decoding="async"
                     loading="lazy"
                     width="3101"
                     height="2030"
                     sizes="500px"
-                    srcSet="https://framerusercontent.com/images/ngYagQaUW4Ja6DkWtkFU1VHV0.png?scale-down-to=512 512w,https://framerusercontent.com/images/ngYagQaUW4Ja6DkWtkFU1VHV0.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/ngYagQaUW4Ja6DkWtkFU1VHV0.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/ngYagQaUW4Ja6DkWtkFU1VHV0.png 3101w"
-                    src="https://framerusercontent.com/images/ngYagQaUW4Ja6DkWtkFU1VHV0.png"
+                    src={ImageWorkshopBanner}
                     alt=""
                     style={{
                       display: "block",
@@ -73,17 +74,19 @@ export function Details3Section() {
                       >
                         <h2
                           className="framer-text"
-                          style={{
-                            ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
-                            ["--framer-font-family"]:
-                              '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "40px",
-                            ["--framer-letter-spacing"]: "-0.03em",
-                            ["--framer-line-height"]: "135%",
-                            ["--framer-text-alignment"]: "left",
-                            ["--framer-text-color"]:
-                              "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                          }}
+                          style={
+                            {
+                              ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                              ["--framer-font-family"]:
+                                '"Poppins", "Poppins Placeholder", sans-serif',
+                              ["--framer-font-size"]: "40px",
+                              ["--framer-letter-spacing"]: "-0.03em",
+                              ["--framer-line-height"]: "135%",
+                              ["--framer-text-alignment"]: "left",
+                              ["--framer-text-color"]:
+                                "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
+                            } as React.CSSProperties
+                          }
                         >
                           A Estrategista de IA para Negócios
                         </h2>
@@ -106,10 +109,12 @@ export function Details3Section() {
                     <p
                       className="framer-text framer-styles-preset-34zyjt"
                       data-styles-preset="jIY0P7P2R"
-                      style={{
-                        ["--framer-text-color"]:
-                          "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      }}
+                      style={
+                        {
+                          ["--framer-text-color"]:
+                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                        } as React.CSSProperties
+                      }
                     >
                       Cursos de prompt. Hackathons de IA. Ferramentas novas a
                       cada semana
@@ -131,10 +136,12 @@ export function Details3Section() {
                     <p
                       className="framer-text framer-styles-preset-34zyjt"
                       data-styles-preset="jIY0P7P2R"
-                      style={{
-                        ["--framer-text-color"]:
-                          "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      }}
+                      style={
+                        {
+                          ["--framer-text-color"]:
+                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                        } as React.CSSProperties
+                      }
                     >
                       E, ainda assim, a sensação é de que a transformação não
                       chegou.
@@ -159,10 +166,12 @@ export function Details3Section() {
                     <p
                       className="framer-text framer-styles-preset-34zyjt"
                       data-styles-preset="jIY0P7P2R"
-                      style={{
-                        ["--framer-text-color"]:
-                          "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      }}
+                      style={
+                        {
+                          ["--framer-text-color"]:
+                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                        } as React.CSSProperties
+                      }
                     >
                       É porque a IA não se implementa de fora pra dentro. Iona
                       entendeu isso e ajuda a ajustar a cultura para operar com

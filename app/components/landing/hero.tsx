@@ -1,4 +1,9 @@
+import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
+import ImageIonaBadge from "@/app/assets/image-iona-badge.png";
+import ImageIonaTextBadge from "@/app/assets/image-iona-text-badge.svg";
+import ImageAsteriskBadge from "@/app/assets/image-asterisk-badge.svg";
+import IonaCoreBanner from "@/app//assets/iona-core-banner.png";
 
 export function HeroSection() {
   return (
@@ -87,11 +92,11 @@ export function HeroSection() {
                       inset: "0px",
                     }}
                   >
-                    <img
+                    <Image
                       decoding="async"
                       width="400"
                       height="400"
-                      src="https://framerusercontent.com/images/7x9HWLUciPAavWAeuAcuO4wtqQ.png"
+                      src={ImageIonaBadge}
                       alt="Image"
                       style={{
                         display: "block",
@@ -120,12 +125,12 @@ export function HeroSection() {
                         inset: "0px",
                       }}
                     >
-                      <img
+                      <Image
                         decoding="async"
                         width="426"
                         height="430"
                         className="animate-spin"
-                        src="https://framerusercontent.com/images/DDZ18NPls3Knrf6JmfNwiDXjpjA.svg"
+                        src={ImageIonaTextBadge}
                         alt="Badge"
                         style={{
                           display: "block",
@@ -152,11 +157,11 @@ export function HeroSection() {
                         inset: "0px",
                       }}
                     >
-                      <img
+                      <Image
                         decoding="async"
                         width="28"
                         height="28"
-                        src="https://framerusercontent.com/images/VWOJvBsj62BLWh6nASlcXqd0HcA.svg"
+                        src={ImageAsteriskBadge}
                         alt="Icon"
                         style={{
                           display: "block",
@@ -233,11 +238,11 @@ export function HeroSection() {
             inset: "0px",
           }}
         >
-          <img
+          <Image
             decoding="async"
             width="6400"
             height="3184"
-            src="https://framerusercontent.com/images/yPmqQzhh9VT5g0ppJqfL41ruuI.png"
+            src={IonaCoreBanner}
             alt="Image"
             style={{
               display: "block",

@@ -1,4 +1,10 @@
+import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
+import IonaLastApresentation from "@/app/assets/iona-image-last-apresentation.png";
+import ImageThing from "@/app/assets/image-thing.png";
+import ImageBook from "@/app/assets/image-book.png";
+import ImageCup from "@/app/assets/image-cup.png";
+import ImageHouse from "@/app/assets/image-house.png";
 
 export default function LectureTwo() {
   return (
@@ -21,14 +27,13 @@ export default function LectureTwo() {
                       inset: "0px",
                     }}
                   >
-                    <img
+                    <Image
                       decoding="async"
                       loading="lazy"
                       width="1188"
                       height="853"
                       sizes="calc(min(100vw - 60px, 1200px) * 0.4292)"
-                      srcSet="https://framerusercontent.com/images/DW56WeEqZ0rCKtMVBWg9Cu6Z3hM.jpeg?scale-down-to=512 512w,https://framerusercontent.com/images/DW56WeEqZ0rCKtMVBWg9Cu6Z3hM.jpeg?scale-down-to=1024 1024w,https://framerusercontent.com/images/DW56WeEqZ0rCKtMVBWg9Cu6Z3hM.jpeg 1188w"
-                      src="https://framerusercontent.com/images/DW56WeEqZ0rCKtMVBWg9Cu6Z3hM.jpeg"
+                      src={IonaLastApresentation}
                       alt="Image"
                       style={{
                         display: "block",
@@ -126,13 +131,13 @@ export default function LectureTwo() {
                         inset: "0px",
                       }}
                     >
-                      <img
+                      <Image
                         decoding="async"
                         loading="lazy"
                         width="240"
                         height="240"
                         sizes="60px"
-                        src="https://framerusercontent.com/images/wH6uUZ9zjp0rPG4I1OPtdYiSXSw.png"
+                        src={ImageThing}
                         alt=""
                         style={{
                           display: "block",
@@ -242,13 +247,13 @@ export default function LectureTwo() {
                         inset: "0px",
                       }}
                     >
-                      <img
+                      <Image
                         decoding="async"
                         loading="lazy"
                         width="240"
                         height="240"
                         sizes="60px"
-                        src="https://framerusercontent.com/images/RoEgHrPMqUGtwyGX7zGvnLB4wH4.png"
+                        src={ImageBook}
                         alt=""
                         style={{
                           display: "block",
@@ -359,13 +364,13 @@ export default function LectureTwo() {
                         inset: "0px",
                       }}
                     >
-                      <img
+                      <Image
                         decoding="async"
                         loading="lazy"
                         width="240"
                         height="240"
                         sizes="60px"
-                        src="https://framerusercontent.com/images/APUEVVSyWas8lib6hnbhJCoOFYw.png"
+                        src={ImageCup}
                         alt=""
                         style={{
                           display: "block",
@@ -475,13 +480,13 @@ export default function LectureTwo() {
                         inset: "0px",
                       }}
                     >
-                      <img
+                      <Image
                         decoding="async"
                         loading="lazy"
                         width="240"
                         height="240"
                         sizes="60px"
-                        src="https://framerusercontent.com/images/a1OWWWyCoTvxF1Ggb63MrhmPBKs.png"
+                        src={ImageHouse}
                         alt=""
                         style={{
                           display: "block",

@@ -1,5 +1,7 @@
 import React from "react";
 import { ScrollReveal } from "../scroll-reveal";
+import ImageIonaDetails4 from "@/app/assets/image-iona-details-4.jpg";
+import Image from "next/image";
 
 export default function Details4Section() {
   return (
@@ -20,14 +22,13 @@ export default function Details4Section() {
                   inset: "0px",
                 }}
               >
-                <img
+                <Image
                   decoding="async"
                   loading="lazy"
                   width="5228"
                   height="8192"
                   sizes="500px"
-                  srcSet="https://framerusercontent.com/images/th8Zbysn2PT9ZjGm8Rx0GShO0.jpg?scale-down-to=1024 653w,https://framerusercontent.com/images/th8Zbysn2PT9ZjGm8Rx0GShO0.jpg?scale-down-to=2048 1307w,https://framerusercontent.com/images/th8Zbysn2PT9ZjGm8Rx0GShO0.jpg?scale-down-to=4096 2614w,https://framerusercontent.com/images/th8Zbysn2PT9ZjGm8Rx0GShO0.jpg 5228w"
-                  src="https://framerusercontent.com/images/th8Zbysn2PT9ZjGm8Rx0GShO0.jpg"
+                  src={ImageIonaDetails4}
                   alt=""
                   style={{
                     display: "block",
@@ -68,11 +69,13 @@ export default function Details4Section() {
                       <h2
                         className="framer-text framer-styles-preset-14xqye4"
                         data-styles-preset="n6MKWMgGa"
-                        style={{
-                          "--framer-text-alignment": "left",
-                          "--framer-text-color":
-                            "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                        }}
+                        style={
+                          {
+                            "--framer-text-alignment": "left",
+                            "--framer-text-color":
+                              "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
+                          } as React.CSSProperties
+                        }
                       >
                         Como ativar a cultura de IA na sua empresa?
                       </h2>
@@ -93,10 +96,12 @@ export default function Details4Section() {
                     <p
                       className="framer-text framer-styles-preset-34zyjt"
                       data-styles-preset="jIY0P7P2R"
-                      style={{
-                        "--framer-text-color":
-                          "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      }}
+                      style={
+                        {
+                          "--framer-text-color":
+                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                        } as React.CSSProperties
+                      }
                     >
                       Iona atua com executivos, conselhos e times de liderança
                       que já aprovaram a IA mas ainda não a integraram à
@@ -118,10 +123,12 @@ export default function Details4Section() {
                     <p
                       className="framer-text framer-styles-preset-34zyjt"
                       data-styles-preset="jIY0P7P2R"
-                      style={{
-                        "--framer-text-color":
-                          "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      }}
+                      style={
+                        {
+                          "--framer-text-color":
+                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                        } as React.CSSProperties
+                      }
                     >
                       Palestras, workshops e mentorias estratégicas que marcam o
                       início da virada cultural.
@@ -145,10 +152,12 @@ export default function Details4Section() {
                     <p
                       className="framer-text framer-styles-preset-34zyjt"
                       data-styles-preset="jIY0P7P2R"
-                      style={{
-                        "--framer-text-color":
-                          "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      }}
+                      style={
+                        {
+                          "--framer-text-color":
+                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                        } as React.CSSProperties
+                      }
                     >
                       Cada formato mobiliza o que ela faz de melhor: provocar
                       pensamento estratégico e destravar ação com aplicabilidade
@@ -173,27 +182,31 @@ export default function Details4Section() {
                   <div
                     className="framer-7c850x"
                     data-framer-component-type="RichTextContainer"
-                    style={{
-                      outline: "none",
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "flex-start",
-                      flexShrink: 0,
-                      "--extracted-r6o4lv":
-                        "var(--token-ae325ebd-12af-4f1b-9546-d54d17049faf, rgb(255, 255, 255))",
-                      "--framer-paragraph-spacing": "0px",
-                      transform: "none",
-                      opacity: 1,
-                    }}
+                    style={
+                      {
+                        outline: "none",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "flex-start",
+                        flexShrink: 0,
+                        "--extracted-r6o4lv":
+                          "var(--token-ae325ebd-12af-4f1b-9546-d54d17049faf, rgb(255, 255, 255))",
+                        "--framer-paragraph-spacing": "0px",
+                        transform: "none",
+                        opacity: 1,
+                      } as React.CSSProperties
+                    }
                   >
                     <p
                       className="framer-text framer-styles-preset-1ivuj08"
                       data-styles-preset="W_sgoDppc"
-                      style={{
-                        "--framer-text-alignment": "center",
-                        "--framer-text-color":
-                          "var(--extracted-r6o4lv, var(--token-ae325ebd-12af-4f1b-9546-d54d17049faf, rgb(255, 255, 255)))",
-                      }}
+                      style={
+                        {
+                          "--framer-text-alignment": "center",
+                          "--framer-text-color":
+                            "var(--extracted-r6o4lv, var(--token-ae325ebd-12af-4f1b-9546-d54d17049faf, rgb(255, 255, 255)))",
+                        } as React.CSSProperties
+                      }
                     >
                       Veja formatos e temas de entrega
                     </p>
