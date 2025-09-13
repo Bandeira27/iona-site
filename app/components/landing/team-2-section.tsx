@@ -1,4 +1,10 @@
-import { ScrollReveal } from "../scroll-reveal";
+import ImageForbesGirl from '@/app/assets/image-forbes-woman.png'
+import ImageForbesTech from '@/app/assets/image-forbes-tech.png'
+import ImageNeofeed from '@/app/assets/image-neofeed.png'
+import ImagePipeline from '@/app/assets/image-pipeline.png'
+import ImageBrazilJournal from '@/app/assets/image-brazil-journal.png'
+import ImagePodcast from '@/app/assets/image-podcast.png'
+import Image from 'next/image';
 
 export function Team2Section() {
   return (
@@ -49,13 +55,13 @@ export function Team2Section() {
                           }}
                           data-framer-background-image-wrapper="true"
                         >
-                          <img
+                          <Image
                             decoding="async"
                             loading="lazy"
                             width="4914"
                             height="2604"
                             sizes="576px"
-                            src="https://framerusercontent.com/images/NyacEZQM73VTDaKXOB1YDoZ6Bk.png"
+                            src={ImageForbesGirl}
                             alt=""
                             style={{
                               display: "block",
@@ -151,13 +157,13 @@ export function Team2Section() {
                           }}
                           data-framer-background-image-wrapper="true"
                         >
-                          <img
+                          <Image
                             decoding="async"
                             loading="lazy"
                             width="4914"
                             height="2532"
                             sizes="576px"
-                            src="https://framerusercontent.com/images/FWEMOtOD2pvIoST8AV1JrUaN0k.png"
+                            src={ImageForbesTech}
                             alt=""
                             style={{
                               display: "block",
@@ -259,13 +265,13 @@ export function Team2Section() {
                             }}
                             data-framer-background-image-wrapper="true"
                           >
-                            <img
+                            <Image
                               decoding="async"
                               loading="lazy"
                               width="4914"
                               height="2581"
                               sizes="576px"
-                              src="https://framerusercontent.com/images/RwCCjOOiOUgZUPx2No3b1GZTo.png"
+                              src={ImageNeofeed}
                               alt=""
                               style={{
                                 display: "block",
@@ -359,13 +365,13 @@ export function Team2Section() {
                             }}
                             data-framer-background-image-wrapper="true"
                           >
-                            <img
+                            <Image
                               decoding="async"
                               loading="lazy"
                               width="4914"
                               height="2599"
                               sizes="576px"
-                              src="https://framerusercontent.com/images/s9M3AFmPQt7QEC7yWrnFBr7zTK0.png"
+                              src={ImagePipeline}
                               alt=""
                               style={{
                                 display: "block",
@@ -467,12 +473,12 @@ export function Team2Section() {
                             }}
                             data-framer-background-image-wrapper="true"
                           >
-                            <img
+                            <Image
                               decoding="async"
                               loading="lazy"
                               width="4914"
                               height="2487"
-                              src="https://framerusercontent.com/images/WrFWQVeFffxhyOpGxqayi3MBLzI.png"
+                              src={ImageBrazilJournal}
                               alt=""
                               style={{
                                 display: "block",
@@ -569,12 +575,12 @@ export function Team2Section() {
                             }}
                             data-framer-background-image-wrapper="true"
                           >
-                            <img
+                            <Image
                               decoding="async"
                               loading="lazy"
                               width="5374"
                               height="2031"
-                              src="https://framerusercontent.com/images/GFRBbq4w9UTpTXPvKAQFsijJcFY.png"
+                              src={ImagePodcast}
                               alt=""
                               style={{
                                 display: "block",
