@@ -1,5 +1,10 @@
 "use client";
 
+import ImageMarqueeFirst from '@/app/assets/image-marquee-first.jpg'
+import ImageMarqueeSecond from '@/app/assets/image-marquee-second.png'
+import ImageMarqueeThree from '@/app/assets/image-marquee-three.jpg'
+import Image from 'next/image';
+
 export default function OverviewSection() {
   return (
     <>
@@ -80,14 +85,14 @@ export default function OverviewSection() {
                         inset: 0,
                       }}
                     >
-                      <img
+                      <Image
                         decoding="async"
                         src={
                           i % 3 === 0
-                            ? "https://framerusercontent.com/images/JyqSD878jH7FWCW91ZN5ZIBTdY.jpg"
+                            ? ImageMarqueeFirst
                             : i % 3 === 1
-                              ? "https://framerusercontent.com/images/09C2s9avPTiRGwBPw59Qh9Y8NV4.png"
-                              : "https://framerusercontent.com/images/RUXKvWGqMoJO8OKtjxNx80eic.jpg"
+                              ? ImageMarqueeSecond
+                              : ImageMarqueeThree
                         }
                         alt="Image"
                         style={{
