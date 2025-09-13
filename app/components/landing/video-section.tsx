@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import PlayIcon from '@/app/assets/play-icon.svg'
-import ImageIonaStarse from '@/app/assets/image-iona-startse.png'
+import PlayIcon from "@/app/assets/play-icon.svg";
+import ImageIonaStarse from "@/app/assets/image-iona-startse.png";
 
 export function VideoSection() {
   const [previewVideo, setPreviewVideo] = useState(false);
@@ -154,17 +154,19 @@ export function VideoSection() {
             >
               <h2
                 className="framer-text"
-                style={{
-                  ["--font-selector"]: "R0Y7UG9wcGlucy01MDA=",
-                  ["--framer-font-family"]:
-                    '"Poppins", "Poppins Placeholder", sans-serif',
-                  ["--framer-font-size"]: "40px",
-                  ["--framer-font-weight"]: "500",
-                  ["--framer-letter-spacing"]: "-0.03em",
-                  ["--framer-line-height"]: "64px",
-                  ["--framer-text-alignment"]: "center",
-                  ["--framer-text-color"]: "rgb(255, 255, 255)",
-                } as React.CSSProperties}
+                style={
+                  {
+                    ["--font-selector"]: "R0Y7UG9wcGlucy01MDA=",
+                    ["--framer-font-family"]:
+                      '"Poppins", "Poppins Placeholder", sans-serif',
+                    ["--framer-font-size"]: "40px",
+                    ["--framer-font-weight"]: "500",
+                    ["--framer-letter-spacing"]: "-0.03em",
+                    ["--framer-line-height"]: "64px",
+                    ["--framer-text-alignment"]: "center",
+                    ["--framer-text-color"]: "rgb(255, 255, 255)",
+                  } as React.CSSProperties
+                }
               >
                 Se você não vai até o Vale do Silício, <br />
                 Iona leva ele até você
@@ -213,7 +215,7 @@ export function VideoSection() {
                     left: 0,
                     height: "100%",
                     width: "100%",
-                    border: '0',
+                    border: "0",
                   }}
                 />
               </article>

@@ -1,9 +1,9 @@
 import React from "react";
 import { ScrollReveal } from "../scroll-reveal";
-import ImageIonaAbout from '@/app/assets/image-iona-about.png'
+import ImageIonaAbout from "@/app/assets/image-iona-about.png";
 import Image from "next/image";
-import ImageIonaApresentationReverse from '@/app/assets/image-iona-apresentation-reverse.png'
-import ImageFormat from '@/app/assets/image-format.png'
+import ImageIonaApresentationReverse from "@/app/assets/image-iona-apresentation-reverse.png";
+import ImageFormat from "@/app/assets/image-format.png";
 
 export default function AboutSection() {
   return (
@@ -130,17 +130,19 @@ export default function AboutSection() {
                     >
                       <h5
                         className="framer-text"
-                        style={{
-                          ["--font-selector"]: "R0Y7UG9wcGlucy01MDA=",
-                          ["--framer-font-family"]:
-                            '"Poppins", "Poppins Placeholder", sans-serif',
-                          ["--framer-font-size"]: "24px",
-                          ["--framer-font-weight"]: "500",
-                          ["--framer-line-height"]: "100%",
-                          ["--framer-text-alignment"]: "left",
-                          ["--framer-text-color"]:
-                            "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            ["--font-selector"]: "R0Y7UG9wcGlucy01MDA=",
+                            ["--framer-font-family"]:
+                              '"Poppins", "Poppins Placeholder", sans-serif',
+                            ["--framer-font-size"]: "24px",
+                            ["--framer-font-weight"]: "500",
+                            ["--framer-line-height"]: "100%",
+                            ["--framer-text-alignment"]: "left",
+                            ["--framer-text-color"]:
+                              "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
+                          } as React.CSSProperties
+                        }
                       >
                         Palestras para eventos e convenções
                       </h5>
@@ -160,18 +162,19 @@ export default function AboutSection() {
                     >
                       <p
                         className="framer-text"
-                        style={{
-                          ["--font-selector"]:
-                            "R0Y7UG9wcGlucy1pdGFsaWM=",
-                          ["--framer-font-family"]:
-                            '"Poppins", "Poppins Placeholder", sans-serif',
-                          ["--framer-font-size"]: "18px",
-                          ["--framer-font-style"]: "italic",
-                          ["--framer-line-height"]: "28px",
-                          ["--framer-text-alignment"]: "left",
-                          ["--framer-text-color"]:
-                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            ["--font-selector"]: "R0Y7UG9wcGlucy1pdGFsaWM=",
+                            ["--framer-font-family"]:
+                              '"Poppins", "Poppins Placeholder", sans-serif',
+                            ["--framer-font-size"]: "18px",
+                            ["--framer-font-style"]: "italic",
+                            ["--framer-line-height"]: "28px",
+                            ["--framer-text-alignment"]: "left",
+                            ["--framer-text-color"]:
+                              "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                          } as React.CSSProperties
+                        }
                       >
                         Quando o assunto é IA, o que sua audiência realmente
                         precisa ouvir?
@@ -192,17 +195,18 @@ export default function AboutSection() {
                     >
                       <p
                         className="framer-text"
-                        style={{
-                          ["--font-selector"]:
-                            "R0Y7UG9wcGlucy1yZWd1bGFy",
-                          ["--framer-font-family"]:
-                            '"Poppins", "Poppins Placeholder", sans-serif',
-                          ["--framer-font-size"]: "18px",
-                          ["--framer-line-height"]: "28px",
-                          ["--framer-text-alignment"]: "left",
-                          ["--framer-text-color"]:
-                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                            ["--framer-font-family"]:
+                              '"Poppins", "Poppins Placeholder", sans-serif',
+                            ["--framer-font-size"]: "18px",
+                            ["--framer-line-height"]: "28px",
+                            ["--framer-text-alignment"]: "left",
+                            ["--framer-text-color"]:
+                              "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                          } as React.CSSProperties
+                        }
                       >
                         Iona desmistifica a imagem de “tecnologia do futuro” e
                         mostra como IA exige ação agora: de mentalidade,
@@ -224,17 +228,18 @@ export default function AboutSection() {
                     >
                       <p
                         className="framer-text"
-                        style={{
-                          ["--font-selector"]:
-                            "R0Y7UG9wcGlucy1yZWd1bGFy",
-                          ["--framer-font-family"]:
-                            '"Poppins", "Poppins Placeholder", sans-serif',
-                          ["--framer-font-size"]: "18px",
-                          ["--framer-line-height"]: "28px",
-                          ["--framer-text-alignment"]: "left",
-                          ["--framer-text-color"]:
-                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                            ["--framer-font-family"]:
+                              '"Poppins", "Poppins Placeholder", sans-serif',
+                            ["--framer-font-size"]: "18px",
+                            ["--framer-line-height"]: "28px",
+                            ["--framer-text-alignment"]: "left",
+                            ["--framer-text-color"]:
+                              "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                          } as React.CSSProperties
+                        }
                       >
                         Ideal para fóruns de inovação, summits, encontros com
                         líderes e times, e mentoria.
@@ -261,17 +266,19 @@ export default function AboutSection() {
                       >
                         <h5
                           className="framer-text"
-                          style={{
-                            ["--font-selector"]: "R0Y7UG9wcGlucy01MDA=",
-                            ["--framer-font-family"]:
-                              '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "24px",
-                            ["--framer-font-weight"]: "500",
-                            ["--framer-line-height"]: "135%",
-                            ["--framer-text-alignment"]: "left",
-                            ["--framer-text-color"]:
-                              "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                          } as React.CSSProperties}
+                          style={
+                            {
+                              ["--font-selector"]: "R0Y7UG9wcGlucy01MDA=",
+                              ["--framer-font-family"]:
+                                '"Poppins", "Poppins Placeholder", sans-serif',
+                              ["--framer-font-size"]: "24px",
+                              ["--framer-font-weight"]: "500",
+                              ["--framer-line-height"]: "135%",
+                              ["--framer-text-alignment"]: "left",
+                              ["--framer-text-color"]:
+                                "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
+                            } as React.CSSProperties
+                          }
                         >
                           Workshops para quem precisa
                         </h5>
@@ -291,18 +298,19 @@ export default function AboutSection() {
                       >
                         <p
                           className="framer-text"
-                          style={{
-                            ["--font-selector"]:
-                              "R0Y7UG9wcGlucy1pdGFsaWM=",
-                            ["--framer-font-family"]:
-                              '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "18px",
-                            ["--framer-font-style"]: "italic",
-                            ["--framer-line-height"]: "28px",
-                            ["--framer-text-alignment"]: "left",
-                            ["--framer-text-color"]:
-                              "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                          } as React.CSSProperties}
+                          style={
+                            {
+                              ["--font-selector"]: "R0Y7UG9wcGlucy1pdGFsaWM=",
+                              ["--framer-font-family"]:
+                                '"Poppins", "Poppins Placeholder", sans-serif',
+                              ["--framer-font-size"]: "18px",
+                              ["--framer-font-style"]: "italic",
+                              ["--framer-line-height"]: "28px",
+                              ["--framer-text-alignment"]: "left",
+                              ["--framer-text-color"]:
+                                "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                            } as React.CSSProperties
+                          }
                         >
                           IA aprovada. Budget definido. Time formado. E a
                           transformação… não acontece.
@@ -323,17 +331,18 @@ export default function AboutSection() {
                       >
                         <p
                           className="framer-text"
-                          style={{
-                            ["--font-selector"]:
-                              "R0Y7UG9wcGlucy1yZWd1bGFy",
-                            ["--framer-font-family"]:
-                              '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "18px",
-                            ["--framer-line-height"]: "28px",
-                            ["--framer-text-alignment"]: "left",
-                            ["--framer-text-color"]:
-                              "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                          } as React.CSSProperties}
+                          style={
+                            {
+                              ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                              ["--framer-font-family"]:
+                                '"Poppins", "Poppins Placeholder", sans-serif',
+                              ["--framer-font-size"]: "18px",
+                              ["--framer-line-height"]: "28px",
+                              ["--framer-text-alignment"]: "left",
+                              ["--framer-text-color"]:
+                                "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                            } as React.CSSProperties
+                          }
                         >
                           Esse é o momento ideal para colocar o C-level à mesa e
                           reorganizar como a empresa pensa, decide, prioriza e
@@ -357,17 +366,19 @@ export default function AboutSection() {
                       >
                         <h5
                           className="framer-text"
-                          style={{
-                            ["--font-selector"]: "R0Y7UG9wcGlucy01MDA=",
-                            ["--framer-font-family"]:
-                              '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "24px",
-                            ["--framer-font-weight"]: "500",
-                            ["--framer-line-height"]: "100%",
-                            ["--framer-text-alignment"]: "left",
-                            ["--framer-text-color"]:
-                              "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                          } as React.CSSProperties}
+                          style={
+                            {
+                              ["--font-selector"]: "R0Y7UG9wcGlucy01MDA=",
+                              ["--framer-font-family"]:
+                                '"Poppins", "Poppins Placeholder", sans-serif',
+                              ["--framer-font-size"]: "24px",
+                              ["--framer-font-weight"]: "500",
+                              ["--framer-line-height"]: "100%",
+                              ["--framer-text-alignment"]: "left",
+                              ["--framer-text-color"]:
+                                "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
+                            } as React.CSSProperties
+                          }
                         >
                           Conversas para conselhos e investidores
                         </h5>
@@ -387,18 +398,19 @@ export default function AboutSection() {
                       >
                         <p
                           className="framer-text"
-                          style={{
-                            ["--font-selector"]:
-                              "R0Y7UG9wcGlucy1pdGFsaWM=",
-                            ["--framer-font-family"]:
-                              '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "18px",
-                            ["--framer-font-style"]: "italic",
-                            ["--framer-line-height"]: "28px",
-                            ["--framer-text-alignment"]: "left",
-                            ["--framer-text-color"]:
-                              "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                          } as React.CSSProperties}
+                          style={
+                            {
+                              ["--font-selector"]: "R0Y7UG9wcGlucy1pdGFsaWM=",
+                              ["--framer-font-family"]:
+                                '"Poppins", "Poppins Placeholder", sans-serif',
+                              ["--framer-font-size"]: "18px",
+                              ["--framer-font-style"]: "italic",
+                              ["--framer-line-height"]: "28px",
+                              ["--framer-text-alignment"]: "left",
+                              ["--framer-text-color"]:
+                                "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                            } as React.CSSProperties
+                          }
                         >
                           Os frameworks estão velhos. Mas as perguntas são
                           novas.
@@ -419,17 +431,18 @@ export default function AboutSection() {
                       >
                         <p
                           className="framer-text"
-                          style={{
-                            ["--font-selector"]:
-                              "R0Y7UG9wcGlucy1yZWd1bGFy",
-                            ["--framer-font-family"]:
-                              '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "18px",
-                            ["--framer-line-height"]: "28px",
-                            ["--framer-text-alignment"]: "left",
-                            ["--framer-text-color"]:
-                              "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                          } as React.CSSProperties}
+                          style={
+                            {
+                              ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                              ["--framer-font-family"]:
+                                '"Poppins", "Poppins Placeholder", sans-serif',
+                              ["--framer-font-size"]: "18px",
+                              ["--framer-line-height"]: "28px",
+                              ["--framer-text-alignment"]: "left",
+                              ["--framer-text-color"]:
+                                "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                            } as React.CSSProperties
+                          }
                         >
                           Como IA impacta governança, valuation e cultura? O que
                           muda no ciclo de decisões e no apetite a risco?
@@ -450,17 +463,18 @@ export default function AboutSection() {
                       >
                         <p
                           className="framer-text"
-                          style={{
-                            ["--font-selector"]:
-                              "R0Y7UG9wcGlucy1yZWd1bGFy",
-                            ["--framer-font-family"]:
-                              '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "18px",
-                            ["--framer-line-height"]: "28px",
-                            ["--framer-text-alignment"]: "left",
-                            ["--framer-text-color"]:
-                              "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                          } as React.CSSProperties}
+                          style={
+                            {
+                              ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                              ["--framer-font-family"]:
+                                '"Poppins", "Poppins Placeholder", sans-serif',
+                              ["--framer-font-size"]: "18px",
+                              ["--framer-line-height"]: "28px",
+                              ["--framer-text-alignment"]: "left",
+                              ["--framer-text-color"]:
+                                "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                            } as React.CSSProperties
+                          }
                         >
                           Essas conversas trazem a visão de quem viveu o Vale do
                           Silício — traduzida para o que realmente importa:
@@ -487,27 +501,31 @@ export default function AboutSection() {
                     <div
                       className="framer-7c850x"
                       data-framer-component-type="RichTextContainer"
-                      style={{
-                        outline: "none",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "flex-start",
-                        flexShrink: 0,
-                        ["--extracted-r6o4lv"]:
-                          "var(--token-ae325ebd-12af-4f1b-9546-d54d17049faf, rgb(255, 255, 255))",
-                        ["--framer-paragraph-spacing"]: "0px",
-                        transform: "none",
-                        opacity: 1,
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          outline: "none",
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "flex-start",
+                          flexShrink: 0,
+                          ["--extracted-r6o4lv"]:
+                            "var(--token-ae325ebd-12af-4f1b-9546-d54d17049faf, rgb(255, 255, 255))",
+                          ["--framer-paragraph-spacing"]: "0px",
+                          transform: "none",
+                          opacity: 1,
+                        } as React.CSSProperties
+                      }
                     >
                       <p
                         className="framer-text framer-styles-preset-1ivuj08"
                         data-styles-preset="W_sgoDppc"
-                        style={{
-                          ["--framer-text-alignment"]: "center",
-                          ["--framer-text-color"]:
-                            "var(--extracted-r6o4lv, var(--token-ae325ebd-12af-4f1b-9546-d54d17049faf, rgb(255, 255, 255)))",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            ["--framer-text-alignment"]: "center",
+                            ["--framer-text-color"]:
+                              "var(--extracted-r6o4lv, var(--token-ae325ebd-12af-4f1b-9546-d54d17049faf, rgb(255, 255, 255)))",
+                          } as React.CSSProperties
+                        }
                       >
                         Fale com iona
                       </p>

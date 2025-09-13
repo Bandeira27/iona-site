@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
-import ImageIonaBadge from '@/app/assets/image-iona-badge.png'
-import ImageIonaTextBadge from '@/app/assets/image-iona-text-badge.svg'
-import ImageAsteriskBadge from '@/app/assets/image-asterisk-badge.svg'
-import IonaCoreBanner from '@/app//assets/iona-core-banner.png'
+import ImageIonaBadge from "@/app/assets/image-iona-badge.png";
+import ImageIonaTextBadge from "@/app/assets/image-iona-text-badge.svg";
+import ImageAsteriskBadge from "@/app/assets/image-asterisk-badge.svg";
+import IonaCoreBanner from "@/app//assets/iona-core-banner.png";
 
 export function HeroSection() {
   return (

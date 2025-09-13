@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
-import ImageLeman from '@/app/assets/image-lemann.png'
-import ImageStanford from '@/app/assets/image-stanford.png'
-import ImageBrazilValley from '@/app/assets/image-brazil-valley.svg'
-import ImageForbes from '@/app/assets/image-forbes.png'
-import ImageGsv from '@/app/assets/image-gsv.png'
-import ImageTopVoice from '@/app/assets/image-top-voice.png'
+import ImageLeman from "@/app/assets/image-lemann.png";
+import ImageStanford from "@/app/assets/image-stanford.png";
+import ImageBrazilValley from "@/app/assets/image-brazil-valley.svg";
+import ImageForbes from "@/app/assets/image-forbes.png";
+import ImageGsv from "@/app/assets/image-gsv.png";
+import ImageTopVoice from "@/app/assets/image-top-voice.png";
 export function ExpertiseSection() {
   return (
     <section className="framer-16apv0y" data-framer-name="Expertise Section">
@@ -78,30 +78,34 @@ export function ExpertiseSection() {
                       className="framer-28szz6"
                       data-framer-name="Protein thing"
                       data-framer-component-type="RichTextContainer"
-                      style={{
-                        outline: "none",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "flex-start",
-                        flexShrink: 0,
-                        ["--extracted-1lwpl3i"]: "rgba(255, 255, 255, 0.7)",
-                        ["--framer-paragraph-spacing"]: "0px",
-                        transform: "none",
-                        opacity: 1,
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          outline: "none",
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "flex-start",
+                          flexShrink: 0,
+                          ["--extracted-1lwpl3i"]: "rgba(255, 255, 255, 0.7)",
+                          ["--framer-paragraph-spacing"]: "0px",
+                          transform: "none",
+                          opacity: 1,
+                        } as React.CSSProperties
+                      }
                     >
                       <h5
                         className="framer-text"
-                        style={{
-                          ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
-                          ["--framer-font-family"]:
-                            '"Poppins", "Poppins Placeholder", sans-serif',
-                          ["--framer-font-size"]: "18px",
-                          ["--framer-line-height"]: "150%",
-                          ["--framer-text-alignment"]: "center",
-                          ["--framer-text-color"]:
-                            "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                            ["--framer-font-family"]:
+                              '"Poppins", "Poppins Placeholder", sans-serif',
+                            ["--framer-font-size"]: "18px",
+                            ["--framer-line-height"]: "150%",
+                            ["--framer-text-alignment"]: "center",
+                            ["--framer-text-color"]:
+                              "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
+                          } as React.CSSProperties
+                        }
                       >
                         Lemann Fellow
                       </h5>
@@ -168,30 +172,34 @@ export function ExpertiseSection() {
                       className="framer-28szz6"
                       data-framer-name="Protein thing"
                       data-framer-component-type="RichTextContainer"
-                      style={{
-                        outline: "none",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "flex-start",
-                        flexShrink: 0,
-                        ["--extracted-1lwpl3i"]: "rgba(255, 255, 255, 0.7)",
-                        ["--framer-paragraph-spacing"]: "0px",
-                        transform: "none",
-                        opacity: 1,
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          outline: "none",
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "flex-start",
+                          flexShrink: 0,
+                          ["--extracted-1lwpl3i"]: "rgba(255, 255, 255, 0.7)",
+                          ["--framer-paragraph-spacing"]: "0px",
+                          transform: "none",
+                          opacity: 1,
+                        } as React.CSSProperties
+                      }
                     >
                       <h5
                         className="framer-text"
-                        style={{
-                          ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
-                          ["--framer-font-family"]:
-                            '"Poppins", "Poppins Placeholder", sans-serif',
-                          ["--framer-font-size"]: "18px",
-                          ["--framer-line-height"]: "150%",
-                          ["--framer-text-alignment"]: "center",
-                          ["--framer-text-color"]:
-                            "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                            ["--framer-font-family"]:
+                              '"Poppins", "Poppins Placeholder", sans-serif',
+                            ["--framer-font-size"]: "18px",
+                            ["--framer-line-height"]: "150%",
+                            ["--framer-text-alignment"]: "center",
+                            ["--framer-text-color"]:
+                              "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
+                          } as React.CSSProperties
+                        }
                       >
                         Mestre por Stanford
                       </h5>
@@ -258,30 +266,34 @@ export function ExpertiseSection() {
                       className="framer-28szz6"
                       data-framer-name="Protein thing"
                       data-framer-component-type="RichTextContainer"
-                      style={{
-                        outline: "none",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "flex-start",
-                        flexShrink: 0,
-                        ["--extracted-1lwpl3i"]: "rgba(255, 255, 255, 0.7)",
-                        ["--framer-paragraph-spacing"]: "0px",
-                        transform: "none",
-                        opacity: 1,
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          outline: "none",
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "flex-start",
+                          flexShrink: 0,
+                          ["--extracted-1lwpl3i"]: "rgba(255, 255, 255, 0.7)",
+                          ["--framer-paragraph-spacing"]: "0px",
+                          transform: "none",
+                          opacity: 1,
+                        } as React.CSSProperties
+                      }
                     >
                       <h5
                         className="framer-text"
-                        style={{
-                          ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
-                          ["--framer-font-family"]:
-                            '"Poppins", "Poppins Placeholder", sans-serif',
-                          ["--framer-font-size"]: "18px",
-                          ["--framer-line-height"]: "150%",
-                          ["--framer-text-alignment"]: "center",
-                          ["--framer-text-color"]:
-                            "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                            ["--framer-font-family"]:
+                              '"Poppins", "Poppins Placeholder", sans-serif',
+                            ["--framer-font-size"]: "18px",
+                            ["--framer-line-height"]: "150%",
+                            ["--framer-text-alignment"]: "center",
+                            ["--framer-text-color"]:
+                              "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
+                          } as React.CSSProperties
+                        }
                       >
                         Co-founder do Brazil at Silicon Valley
                       </h5>
@@ -348,30 +360,34 @@ export function ExpertiseSection() {
                       className="framer-28szz6"
                       data-framer-name="Protein thing"
                       data-framer-component-type="RichTextContainer"
-                      style={{
-                        outline: "none",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "flex-start",
-                        flexShrink: 0,
-                        ["--extracted-1lwpl3i"]: "rgba(255, 255, 255, 0.7)",
-                        ["--framer-paragraph-spacing"]: "0px",
-                        transform: "none",
-                        opacity: 1,
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          outline: "none",
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "flex-start",
+                          flexShrink: 0,
+                          ["--extracted-1lwpl3i"]: "rgba(255, 255, 255, 0.7)",
+                          ["--framer-paragraph-spacing"]: "0px",
+                          transform: "none",
+                          opacity: 1,
+                        } as React.CSSProperties
+                      }
                     >
                       <h5
                         className="framer-text"
-                        style={{
-                          ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
-                          ["--framer-font-family"]:
-                            '"Poppins", "Poppins Placeholder", sans-serif',
-                          ["--framer-font-size"]: "18px",
-                          ["--framer-line-height"]: "150%",
-                          ["--framer-text-alignment"]: "center",
-                          ["--framer-text-color"]:
-                            "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                            ["--framer-font-family"]:
+                              '"Poppins", "Poppins Placeholder", sans-serif',
+                            ["--framer-font-size"]: "18px",
+                            ["--framer-line-height"]: "150%",
+                            ["--framer-text-alignment"]: "center",
+                            ["--framer-text-color"]:
+                              "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
+                          } as React.CSSProperties
+                        }
                       >
                         Colunista da Forbes Tech
                       </h5>
@@ -438,30 +454,34 @@ export function ExpertiseSection() {
                       className="framer-28szz6"
                       data-framer-name="Protein thing"
                       data-framer-component-type="RichTextContainer"
-                      style={{
-                        outline: "none",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "flex-start",
-                        flexShrink: 0,
-                        ["--extracted-1lwpl3i"]: "rgba(255, 255, 255, 0.7)",
-                        ["--framer-paragraph-spacing"]: "0px",
-                        transform: "none",
-                        opacity: 1,
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          outline: "none",
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "flex-start",
+                          flexShrink: 0,
+                          ["--extracted-1lwpl3i"]: "rgba(255, 255, 255, 0.7)",
+                          ["--framer-paragraph-spacing"]: "0px",
+                          transform: "none",
+                          opacity: 1,
+                        } as React.CSSProperties
+                      }
                     >
                       <h5
                         className="framer-text"
-                        style={{
-                          ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
-                          ["--framer-font-family"]:
-                            '"Poppins", "Poppins Placeholder", sans-serif',
-                          ["--framer-font-size"]: "18px",
-                          ["--framer-line-height"]: "150%",
-                          ["--framer-text-alignment"]: "center",
-                          ["--framer-text-color"]:
-                            "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                            ["--framer-font-family"]:
+                              '"Poppins", "Poppins Placeholder", sans-serif',
+                            ["--framer-font-size"]: "18px",
+                            ["--framer-line-height"]: "150%",
+                            ["--framer-text-alignment"]: "center",
+                            ["--framer-text-color"]:
+                              "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
+                          } as React.CSSProperties
+                        }
                       >
                         Top 3 Edtechs - GSV Cup
                       </h5>
@@ -528,30 +548,34 @@ export function ExpertiseSection() {
                       className="framer-28szz6"
                       data-framer-name="Protein thing"
                       data-framer-component-type="RichTextContainer"
-                      style={{
-                        outline: "none",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "flex-start",
-                        flexShrink: 0,
-                        ["--extracted-1lwpl3i"]: "rgba(255, 255, 255, 0.7)",
-                        ["--framer-paragraph-spacing"]: "0px",
-                        transform: "none",
-                        opacity: 1,
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          outline: "none",
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "flex-start",
+                          flexShrink: 0,
+                          ["--extracted-1lwpl3i"]: "rgba(255, 255, 255, 0.7)",
+                          ["--framer-paragraph-spacing"]: "0px",
+                          transform: "none",
+                          opacity: 1,
+                        } as React.CSSProperties
+                      }
                     >
                       <h5
                         className="framer-text"
-                        style={{
-                          ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
-                          ["--framer-font-family"]:
-                            '"Poppins", "Poppins Placeholder", sans-serif',
-                          ["--framer-font-size"]: "18px",
-                          ["--framer-line-height"]: "150%",
-                          ["--framer-text-alignment"]: "center",
-                          ["--framer-text-color"]:
-                            "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                            ["--framer-font-family"]:
+                              '"Poppins", "Poppins Placeholder", sans-serif',
+                            ["--framer-font-size"]: "18px",
+                            ["--framer-line-height"]: "150%",
+                            ["--framer-text-alignment"]: "center",
+                            ["--framer-text-color"]:
+                              "var(--extracted-1lwpl3i, rgba(255, 255, 255, 0.7))",
+                          } as React.CSSProperties
+                        }
                       >
                         LinkedIn Top Voices
                       </h5>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
-import IonaCoreApresentation from '@/app/assets/iona-core-apresentation.jpeg'
+import IonaCoreApresentation from "@/app/assets/iona-core-apresentation.jpeg";
 
 export function Details2Section() {
   return (
@@ -40,17 +40,19 @@ export function Details2Section() {
                       >
                         <h2
                           className="framer-text"
-                          style={{
-                            ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
-                            ["--framer-font-family"]:
-                              '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "40px",
-                            ["--framer-letter-spacing"]: "-0.03em",
-                            ["--framer-line-height"]: "135%",
-                            ["--framer-text-alignment"]: "left",
-                            ["--framer-text-color"]:
-                              "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                          } as React.CSSProperties}
+                          style={
+                            {
+                              ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                              ["--framer-font-family"]:
+                                '"Poppins", "Poppins Placeholder", sans-serif',
+                              ["--framer-font-size"]: "40px",
+                              ["--framer-letter-spacing"]: "-0.03em",
+                              ["--framer-line-height"]: "135%",
+                              ["--framer-text-alignment"]: "left",
+                              ["--framer-text-color"]:
+                                "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
+                            } as React.CSSProperties
+                          }
                         >
                           A Tradutora do Vale para o Brasil Corporativo
                         </h2>
@@ -73,10 +75,12 @@ export function Details2Section() {
                     <p
                       className="framer-text framer-styles-preset-34zyjt"
                       data-styles-preset="jIY0P7P2R"
-                      style={{
-                        ["--framer-text-color"]:
-                          "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          ["--framer-text-color"]:
+                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                        } as React.CSSProperties
+                      }
                     >
                       Iona viveu por mais de uma década no epicentro da inovação
                       global.
@@ -98,10 +102,12 @@ export function Details2Section() {
                     <p
                       className="framer-text framer-styles-preset-34zyjt"
                       data-styles-preset="jIY0P7P2R"
-                      style={{
-                        ["--framer-text-color"]:
-                          "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          ["--framer-text-color"]:
+                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                        } as React.CSSProperties
+                      }
                     >
                       Estudou em Stanford, foi executiva, criou filhos e
                       mergulhou em uma cultura que normaliza o novo todos os
@@ -127,10 +133,12 @@ export function Details2Section() {
                     <p
                       className="framer-text framer-styles-preset-34zyjt"
                       data-styles-preset="jIY0P7P2R"
-                      style={{
-                        ["--framer-text-color"]:
-                          "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          ["--framer-text-color"]:
+                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                        } as React.CSSProperties
+                      }
                     >
                       Lá, aprendeu que sucesso tem método e existe um jeito de
                       traduzir essa mentalidade para o Brasil.

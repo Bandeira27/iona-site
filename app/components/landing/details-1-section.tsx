@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
-import ImageIonaApresentation from '@/app/assets/image-iona-apresentation.png'
+import ImageIonaApresentation from "@/app/assets/image-iona-apresentation.png";
 
 export function Details1Section() {
   return (
@@ -77,17 +77,19 @@ export function Details1Section() {
                       >
                         <h2
                           className="framer-text"
-                          style={{
-                            ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
-                            ["--framer-font-family"]:
-                              '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "40px",
-                            ["--framer-letter-spacing"]: "-0.03em",
-                            ["--framer-line-height"]: "135%",
-                            ["--framer-text-alignment"]: "left",
-                            ["--framer-text-color"]:
-                              "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                          } as React.CSSProperties}
+                          style={
+                            {
+                              ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
+                              ["--framer-font-family"]:
+                                '"Poppins", "Poppins Placeholder", sans-serif',
+                              ["--framer-font-size"]: "40px",
+                              ["--framer-letter-spacing"]: "-0.03em",
+                              ["--framer-line-height"]: "135%",
+                              ["--framer-text-alignment"]: "left",
+                              ["--framer-text-color"]:
+                                "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
+                            } as React.CSSProperties
+                          }
                         >
                           A Catalisadora da Cultura do Futuro
                         </h2>
@@ -110,10 +112,12 @@ export function Details1Section() {
                     <p
                       className="framer-text framer-styles-preset-34zyjt"
                       data-styles-preset="jIY0P7P2R"
-                      style={{
-                        ["--framer-text-color"]:
-                          "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          ["--framer-text-color"]:
+                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                        } as React.CSSProperties
+                      }
                     >
                       Em tempos de medo do futuro, quem está preparando o
                       presente?
@@ -135,10 +139,12 @@ export function Details1Section() {
                     <p
                       className="framer-text framer-styles-preset-34zyjt"
                       data-styles-preset="jIY0P7P2R"
-                      style={{
-                        ["--framer-text-color"]:
-                          "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          ["--framer-text-color"]:
+                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                        } as React.CSSProperties
+                      }
                     >
                       A inteligência artificial acelerou o tempo, mas a maioria
                       das empresas ainda tenta operar com os códigos do passado.
@@ -163,10 +169,12 @@ export function Details1Section() {
                     <p
                       className="framer-text framer-styles-preset-34zyjt"
                       data-styles-preset="jIY0P7P2R"
-                      style={{
-                        ["--framer-text-color"]:
-                          "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          ["--framer-text-color"]:
+                            "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
+                        } as React.CSSProperties
+                      }
                     >
                       Enquanto muitos falam sobre o que vem por aí, Iona atua no
                       agora: acelerando a transição entre a disrupção
