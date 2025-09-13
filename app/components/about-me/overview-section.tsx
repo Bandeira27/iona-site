@@ -1,9 +1,9 @@
 "use client";
 
-import ImageMarqueeFirst from '@/app/assets/image-marquee-first.jpg'
-import ImageMarqueeSecond from '@/app/assets/image-marquee-second.png'
-import ImageMarqueeThree from '@/app/assets/image-marquee-three.jpg'
-import Image from 'next/image';
+import ImageMarqueeFirst from "@/app/assets/image-marquee-first.jpg";
+import ImageMarqueeSecond from "@/app/assets/image-marquee-second.png";
+import ImageMarqueeThree from "@/app/assets/image-marquee-three.jpg";
+import Image from "next/image";
 
 export default function OverviewSection() {
   return (

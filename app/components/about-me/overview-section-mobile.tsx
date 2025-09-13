@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import ImageMarqueeFirst from '@/app/assets/image-marquee-first.jpg'
-import ImageMarqueeSecond from '@/app/assets/image-marquee-second.png'
-import Image from 'next/image';
+import ImageMarqueeFirst from "@/app/assets/image-marquee-first.jpg";
+import ImageMarqueeSecond from "@/app/assets/image-marquee-second.png";
+import Image from "next/image";
 
 export function OverviewSectionMobile() {
   return (
@@ -28,55 +28,59 @@ export function OverviewSectionMobile() {
         <div className="framer-2t4pgv-container hidden-1qcvg63 hidden-p0mfc">
           <section
             style={{
-              display: 'flex',
-              width: '100%',
-              height: '100%',
-              maxWidth: '100%',
-              maxHeight: '100%',
-              placeItems: 'center',
+              display: "flex",
+              width: "100%",
+              height: "100%",
+              maxWidth: "100%",
+              maxHeight: "100%",
+              placeItems: "center",
               margin: 0,
-              padding: '10px',
-              listStyleType: 'none',
+              padding: "10px",
+              listStyleType: "none",
               opacity: 1,
-              overflow: 'hidden',
+              overflow: "hidden",
             }}
           >
             <ul
               className="marquee-track"
               style={{
-                display: 'flex',
-                width: '100%',
-                height: '100%',
-                maxWidth: '100%',
-                maxHeight: '100%',
-                placeItems: 'center',
+                display: "flex",
+                width: "100%",
+                height: "100%",
+                maxWidth: "100%",
+                maxHeight: "100%",
+                placeItems: "center",
                 margin: 0,
                 padding: 0,
-                listStyleType: 'none',
-                gap: '20px',
-                position: 'relative',
-                flexDirection: 'row',
-                willChange: 'transform',
-                transform: 'translateX(0px)',
+                listStyleType: "none",
+                gap: "20px",
+                position: "relative",
+                flexDirection: "row",
+                willChange: "transform",
+                transform: "translateX(0px)",
               }}
             >
               {[...Array(6), ...Array(6)].map((_, i) => {
                 const isFirstImage = i % 2 === 0;
                 const imgSrc = isFirstImage
                   ? ImageMarqueeFirst
-                  : ImageMarqueeSecond
+                  : ImageMarqueeSecond;
                 const className = isFirstImage
-                  ? 'framer-c5t4yn'
-                  : 'framer-1y7fqd4';
+                  ? "framer-c5t4yn"
+                  : "framer-1y7fqd4";
 
                 return (
-                  <li key={i} aria-hidden={i > 1} style={{ willChange: 'transform' }}>
+                  <li
+                    key={i}
+                    aria-hidden={i > 1}
+                    style={{ willChange: "transform" }}
+                  >
                     <div className={className} style={{ flexShrink: 0 }}>
                       <div
                         data-framer-background-image-wrapper="true"
                         style={{
-                          position: 'absolute',
-                          borderRadius: 'inherit',
+                          position: "absolute",
+                          borderRadius: "inherit",
                           inset: 0,
                         }}
                       >
@@ -85,12 +89,12 @@ export function OverviewSectionMobile() {
                           src={imgSrc}
                           alt="Image"
                           style={{
-                            display: 'block',
-                            width: '100%',
-                            height: '100%',
-                            borderRadius: 'inherit',
-                            objectPosition: 'center center',
-                            objectFit: 'cover',
+                            display: "block",
+                            width: "100%",
+                            height: "100%",
+                            borderRadius: "inherit",
+                            objectPosition: "center center",
+                            objectFit: "cover",
                           }}
                         />
                       </div>

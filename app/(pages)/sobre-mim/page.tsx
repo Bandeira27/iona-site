@@ -21,30 +21,29 @@ export default function AboutMe() {
       >
         <BannerSectionAboutMe />
         <AboutSectionAboutMe />
-         <div className="hidden md:block">
-
-        <OverviewSection />
+        <div className="hidden md:block">
+          <OverviewSection />
         </div>
-       <div className="block md:hidden">
-        <OverviewSectionMobile />
+        <div className="block md:hidden">
+          <OverviewSectionMobile />
         </div>
         <TransformerSection />
 
-         <div className="hidden md:block">
-        <AchievementSection />
-         </div>
+        <div className="hidden md:block">
+          <AchievementSection />
+        </div>
 
-       <div className="block md:hidden">
+        <div className="block md:hidden">
           <AchievementSectionMobile />
-         </div>
+        </div>
         <MissionSection />
-     <div className="hidden md:block">
-               <Footer />
-             </div>
-     
-             <div className="block md:hidden">
-               <FooterMobile />
-             </div>
+        <div className="hidden md:block">
+          <Footer />
+        </div>
+
+        <div className="block md:hidden">
+          <FooterMobile />
+        </div>
       </div>
     </div>
   );

@@ -131,7 +131,7 @@ const AchievementSection: React.FC = () => {
           "Trabalho com empresas que querem os benefícios da Inteligência Artificial, mas ainda não sabem como agir. É aí que a transformação trava. É aí que eu entro.",
       },
     ],
-    []
+    [],
   );
 
   const loopedAchievements = [...achievements, ...achievements];
@@ -163,7 +163,10 @@ const AchievementSection: React.FC = () => {
   return (
     <section className="framer-sani89" data-framer-name="Achievement Section">
       <div className="ssr-variant hidden-xme965 hidden-p0mfc">
-        <div className="framer-1oe5aw3" style={{ transform: "translateY(-50%)" }}>
+        <div
+          className="framer-1oe5aw3"
+          style={{ transform: "translateY(-50%)" }}
+        >
           <div
             data-framer-background-image-wrapper="true"
             style={{

@@ -1,5 +1,5 @@
-import ImageHuman from '@/app/assets/image-human.png'
-import Image from 'next/image';
+import ImageHuman from "@/app/assets/image-human.png";
+import Image from "next/image";
 
 export default function BannerSectionAboutMe() {
   return (
@@ -46,17 +46,19 @@ export default function BannerSectionAboutMe() {
             >
               <h2
                 className="framer-text"
-                style={{
-                  "--font-selector": "R0Y7UG9wcGlucy1yZWd1bGFy",
-                  "--framer-font-family":
-                    '"Poppins", "Poppins Placeholder", sans-serif',
-                  "--framer-font-size": "38px",
-                  "--framer-letter-spacing": "-0.03em",
-                  "--framer-line-height": "48px",
-                  "--framer-text-alignment": "center",
-                  "--framer-text-color":
-                    "var(--token-b25fd8ad-c9e3-4471-b11c-08fc2ed02e4e, rgb(17, 17, 51))",
-                } as React.CSSProperties}
+                style={
+                  {
+                    "--font-selector": "R0Y7UG9wcGlucy1yZWd1bGFy",
+                    "--framer-font-family":
+                      '"Poppins", "Poppins Placeholder", sans-serif',
+                    "--framer-font-size": "38px",
+                    "--framer-letter-spacing": "-0.03em",
+                    "--framer-line-height": "48px",
+                    "--framer-text-alignment": "center",
+                    "--framer-text-color":
+                      "var(--token-b25fd8ad-c9e3-4471-b11c-08fc2ed02e4e, rgb(17, 17, 51))",
+                  } as React.CSSProperties
+                }
               >
                 A origem é humana
               </h2>
@@ -67,5 +69,3 @@ export default function BannerSectionAboutMe() {
     </section>
   );
 }
-
-

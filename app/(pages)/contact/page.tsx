@@ -1,5 +1,6 @@
 import ContactSection from "@/app/components/contact/contact-section";
 import { Footer } from "@/app/components/landing/footer";
+import { FooterMobile } from "@/app/components/landing/footer-mobile";
 import { LandingHeader } from "@/app/components/landing/header";
 
 export default function ContactPage() {
@@ -12,7 +13,13 @@ export default function ContactPage() {
         style={{ minHeight: "100vh", width: "auto", display: "contents" }}
       >
         <ContactSection />
-        <Footer />
+        <div className="hidden md:block">
+          <Footer />
+        </div>
+
+        <div className="block md:hidden">
+          <FooterMobile />
+        </div>
       </div>
     </div>
   );
