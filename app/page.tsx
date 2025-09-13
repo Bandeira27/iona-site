@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { AboutSection } from "./components/landing/about";
 import { AboutExtraSection } from "./components/landing/about-extra";
@@ -9,7 +9,9 @@ import { Details3Section } from "./components/landing/details-3-section";
 import Details4Section from "./components/landing/details-4-section";
 import { ExpertiseSection } from "./components/landing/expertise-section";
 import { FeedbackSection } from "./components/landing/feedback-section";
+import { FeedbackSectionMobile } from "./components/landing/feedback-section-mobile";
 import { Footer } from "./components/landing/footer";
+import { FooterMobile } from "./components/landing/footer-mobile";
 import { FutureSection } from "./components/landing/future-section";
 import { LandingHeader } from "./components/landing/header";
 import { HeroSection } from "./components/landing/hero";
@@ -21,9 +23,9 @@ export default function Landing() {
   return (
     <div>
       <LandingHeader />
-      <div 
-        data-framer-root="" 
-        className="framer-QrmFE framer-KGwWx framer-2PkMf framer-72rtr7" 
+      <div
+        data-framer-root=""
+        className="framer-QrmFE framer-KGwWx framer-2PkMf framer-72rtr7"
         style={{ minHeight: "100vh", width: "auto", display: "contents" }}
       >
         <HeroSection />
@@ -37,11 +39,23 @@ export default function Landing() {
         <Details3Section />
         <BrandSection />
         <Details4Section />
-        <FeedbackSection />
+        <div className="hidden md:block">
+          <FeedbackSection />
+        </div>
+        <div className="block md:hidden">
+          <FeedbackSectionMobile />
+        </div>
         <Team1Section />
         <Team2Section />
-        <Footer />
+
+        <div className="hidden md:block">
+          <Footer />
+        </div>
+
+        <div className="block md:hidden">
+          <FooterMobile />
+        </div>
       </div>
     </div>
-  )
+  );
 }

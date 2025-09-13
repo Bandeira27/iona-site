@@ -1,4 +1,9 @@
-'use client'
+"use client";
+
+import ImageMarqueeFirst from "@/app/assets/image-marquee-first.jpg";
+import ImageMarqueeSecond from "@/app/assets/image-marquee-second.png";
+import ImageMarqueeThree from "@/app/assets/image-marquee-three.jpg";
+import Image from "next/image";
 
 export default function OverviewSection() {
   return (
@@ -57,14 +62,18 @@ export default function OverviewSection() {
               }}
             >
               {[...Array(12), ...Array(12)].map((_, i) => (
-                <li key={i} aria-hidden={i > 2} style={{ willChange: "transform" }}>
+                <li
+                  key={i}
+                  aria-hidden={i > 2}
+                  style={{ willChange: "transform" }}
+                >
                   <div
                     className={`framer-${
                       i % 3 === 0
                         ? "1t97jvt"
                         : i % 3 === 1
-                        ? "flcglx"
-                        : "s60kps"
+                          ? "flcglx"
+                          : "s60kps"
                     }`}
                     style={{ flexShrink: 0 }}
                   >
@@ -76,14 +85,14 @@ export default function OverviewSection() {
                         inset: 0,
                       }}
                     >
-                      <img
+                      <Image
                         decoding="async"
                         src={
                           i % 3 === 0
-                            ? "https://framerusercontent.com/images/JyqSD878jH7FWCW91ZN5ZIBTdY.jpg"
+                            ? ImageMarqueeFirst
                             : i % 3 === 1
-                            ? "https://framerusercontent.com/images/09C2s9avPTiRGwBPw59Qh9Y8NV4.png"
-                            : "https://framerusercontent.com/images/RUXKvWGqMoJO8OKtjxNx80eic.jpg"
+                              ? ImageMarqueeSecond
+                              : ImageMarqueeThree
                         }
                         alt="Image"
                         style={{
@@ -107,10 +116,7 @@ export default function OverviewSection() {
           data-framer-name="Container"
           style={{ willChange: "transform", opacity: 1, transform: "none" }}
         >
-          <div
-            className="framer-112gjwb"
-            data-framer-name="Content"
-          ></div>
+          <div className="framer-112gjwb" data-framer-name="Content"></div>
         </div>
       </section>
     </>

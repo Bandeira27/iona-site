@@ -3,215 +3,253 @@ import { ScrollReveal } from "../scroll-reveal";
 export function HeroSection() {
   return (
     <section className="framer-qzjj2l" data-framer-name="Hero Section">
-   <ScrollReveal>
-    <div 
-        className="framer-z4bw6g" 
-        data-framer-name="Container" 
-        style={{ willChange: "transform", opacity: 1, transform: "none" }}
-      >
-        <div className="framer-og55ik" data-framer-name="Content">
-          <div className="framer-z57mcf">
-            <div 
-              className="framer-t4val1" 
-              data-framer-component-type="RichTextContainer" 
-              style={{ 
-                outline: "none", 
-                display: "flex", 
-                flexDirection: "column", 
-                justifyContent: "flex-start", 
-                flexShrink: 0, 
-                transform: "none" 
-              }}
-            >
-              <h1 
-                className="framer-text" 
+      <ScrollReveal>
+        <div
+          className="framer-z4bw6g"
+          data-framer-name="Container"
+          style={{ willChange: "transform", opacity: 1, transform: "none" }}
+        >
+          <div className="framer-og55ik" data-framer-name="Content">
+            <div className="framer-z57mcf">
+              <div
+                className="framer-t4val1"
+                data-framer-component-type="RichTextContainer"
                 style={{
-                  "--font-selector": "R0Y7UG9wcGlucy0zMDA=",
-                  "--framer-font-family": '"Poppins", "Poppins Placeholder", sans-serif',
-                  "--framer-font-size": "140px",
-                  "--framer-font-weight": "300",
-                  "--framer-line-height": "100%",
-                  "--framer-text-alignment": "left",
-                  "--framer-text-color": "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(0, 0, 0))",
-                  "--framer-text-transform": "uppercase"
-                } as React.CSSProperties}
+                  outline: "none",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "flex-start",
+                  flexShrink: 0,
+                  transform: "none",
+                }}
               >
-                iona Szkurnik
-              </h1>
-            </div>
-            <div 
-              className="framer-1n11fyp" 
-              data-framer-component-type="RichTextContainer" 
-              style={{ 
-                outline: "none", 
-                display: "flex", 
-                flexDirection: "column", 
-                justifyContent: "flex-start", 
-                flexShrink: 0, 
-                transform: "none" 
-              }}
-            >
-              <h3 
-                className="framer-text" 
+                <h1
+                  className="framer-text"
+                  style={
+                    {
+                      "--font-selector": "R0Y7UG9wcGlucy0zMDA=",
+                      "--framer-font-family":
+                        '"Poppins", "Poppins Placeholder", sans-serif',
+                      "--framer-font-size": "140px",
+                      "--framer-font-weight": "300",
+                      "--framer-line-height": "100%",
+                      "--framer-text-alignment": "left",
+                      "--framer-text-color":
+                        "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(0, 0, 0))",
+                      "--framer-text-transform": "uppercase",
+                    } as React.CSSProperties
+                  }
+                >
+                  iona Szkurnik
+                </h1>
+              </div>
+              <div
+                className="framer-1n11fyp"
+                data-framer-component-type="RichTextContainer"
                 style={{
-                  "--font-selector": "R0Y7RE0gU2Fucy1yZWd1bGFy",
-                  "--framer-font-family": '"DM Sans", "DM Sans Placeholder", sans-serif',
-                  "--framer-font-size": "32px",
-                  "--framer-letter-spacing": "-0.02em",
-                  "--framer-line-height": "115%",
-                  "--framer-text-alignment": "left",
-                  "--framer-text-color": "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(0, 0, 0))"
-                } as React.CSSProperties}
+                  outline: "none",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "flex-start",
+                  flexShrink: 0,
+                  transform: "none",
+                }}
               >
-                Do Vale do Silício para a decisão estratégica no Brasil corporativo.
-              </h3>
+                <h3
+                  className="framer-text"
+                  style={
+                    {
+                      "--font-selector": "R0Y7RE0gU2Fucy1yZWd1bGFy",
+                      "--framer-font-family":
+                        '"DM Sans", "DM Sans Placeholder", sans-serif',
+                      "--framer-font-size": "32px",
+                      "--framer-letter-spacing": "-0.02em",
+                      "--framer-line-height": "115%",
+                      "--framer-text-alignment": "left",
+                      "--framer-text-color":
+                        "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(0, 0, 0))",
+                    } as React.CSSProperties
+                  }
+                >
+                  Do Vale do Silício para a decisão estratégica no Brasil
+                  corporativo.
+                </h3>
+              </div>
             </div>
-          </div>
-          <div className="framer-1mjwohw" data-framer-name="Badge and Text">
-            <div className="framer-1uec7pv" data-framer-name="Badge Wrapper">
-              <div className="framer-azfy8r" data-framer-name="Badge Text">
-                <div 
-                  data-framer-background-image-wrapper="true" 
-                  style={{ position: "absolute", borderRadius: "inherit", inset: "0px" }}
-                >
-                  <img 
-                    decoding="async" 
-                    width="400" 
-                    height="400" 
-                    src="https://framerusercontent.com/images/7x9HWLUciPAavWAeuAcuO4wtqQ.png" 
-                    alt="Image" 
-                    style={{ 
-                      display: "block", 
-                      width: "100%", 
-                      height: "100%", 
-                      borderRadius: "inherit", 
-                      objectPosition: "center center", 
-                      objectFit: "cover" 
-                    }} 
-                  />
-                </div>
-                <div 
-                  className="framer-1pjgyza" 
-                  data-framer-name="Text" 
-                  style={{ willChange: "transform", opacity: 1, transform: "rotate(352.998deg)" }}
-                >
-                  <div 
-                    data-framer-background-image-wrapper="true" 
-                    style={{ position: "absolute", borderRadius: "inherit", inset: "0px" }}
+            <div className="framer-1mjwohw" data-framer-name="Badge and Text">
+              <div className="framer-1uec7pv" data-framer-name="Badge Wrapper">
+                <div className="framer-azfy8r" data-framer-name="Badge Text">
+                  <div
+                    data-framer-background-image-wrapper="true"
+                    style={{
+                      position: "absolute",
+                      borderRadius: "inherit",
+                      inset: "0px",
+                    }}
                   >
-                    <img 
-                      decoding="async" 
-                      width="426" 
-                      height="430" 
-                      className="animate-spin"
-                      src="https://framerusercontent.com/images/DDZ18NPls3Knrf6JmfNwiDXjpjA.svg" 
-                      alt="Badge" 
-                      style={{ 
-                        display: "block", 
-                        width: "100%", 
-                        height: "100%", 
-                        borderRadius: "inherit", 
-                        objectPosition: "center center", 
-                        objectFit: "contain",
-                        animationDuration: "10000ms"
-                      }} 
+                    <img
+                      decoding="async"
+                      width="400"
+                      height="400"
+                      src="https://framerusercontent.com/images/7x9HWLUciPAavWAeuAcuO4wtqQ.png"
+                      alt="Image"
+                      style={{
+                        display: "block",
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: "inherit",
+                        objectPosition: "center center",
+                        objectFit: "cover",
+                      }}
                     />
                   </div>
-                </div>
-                <div 
-                  className="framer-12rmoex" 
-                  data-framer-name="Icon" 
-                  style={{ transform: "translate(-50%, -50%)" }}
-                >
-                  <div 
-                    data-framer-background-image-wrapper="true" 
-                    style={{ position: "absolute", borderRadius: "inherit", inset: "0px" }}
+                  <div
+                    className="framer-1pjgyza"
+                    data-framer-name="Text"
+                    style={{
+                      willChange: "transform",
+                      opacity: 1,
+                      transform: "rotate(352.998deg)",
+                    }}
                   >
-                    <img 
-                      decoding="async" 
-                      width="28" 
-                      height="28" 
-                      src="https://framerusercontent.com/images/VWOJvBsj62BLWh6nASlcXqd0HcA.svg" 
-                      alt="Icon" 
-                      style={{ 
-                        display: "block", 
-                        width: "100%", 
-                        height: "100%", 
-                        borderRadius: "inherit", 
-                        objectPosition: "center center", 
-                        objectFit: "cover" 
-                      }} 
-                    />
+                    <div
+                      data-framer-background-image-wrapper="true"
+                      style={{
+                        position: "absolute",
+                        borderRadius: "inherit",
+                        inset: "0px",
+                      }}
+                    >
+                      <img
+                        decoding="async"
+                        width="426"
+                        height="430"
+                        className="animate-spin"
+                        src="https://framerusercontent.com/images/DDZ18NPls3Knrf6JmfNwiDXjpjA.svg"
+                        alt="Badge"
+                        style={{
+                          display: "block",
+                          width: "100%",
+                          height: "100%",
+                          borderRadius: "inherit",
+                          objectPosition: "center center",
+                          objectFit: "contain",
+                          animationDuration: "10000ms",
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="framer-12rmoex"
+                    data-framer-name="Icon"
+                    style={{ transform: "translate(-50%, -50%)" }}
+                  >
+                    <div
+                      data-framer-background-image-wrapper="true"
+                      style={{
+                        position: "absolute",
+                        borderRadius: "inherit",
+                        inset: "0px",
+                      }}
+                    >
+                      <img
+                        decoding="async"
+                        width="28"
+                        height="28"
+                        src="https://framerusercontent.com/images/VWOJvBsj62BLWh6nASlcXqd0HcA.svg"
+                        alt="Icon"
+                        style={{
+                          display: "block",
+                          width: "100%",
+                          height: "100%",
+                          borderRadius: "inherit",
+                          objectPosition: "center center",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div 
-              className="framer-14ck4lk" 
-              data-framer-component-type="RichTextContainer" 
-              style={{ 
-                outline: "none", 
-                display: "flex", 
-                flexDirection: "column", 
-                justifyContent: "flex-start", 
-                flexShrink: 0, 
-                transform: "none" 
-              }}
-            >
-              <p className="framer-text framer-styles-preset-34zyjt" data-styles-preset="jIY0P7P2R">
-                Formada por Stanford e moldada no Vale do Silício, atuo com lideranças que sabem que a IA já chegou. Mas que ainda precisam entender como transformá-la em resultado e cultura.
-              </p>
-            </div>
-            <div 
-              className="framer-mtrtz7" 
-              data-framer-name="White shark toadfish cutthroat trout dusky grouper rocket danio bass queen parrotfish North American." 
-              data-framer-component-type="RichTextContainer" 
-              style={{ 
-                outline: "none", 
-                display: "flex", 
-                flexDirection: "column", 
-                justifyContent: "flex-start", 
-                flexShrink: 0, 
-                transform: "none" 
-              }}
-            >
-              <p 
-                className="framer-text framer-styles-preset-34zyjt" 
-                data-styles-preset="jIY0P7P2R" 
+              <div
+                className="framer-14ck4lk"
+                data-framer-component-type="RichTextContainer"
                 style={{
-                  "--framer-text-alignment": "left",
-                  "--framer-text-color": "var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(0, 0, 0))"
-                } as React.CSSProperties}
+                  outline: "none",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "flex-start",
+                  flexShrink: 0,
+                  transform: "none",
+                }}
               >
-                Transformações sustentáveis começam na cultura. É aí que a IA precisa entrar: como pilar estratégico do negócio.
-              </p>
+                <p
+                  className="framer-text framer-styles-preset-34zyjt"
+                  data-styles-preset="jIY0P7P2R"
+                >
+                  Formada por Stanford e moldada no Vale do Silício, atuo com
+                  lideranças que sabem que a IA já chegou. Mas que ainda
+                  precisam entender como transformá-la em resultado e cultura.
+                </p>
+              </div>
+              <div
+                className="framer-mtrtz7"
+                data-framer-name="White shark toadfish cutthroat trout dusky grouper rocket danio bass queen parrotfish North American."
+                data-framer-component-type="RichTextContainer"
+                style={{
+                  outline: "none",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "flex-start",
+                  flexShrink: 0,
+                  transform: "none",
+                }}
+              >
+                <p
+                  className="framer-text framer-styles-preset-34zyjt"
+                  data-styles-preset="jIY0P7P2R"
+                  style={
+                    {
+                      "--framer-text-alignment": "left",
+                      "--framer-text-color":
+                        "var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(0, 0, 0))",
+                    } as React.CSSProperties
+                  }
+                >
+                  Transformações sustentáveis começam na cultura. É aí que a IA
+                  precisa entrar: como pilar estratégico do negócio.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </ScrollReveal>
+      </ScrollReveal>
       <div className="framer-1l5ci7b">
-        <div 
-          data-framer-background-image-wrapper="true" 
-          style={{ position: "absolute", borderRadius: "inherit", inset: "0px" }}
+        <div
+          data-framer-background-image-wrapper="true"
+          style={{
+            position: "absolute",
+            borderRadius: "inherit",
+            inset: "0px",
+          }}
         >
-          <img 
-            decoding="async" 
-            width="6400" 
-            height="3184" 
-            src="https://framerusercontent.com/images/yPmqQzhh9VT5g0ppJqfL41ruuI.png" 
-            alt="Image" 
-            style={{ 
-              display: "block", 
-              width: "100%", 
-              height: "100%", 
-              borderRadius: "inherit", 
-              objectPosition: "center top", 
-              objectFit: "cover" 
-            }} 
+          <img
+            decoding="async"
+            width="6400"
+            height="3184"
+            src="https://framerusercontent.com/images/yPmqQzhh9VT5g0ppJqfL41ruuI.png"
+            alt="Image"
+            style={{
+              display: "block",
+              width: "100%",
+              height: "100%",
+              borderRadius: "inherit",
+              objectPosition: "center top",
+              objectFit: "cover",
+            }}
           />
         </div>
       </div>
     </section>
-  )
+  );
 }

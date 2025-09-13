@@ -1,5 +1,5 @@
-'use client'
-import { useEffect, useRef, useState, ReactNode } from 'react';
+"use client";
+import { useEffect, useRef, useState, ReactNode } from "react";
 
 interface ScrollRevealProps {
   children: ReactNode;
@@ -7,7 +7,11 @@ interface ScrollRevealProps {
   delay?: number; // delay em ms
 }
 
-export function ScrollReveal({ children, className = '', delay = 0 }: ScrollRevealProps) {
+export function ScrollReveal({
+  children,
+  className = "",
+  delay = 0,
+}: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -21,7 +25,7 @@ export function ScrollReveal({ children, className = '', delay = 0 }: ScrollReve
           setTimeout(() => setVisible(true), delay);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     observer.observe(el);
@@ -34,8 +38,8 @@ export function ScrollReveal({ children, className = '', delay = 0 }: ScrollReve
       className={className}
       style={{
         opacity: visible ? 1 : 0,
-        transform: visible ? 'translateY(0)' : 'translateY(20px)',
-        transition: 'opacity 0.6s ease-out, transform 0.6s ease-out',
+        transform: visible ? "translateY(0)" : "translateY(20px)",
+        transition: "opacity 0.6s ease-out, transform 0.6s ease-out",
       }}
     >
       {children}
