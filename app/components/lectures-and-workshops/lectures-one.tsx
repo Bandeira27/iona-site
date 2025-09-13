@@ -1,6 +1,13 @@
 import React from "react";
 import { ScrollReveal } from "../scroll-reveal";
 
+import ImageMarqueeSecond from '@/app/assets/image-marquee-second.png'
+import ImageThing from '@/app/assets/image-thing.png'
+import ImageBook from '@/app/assets/image-book.png'
+import ImageCup from '@/app/assets/image-cup.png'
+import Image from "next/image";
+import ImageHouse from '@/app/assets/image-house.png'
+
 export default function LectureOne() {
   return (
     <ScrollReveal>
@@ -22,14 +29,13 @@ export default function LectureOne() {
                       inset: "0px",
                     }}
                   >
-                    <img
+                    <Image
                       decoding="async"
                       loading="lazy"
                       width={4160}
                       height={2773}
                       sizes="calc(min(100vw - 60px, 1200px) * 0.4292)"
-                      srcSet="https://framerusercontent.com/images/9ZeTYCi9YvvlbWAA1qL9vIQmZk.jpeg?scale-down-to=512 512w,https://framerusercontent.com/images/9ZeTYCi9YvvlbWAA1qL9vIQmZk.jpeg?scale-down-to=1024 1024w,https://framerusercontent.com/images/9ZeTYCi9YvvlbWAA1qL9vIQmZk.jpeg?scale-down-to=2048 2048w,https://framerusercontent.com/images/9ZeTYCi9YvvlbWAA1qL9vIQmZk.jpeg?scale-down-to=4096 4096w,https://framerusercontent.com/images/9ZeTYCi9YvvlbWAA1qL9vIQmZk.jpeg 4160w"
-                      src="https://framerusercontent.com/images/9ZeTYCi9YvvlbWAA1qL9vIQmZk.jpeg"
+                      src={ImageMarqueeSecond}
                       alt="Image"
                       style={{
                         display: "block",
@@ -61,9 +67,9 @@ export default function LectureOne() {
                     className="framer-text framer-styles-preset-14xqye4"
                     data-styles-preset="n6MKWMgGa"
                     style={{
-                      ["--framer-text-color" as any]:
+                      ["--framer-text-color"]:
                         "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                    }}
+                    }as React.CSSProperties}
                   >
                     A Revolução do Vale do Silício
                   </h2>
@@ -85,9 +91,9 @@ export default function LectureOne() {
                     className="framer-text framer-styles-preset-34zyjt"
                     data-styles-preset="jIY0P7P2R"
                     style={{
-                      ["--framer-text-color" as any]:
+                      ["--framer-text-color"]:
                         "var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111))",
-                    }}
+                    }as React.CSSProperties}
                   >
                     O que aprendi em uma década no maior ecossistema de inovação
                     do mundo — e por que o Brasil precisa escutar isso agora.
@@ -104,16 +110,16 @@ export default function LectureOne() {
                   data-framer-name="Why Choose Us Card 01"
                   href="./"
                   style={{
-                    ["--border-bottom-width" as any]: "1px",
-                    ["--border-color" as any]: "rgba(44, 44, 45, 0.12)",
-                    ["--border-left-width" as any]: "1px",
-                    ["--border-right-width" as any]: "1px",
-                    ["--border-style" as any]: "solid",
-                    ["--border-top-width" as any]: "1px",
+                    ["--border-bottom-width"]: "1px",
+                    ["--border-color"]: "rgba(44, 44, 45, 0.12)",
+                    ["--border-left-width"]: "1px",
+                    ["--border-right-width"]: "1px",
+                    ["--border-style"]: "solid",
+                    ["--border-top-width"]: "1px",
                     width: "100%",
                     borderRadius: "10px",
                     opacity: 1,
-                  }}
+                  }as React.CSSProperties}
                 >
                   <div className="framer-1ewonq7" style={{ opacity: 1 }}>
                     <div
@@ -124,13 +130,13 @@ export default function LectureOne() {
                         inset: "0px",
                       }}
                     >
-                      <img
+                      <Image
                         decoding="async"
                         loading="lazy"
                         width={240}
                         height={240}
                         sizes="60px"
-                        src="https://framerusercontent.com/images/wH6uUZ9zjp0rPG4I1OPtdYiSXSw.png"
+                        src={ImageThing}
                         alt=""
                         style={{
                           display: "block",
@@ -155,21 +161,21 @@ export default function LectureOne() {
                         flexDirection: "column",
                         justifyContent: "flex-start",
                         flexShrink: 0,
-                        ["--extracted-1lwpl3i" as any]:
+                        ["--extracted-1lwpl3i"]:
                           "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                        ["--framer-paragraph-spacing" as any]: "0px",
+                        ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      }as React.CSSProperties}
                     >
                       <h5
                         className="framer-text framer-styles-preset-nqnhcn"
                         data-styles-preset="ZQFNhUXsq"
                         style={{
-                          ["--framer-text-alignment" as any]: "left",
-                          ["--framer-text-color" as any]:
+                          ["--framer-text-alignment"]: "left",
+                          ["--framer-text-color"]:
                             "var(--extracted-1lwpl3i, var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22)))",
-                        }}
+                        }as React.CSSProperties}
                       >
                         Eixo Temático
                       </h5>
@@ -185,20 +191,20 @@ export default function LectureOne() {
                         flexDirection: "column",
                         justifyContent: "flex-start",
                         flexShrink: 0,
-                        ["--extracted-r6o4lv" as any]:
+                        ["--extracted-r6o4lv"]:
                           "var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111))",
-                        ["--framer-paragraph-spacing" as any]: "0px",
+                        ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      }as React.CSSProperties}
                     >
                       <p
                         className="framer-text framer-styles-preset-34zyjt"
                         data-styles-preset="jIY0P7P2R"
                         style={{
-                          ["--framer-text-color" as any]:
+                          ["--framer-text-color"]:
                             "var(--extracted-r6o4lv, var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111)))",
-                        }}
+                        }as React.CSSProperties}
                       >
                         Cultura da inovação, velocidade de decisão e mentalidade
                         do Vale.
@@ -214,16 +220,16 @@ export default function LectureOne() {
                   data-border="true"
                   data-framer-name="Why Choose Us Card 01"
                   style={{
-                    ["--border-bottom-width" as any]: "1px",
-                    ["--border-color" as any]: "rgba(44, 44, 45, 0.12)",
-                    ["--border-left-width" as any]: "1px",
-                    ["--border-right-width" as any]: "1px",
-                    ["--border-style" as any]: "solid",
-                    ["--border-top-width" as any]: "1px",
+                    ["--border-bottom-width"]: "1px",
+                    ["--border-color"]: "rgba(44, 44, 45, 0.12)",
+                    ["--border-left-width"]: "1px",
+                    ["--border-right-width"]: "1px",
+                    ["--border-style"]: "solid",
+                    ["--border-top-width"]: "1px",
                     width: "100%",
                     borderRadius: "10px",
                     opacity: 1,
-                  }}
+                  }as React.CSSProperties}
                 >
                   <div className="framer-1ewonq7" style={{ opacity: 1 }}>
                     <div
@@ -234,13 +240,13 @@ export default function LectureOne() {
                         inset: "0px",
                       }}
                     >
-                      <img
+                      <Image
                         decoding="async"
                         loading="lazy"
                         width={240}
                         height={240}
                         sizes="60px"
-                        src="https://framerusercontent.com/images/RoEgHrPMqUGtwyGX7zGvnLB4wH4.png"
+                        src={ImageBook}
                         alt=""
                         style={{
                           display: "block",
@@ -265,21 +271,21 @@ export default function LectureOne() {
                         flexDirection: "column",
                         justifyContent: "flex-start",
                         flexShrink: 0,
-                        ["--extracted-1lwpl3i" as any]:
+                        ["--extracted-1lwpl3i"]:
                           "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                        ["--framer-paragraph-spacing" as any]: "0px",
+                        ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      } as React.CSSProperties}
                     >
                       <h5
                         className="framer-text framer-styles-preset-nqnhcn"
                         data-styles-preset="ZQFNhUXsq"
                         style={{
-                          ["--framer-text-alignment" as any]: "left",
-                          ["--framer-text-color" as any]:
+                          ["--framer-text-alignment"]: "left",
+                          ["--framer-text-color"]:
                             "var(--extracted-1lwpl3i, var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22)))",
-                        }}
+                        }as React.CSSProperties}
                       >
                         Fundamento Conceitual
                       </h5>
@@ -295,20 +301,20 @@ export default function LectureOne() {
                         flexDirection: "column",
                         justifyContent: "flex-start",
                         flexShrink: 0,
-                        ["--extracted-r6o4lv" as any]:
+                        ["--extracted-r6o4lv"]:
                           "var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111))",
-                        ["--framer-paragraph-spacing" as any]: "0px",
+                        ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      }as React.CSSProperties}
                     >
                       <p
                         className="framer-text framer-styles-preset-34zyjt"
                         data-styles-preset="jIY0P7P2R"
                         style={{
-                          ["--framer-text-color" as any]:
+                          ["--framer-text-color"]:
                             "var(--extracted-r6o4lv, var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111)))",
-                        }}
+                        }as React.CSSProperties}
                       >
                         Contrasta práticas brasileiras com códigos culturais do
                         ecossistema do Vale.
@@ -324,16 +330,16 @@ export default function LectureOne() {
                   data-border="true"
                   data-framer-name="Why Choose Us Card 01"
                   style={{
-                    ["--border-bottom-width" as any]: "1px",
-                    ["--border-color" as any]: "rgba(44, 44, 45, 0.12)",
-                    ["--border-left-width" as any]: "1px",
-                    ["--border-right-width" as any]: "1px",
-                    ["--border-style" as any]: "solid",
-                    ["--border-top-width" as any]: "1px",
+                    ["--border-bottom-width"]: "1px",
+                    ["--border-color"]: "rgba(44, 44, 45, 0.12)",
+                    ["--border-left-width"]: "1px",
+                    ["--border-right-width"]: "1px",
+                    ["--border-style"]: "solid",
+                    ["--border-top-width"]: "1px",
                     width: "100%",
                     borderRadius: "10px",
                     opacity: 1,
-                  }}
+                  }as React.CSSProperties}
                 >
                   <div className="framer-1ewonq7" style={{ opacity: 1 }}>
                     <div
@@ -344,13 +350,13 @@ export default function LectureOne() {
                         inset: "0px",
                       }}
                     >
-                      <img
+                      <Image
                         decoding="async"
                         loading="lazy"
                         width={240}
                         height={240}
                         sizes="60px"
-                        src="https://framerusercontent.com/images/APUEVVSyWas8lib6hnbhJCoOFYw.png"
+                        src={ImageCup}
                         alt=""
                         style={{
                           display: "block",
@@ -375,21 +381,21 @@ export default function LectureOne() {
                         flexDirection: "column",
                         justifyContent: "flex-start",
                         flexShrink: 0,
-                        ["--extracted-1lwpl3i" as any]:
+                        ["--extracted-1lwpl3i"]:
                           "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                        ["--framer-paragraph-spacing" as any]: "0px",
+                        ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      }as React.CSSProperties}
                     >
                       <h5
                         className="framer-text framer-styles-preset-nqnhcn"
                         data-styles-preset="ZQFNhUXsq"
                         style={{
-                          ["--framer-text-alignment" as any]: "left",
-                          ["--framer-text-color" as any]:
+                          ["--framer-text-alignment"]: "left",
+                          ["--framer-text-color"]:
                             "var(--extracted-1lwpl3i, var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22)))",
-                        }}
+                        }as React.CSSProperties}
                       >
                         Reconhecimento Institucional
                       </h5>
@@ -405,20 +411,20 @@ export default function LectureOne() {
                         flexDirection: "column",
                         justifyContent: "flex-start",
                         flexShrink: 0,
-                        ["--extracted-r6o4lv" as any]:
+                        ["--extracted-r6o4lv"]:
                           "var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111))",
-                        ["--framer-paragraph-spacing" as any]: "0px",
+                        ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      }as React.CSSProperties}
                     >
                       <p
                         className="framer-text framer-styles-preset-34zyjt"
                         data-styles-preset="jIY0P7P2R"
                         style={{
-                          ["--framer-text-color" as any]:
+                          ["--framer-text-color"]:
                             "var(--extracted-r6o4lv, var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111)))",
-                        }}
+                        }as React.CSSProperties}
                       >
                         Escolhida por StartSe, Google, Hospital A. Einstein, BTG
                         Pactual, Ambev, entre outros.
@@ -434,16 +440,16 @@ export default function LectureOne() {
                   data-border="true"
                   data-framer-name="Why Choose Us Card 01"
                   style={{
-                    ["--border-bottom-width" as any]: "1px",
-                    ["--border-color" as any]: "rgba(44, 44, 45, 0.12)",
-                    ["--border-left-width" as any]: "1px",
-                    ["--border-right-width" as any]: "1px",
-                    ["--border-style" as any]: "solid",
-                    ["--border-top-width" as any]: "1px",
+                    ["--border-bottom-width"]: "1px",
+                    ["--border-color"]: "rgba(44, 44, 45, 0.12)",
+                    ["--border-left-width"]: "1px",
+                    ["--border-right-width"]: "1px",
+                    ["--border-style"]: "solid",
+                    ["--border-top-width"]: "1px",
                     width: "100%",
                     borderRadius: "10px",
                     opacity: 1,
-                  }}
+                  }as React.CSSProperties}
                 >
                   <div className="framer-1ewonq7" style={{ opacity: 1 }}>
                     <div
@@ -454,13 +460,13 @@ export default function LectureOne() {
                         inset: "0px",
                       }}
                     >
-                      <img
+                      <Image
                         decoding="async"
                         loading="lazy"
                         width={240}
                         height={240}
                         sizes="60px"
-                        src="https://framerusercontent.com/images/a1OWWWyCoTvxF1Ggb63MrhmPBKs.png"
+                        src={ImageHouse}
                         alt=""
                         style={{
                           display: "block",
@@ -485,21 +491,21 @@ export default function LectureOne() {
                         flexDirection: "column",
                         justifyContent: "flex-start",
                         flexShrink: 0,
-                        ["--extracted-1lwpl3i" as any]:
+                        ["--extracted-1lwpl3i"]:
                           "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                        ["--framer-paragraph-spacing" as any]: "0px",
+                        ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      }as React.CSSProperties}
                     >
                       <h5
                         className="framer-text framer-styles-preset-nqnhcn"
                         data-styles-preset="ZQFNhUXsq"
                         style={{
-                          ["--framer-text-alignment" as any]: "left",
-                          ["--framer-text-color" as any]:
+                          ["--framer-text-alignment"]: "left",
+                          ["--framer-text-color"]:
                             "var(--extracted-1lwpl3i, var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22)))",
-                        }}
+                        } as React.CSSProperties}
                       >
                         Público-Alvo Estratégico
                       </h5>
@@ -515,20 +521,20 @@ export default function LectureOne() {
                         flexDirection: "column",
                         justifyContent: "flex-start",
                         flexShrink: 0,
-                        ["--extracted-r6o4lv" as any]:
+                        ["--extracted-r6o4lv"]:
                           "var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111))",
-                        ["--framer-paragraph-spacing" as any]: "0px",
+                        ["--framer-paragraph-spacing"]: "0px",
                         transform: "none",
                         opacity: 1,
-                      }}
+                      } as React.CSSProperties}
                     >
                       <p
                         className="framer-text framer-styles-preset-34zyjt"
                         data-styles-preset="jIY0P7P2R"
                         style={{
-                          ["--framer-text-color" as any]:
+                          ["--framer-text-color"]:
                             "var(--extracted-r6o4lv, var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111)))",
-                        }}
+                        } as React.CSSProperties}
                       >
                         Fóruns de inovação, tech summits e encontros com
                         lideranças empresariais.
