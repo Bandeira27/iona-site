@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
+import IonaCoreApresentation from '@/app/assets/iona-core-apresentation.jpeg'
 
 export function Details2Section() {
   return (
@@ -48,7 +50,7 @@ export function Details2Section() {
                             ["--framer-text-alignment"]: "left",
                             ["--framer-text-color"]:
                               "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                          }}
+                          } as React.CSSProperties}
                         >
                           A Tradutora do Vale para o Brasil Corporativo
                         </h2>
@@ -74,7 +76,7 @@ export function Details2Section() {
                       style={{
                         ["--framer-text-color"]:
                           "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      }}
+                      } as React.CSSProperties}
                     >
                       Iona viveu por mais de uma década no epicentro da inovação
                       global.
@@ -99,7 +101,7 @@ export function Details2Section() {
                       style={{
                         ["--framer-text-color"]:
                           "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      }}
+                      } as React.CSSProperties}
                     >
                       Estudou em Stanford, foi executiva, criou filhos e
                       mergulhou em uma cultura que normaliza o novo todos os
@@ -128,7 +130,7 @@ export function Details2Section() {
                       style={{
                         ["--framer-text-color"]:
                           "var(--token-65d16cfb-8ae4-4ebd-808d-4722dde25329, rgb(110, 118, 111))",
-                      }}
+                      } as React.CSSProperties}
                     >
                       Lá, aprendeu que sucesso tem método e existe um jeito de
                       traduzir essa mentalidade para o Brasil.
@@ -151,14 +153,13 @@ export function Details2Section() {
                   }}
                   data-framer-background-image-wrapper="true"
                 >
-                  <img
+                  <Image
                     decoding="async"
                     loading="lazy"
                     width="3069"
                     height="2773"
                     sizes="500px"
-                    srcSet="https://framerusercontent.com/images/kgKFEeP3CmL4O7HFFenyj6WA54.jpeg?scale-down-to=512 512w,https://framerusercontent.com/images/kgKFEeP3CmL4O7HFFenyj6WA54.jpeg?scale-down-to=1024 1024w,https://framerusercontent.com/images/kgKFEeP3CmL4O7HFFenyj6WA54.jpeg?scale-down-to=2048 2048w,https://framerusercontent.com/images/kgKFEeP3CmL4O7HFFenyj6WA54.jpeg 3069w"
-                    src="https://framerusercontent.com/images/kgKFEeP3CmL4O7HFFenyj6WA54.jpeg"
+                    src={IonaCoreApresentation}
                     alt=""
                     style={{
                       display: "block",
