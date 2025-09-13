@@ -2,15 +2,17 @@
 
 import { useState } from "react";
 import { ScrollReveal } from "../scroll-reveal";
-import JuniaGontijo from '../../assets/junia-gontijo.jpg'
-import JulianaHadad from '../../assets/juliana-hadad.png'
-import IonaFeedbackSectionFirst from '../../assets/iona-feedback-section-first.png'
-import IonaFeedbackSectionSecond from '../../assets/iona-feedback-section-second.png'
-import PlayIcon from '../../assets/play-icon.svg'
+import JuniaGontijo from "../../assets/junia-gontijo.jpg";
+import JulianaHadad from "../../assets/juliana-hadad.png";
+import IonaFeedbackSectionFirst from "../../assets/iona-feedback-section-first.png";
+import IonaFeedbackSectionSecond from "../../assets/iona-feedback-section-second.png";
+import PlayIcon from "../../assets/play-icon.svg";
 import Image from "next/image";
+import { YoutubeEmbed } from "../video-play/youtube-embed";
 
 export function FeedbackSection() {
   const [preview, setPreview] = useState(true);
+  const [playVideo, setPlayVideo] = useState(false);
   return (
     <>
       <ScrollReveal>
@@ -184,7 +186,10 @@ export function FeedbackSection() {
                               }}
                             >
                               <div
-                                onClick={() => setPreview(false)}
+                                onClick={() => {
+                                  setPreview(false);
+                                  setPlayVideo(false);
+                                }}
                                 className="framer-jRKFu framer-19ic7g0 framer-v-1iorwjb"
                                 data-framer-name="Profile Card 01"
                                 data-highlight="true"
@@ -354,103 +359,108 @@ export function FeedbackSection() {
                             transformOrigin: "50% 50% 0px",
                           }}
                         >
-                          <div
-                            className="framer-wd5875"
-                            style={{
-                              borderRadius: "10px",
-                              transform: "none",
-                              transformOrigin: "50% 50% 0px",
-                            }}
-                          >
+                          {!playVideo ? (
                             <div
-                              data-framer-background-image-wrapper="true"
+                              className="framer-wd5875"
                               style={{
-                                position: "absolute",
-                                borderRadius: "inherit",
-                                inset: "0px",
-                              }}
-                            >
-                              <Image
-                                decoding="async"
-                                width="4160"
-                                height="2773"
-                                sizes="calc(min(100vw - 60px, 1200px) * 0.5833)"
-                                src={IonaFeedbackSectionFirst}
-                                alt="Image"
-                                style={{
-                                  display: "block",
-                                  width: "100%",
-                                  height: "100%",
-                                  borderRadius: "inherit",
-                                  objectPosition: "center center",
-                                  objectFit: "cover",
-                                }}
-                              />
-                            </div>
-                            <div
-                              className="framer-1uxq3hc"
-                              style={{
-                                backgroundColor: "rgba(21, 21, 22, 0.15)",
+                                borderRadius: "10px",
                                 transform: "none",
                                 transformOrigin: "50% 50% 0px",
                               }}
                             >
                               <div
-                                className="framer-1km9v46"
-                                data-framer-name="Play Pulse"
+                                data-framer-background-image-wrapper="true"
                                 style={{
+                                  position: "absolute",
+                                  borderRadius: "inherit",
+                                  inset: "0px",
+                                }}
+                              >
+                                <Image
+                                  decoding="async"
+                                  width="4160"
+                                  height="2773"
+                                  sizes="calc(min(100vw - 60px, 1200px) * 0.5833)"
+                                  src={IonaFeedbackSectionFirst}
+                                  alt="Image"
+                                  style={{
+                                    display: "block",
+                                    width: "100%",
+                                    height: "100%",
+                                    borderRadius: "inherit",
+                                    objectPosition: "center center",
+                                    objectFit: "cover",
+                                  }}
+                                />
+                              </div>
+                              <div
+                                className="framer-1uxq3hc"
+                                style={{
+                                  backgroundColor: "rgba(21, 21, 22, 0.15)",
                                   transform: "none",
                                   transformOrigin: "50% 50% 0px",
                                 }}
-                                data-highlight="true"
-                                tabIndex={0}
                               >
                                 <div
-                                  className="framer-1gcndfc"
-                                  data-framer-name="Indicator Pulse"
+                                  className="framer-1km9v46"
+                                  data-framer-name="Play Pulse"
                                   style={{
-                                    borderRadius: "100%",
                                     transform: "none",
                                     transformOrigin: "50% 50% 0px",
                                   }}
-                                ></div>
-                                <div
-                                  className="framer-1as4rfv"
-                                  data-framer-name="Outer Circle"
-                                  style={{
-                                    borderRadius: "100%",
-                                    transform: "none",
-                                    transformOrigin: "50% 50% 0px",
-                                  }}
+                                  data-highlight="true"
+                                  tabIndex={0}
                                 >
                                   <div
-                                    data-framer-background-image-wrapper="true"
+                                    className="framer-1gcndfc"
+                                    data-framer-name="Indicator Pulse"
                                     style={{
-                                      position: "absolute",
-                                      borderRadius: "inherit",
-                                      inset: "0px",
+                                      borderRadius: "100%",
+                                      transform: "none",
+                                      transformOrigin: "50% 50% 0px",
+                                    }}
+                                  ></div>
+                                  <div
+                                    className="framer-1as4rfv"
+                                    data-framer-name="Outer Circle"
+                                    style={{
+                                      borderRadius: "100%",
+                                      transform: "none",
+                                      transformOrigin: "50% 50% 0px",
                                     }}
                                   >
-                                    <Image
-                                      decoding="async"
-                                      width="120"
-                                      height="120"
-                                      src={PlayIcon}
-                                      alt="play icon"
+                                    <div
+                                      data-framer-background-image-wrapper="true"
+                                      onClick={() => setPlayVideo(true)}
                                       style={{
-                                        display: "block",
-                                        width: "100%",
-                                        height: "100%",
+                                        position: "absolute",
                                         borderRadius: "inherit",
-                                        objectPosition: "center center",
-                                        objectFit: "cover",
+                                        inset: "0px",
                                       }}
-                                    />
+                                    >
+                                      <Image
+                                        decoding="async"
+                                        width="120"
+                                        height="120"
+                                        src={PlayIcon}
+                                        alt="play icon"
+                                        style={{
+                                          display: "block",
+                                          width: "100%",
+                                          height: "100%",
+                                          borderRadius: "inherit",
+                                          objectPosition: "center center",
+                                          objectFit: "cover",
+                                        }}
+                                      />
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
+                          ) : (
+                            <YoutubeEmbed url="youtube.com/watch?v=GGSVtDeisvg&embeds_referring_euri=https%3A%2F%2Fionaszkurnik.com.br%2F" />
+                          )}
                           <div
                             className="framer-13b046i"
                             data-framer-name="Rating and Review"
@@ -602,7 +612,7 @@ export function FeedbackSection() {
                                   } as React.CSSProperties
                                 }
                               >
-                             {`"A forma como ela contou essa trajetória dela foi uma história que me impactou muito. A história começa com um grande desafio de vida e, a partir daquilo, existe uma reinvenção da forma de ser."`}
+                                {`"A forma como ela contou essa trajetória dela foi uma história que me impactou muito. A história começa com um grande desafio de vida e, a partir daquilo, existe uma reinvenção da forma de ser."`}
                               </h3>
                             </div>
                           </div>
