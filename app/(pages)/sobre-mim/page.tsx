@@ -1,11 +1,13 @@
 import { AboutSectionAboutMe } from "@/app/components/about-me/about-section-about-me";
 import AchievementSection from "@/app/components/about-me/achievement-section";
+import { AchievementSectionMobile } from "@/app/components/about-me/achievement-section-mobile";
 import BannerSectionAboutMe from "@/app/components/about-me/banner-section-about-me";
 import MissionSection from "@/app/components/about-me/mission-section";
 import OverviewSection from "@/app/components/about-me/overview-section";
 import { OverviewSectionMobile } from "@/app/components/about-me/overview-section-mobile";
 import TransformerSection from "@/app/components/about-me/transformer-section";
 import { Footer } from "@/app/components/landing/footer";
+import { FooterMobile } from "@/app/components/landing/footer-mobile";
 import { LandingHeader } from "@/app/components/landing/header";
 
 export default function AboutMe() {
@@ -27,9 +29,22 @@ export default function AboutMe() {
         <OverviewSectionMobile />
         </div>
         <TransformerSection />
+
+         <div className="hidden md:block">
         <AchievementSection />
+         </div>
+
+       <div className="block md:hidden">
+          <AchievementSectionMobile />
+         </div>
         <MissionSection />
-        <Footer />
+     <div className="hidden md:block">
+               <Footer />
+             </div>
+     
+             <div className="block md:hidden">
+               <FooterMobile />
+             </div>
       </div>
     </div>
   );

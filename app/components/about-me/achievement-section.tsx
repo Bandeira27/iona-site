@@ -5,8 +5,85 @@ import { ScrollReveal } from "../scroll-reveal";
 import Image from "next/image";
 import IonaAchievements from "@/app/assets/iona-achievements.png";
 
-const AchievementSection = () => {
-  const scrollRef = useRef(null);
+interface AchievementCardProps {
+  year: string;
+  title: string;
+  description: string;
+  height?: number;
+}
+
+const AchievementCard: React.FC<AchievementCardProps> = ({
+  year,
+  title,
+  description,
+  height = 188,
+}) => (
+  <li style={{ width: 508, height }}>
+    <div
+      className="framer-card-container"
+      style={{ width: 508, height, flexShrink: 0 }}
+    >
+      <div
+        className="framer-RrTeE framer-1quxhlx framer-v-1quxhlx"
+        style={{ width: "100%", opacity: 1 }}
+      >
+        <div
+          className="framer-1crcx3f"
+          style={{
+            outline: "none",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex-start",
+            flexShrink: 0,
+            transform: "none",
+            opacity: 1,
+          }}
+        >
+          <h2 className="framer-text" style={titleStyle}>
+            {year}
+          </h2>
+        </div>
+        <div className="framer-4p62be" style={{ opacity: 1 }}>
+          <div
+            className="framer-127yz6w"
+            style={{
+              outline: "none",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "flex-start",
+              flexShrink: 0,
+              transform: "none",
+              opacity: 1,
+            }}
+          >
+            <h5 className="framer-text" style={subtitleStyle}>
+              {title}
+            </h5>
+          </div>
+          <div
+            className="framer-1icradu"
+            style={{
+              outline: "none",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "flex-start",
+              flexShrink: 0,
+              transform: "none",
+              opacity: 1,
+            }}
+          >
+            <p className="framer-text" style={descriptionStyle}>
+              {description}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+);
+
+const AchievementSection: React.FC = () => {
+  const scrollRef = useRef<HTMLUListElement>(null);
 
   const achievements = useMemo(
     () => [
@@ -54,10 +131,9 @@ const AchievementSection = () => {
           "Trabalho com empresas que querem os benefícios da Inteligência Artificial, mas ainda não sabem como agir. É aí que a transformação trava. É aí que eu entro.",
       },
     ],
-    [],
+    []
   );
 
-  // Duplica a lista para efeito de scroll contínuo
   const loopedAchievements = [...achievements, ...achievements];
 
   useEffect(() => {
@@ -67,106 +143,33 @@ const AchievementSection = () => {
     let currentTranslateY = 0;
     const speed = 1;
 
-    // Calcula altura total da primeira metade
     const totalHeight =
       achievements.reduce((sum, a) => sum + (a.height || 188), 0) +
       (achievements.length - 1) * 100;
 
     const animate = () => {
       currentTranslateY -= speed;
-
-      // Quando passar a primeira metade da lista, volta para 0
       if (Math.abs(currentTranslateY) >= totalHeight) {
-        currentTranslateY = currentTranslateY + totalHeight;
+        currentTranslateY += totalHeight;
       }
-
       scrollElement.style.transform = `translateY(${currentTranslateY}px)`;
       requestAnimationFrame(animate);
     };
 
     const animationId = requestAnimationFrame(animate);
-
     return () => cancelAnimationFrame(animationId);
   }, [achievements]);
-
-  const AchievementCard = ({ year, title, description, height = 188 }) => (
-    <li style={{ width: "508px", height: `${height}px` }}>
-      <div
-        className="framer-card-container"
-        style={{ width: "508px", height: `${height}px`, flexShrink: 0 }}
-      >
-        <div
-          className="framer-RrTeE framer-1quxhlx framer-v-1quxhlx"
-          style={{ width: "100%", opacity: 1 }}
-        >
-          <div
-            className="framer-1crcx3f"
-            style={{
-              outline: "none",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "flex-start",
-              flexShrink: 0,
-              transform: "none",
-              opacity: 1,
-            }}
-          >
-            <h2 className="framer-text" style={titleStyle}>
-              {year}
-            </h2>
-          </div>
-          <div className="framer-4p62be" style={{ opacity: 1 }}>
-            <div
-              className="framer-127yz6w"
-              style={{
-                outline: "none",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "flex-start",
-                flexShrink: 0,
-                transform: "none",
-                opacity: 1,
-              }}
-            >
-              <h5 className="framer-text" style={subtitleStyle}>
-                {title}
-              </h5>
-            </div>
-            <div
-              className="framer-1icradu"
-              style={{
-                outline: "none",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "flex-start",
-                flexShrink: 0,
-                transform: "none",
-                opacity: 1,
-              }}
-            >
-              <p className="framer-text" style={descriptionStyle}>
-                {description}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li>
-  );
 
   return (
     <section className="framer-sani89" data-framer-name="Achievement Section">
       <div className="ssr-variant hidden-xme965 hidden-p0mfc">
-        <div
-          className="framer-1oe5aw3"
-          style={{ transform: "translateY(-50%)" }}
-        >
+        <div className="framer-1oe5aw3" style={{ transform: "translateY(-50%)" }}>
           <div
             data-framer-background-image-wrapper="true"
             style={{
               position: "absolute",
               borderRadius: "inherit",
-              inset: "0px",
+              inset: 0,
             }}
           >
             <Image
@@ -188,6 +191,7 @@ const AchievementSection = () => {
           </div>
         </div>
       </div>
+
       <div
         className="framer-qf946z"
         data-framer-name="Container"
@@ -217,25 +221,27 @@ const AchievementSection = () => {
   );
 };
 
-const titleStyle = {
+const titleStyle: React.CSSProperties = {
   fontFamily: '"Poppins", sans-serif',
-  fontSize: "48px",
-  letterSpacing: "-0.03em",
+  fontSize: 48,
+  letterSpacing: -0.03,
   lineHeight: "58px",
   textAlign: "center",
   color: "#fff",
   margin: 0,
 };
-const subtitleStyle = {
+
+const subtitleStyle: React.CSSProperties = {
   fontFamily: '"Poppins", sans-serif',
-  fontSize: "24px",
+  fontSize: 24,
   fontWeight: 500,
   lineHeight: "100%",
   textAlign: "center",
   color: "#fff",
   margin: 0,
 };
-const descriptionStyle = {
+
+const descriptionStyle: React.CSSProperties = {
   fontFamily: '"Poppins", sans-serif',
   lineHeight: "28px",
   textAlign: "center",
@@ -243,15 +249,15 @@ const descriptionStyle = {
   margin: 0,
 };
 
-const scrollSectionStyle = {
+const scrollSectionStyle: React.CSSProperties = {
   display: "flex",
   width: "100%",
   height: "100%",
   maxWidth: "100%",
   maxHeight: "100%",
   placeItems: "center",
-  margin: "0px",
-  padding: "10px",
+  margin: 0,
+  padding: 10,
   listStyleType: "none",
   opacity: 1,
   maskImage:
@@ -259,10 +265,10 @@ const scrollSectionStyle = {
   overflow: "hidden",
 };
 
-const scrollListStyle = {
+const scrollListStyle: React.CSSProperties = {
   display: "flex",
   flexDirection: "column",
-  gap: "100px",
+  gap: 100,
   margin: 0,
   padding: 0,
   listStyleType: "none",
