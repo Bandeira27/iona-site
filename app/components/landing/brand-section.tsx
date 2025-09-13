@@ -1,4 +1,18 @@
+import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
+
+import ImageMarketingNetwork from '@/app/assets/image-marketing-network.svg'
+import ImageGoogleStartup from '@/app/assets/image-google-startup.svg'
+import SvgBrazilValley from '@/app/assets/image-brazil-valley.svg'
+import SvgForbes from '@/app/assets/svg-forbes.svg'
+import SvgLemann from '@/app/assets/svg-lemann.svg'
+import SvgEinstein from '@/app/assets/svg-einstein.svg'
+import SvgAmbev from '@/app/assets/svg-ambev.svg'
+import SvgStartse from '@/app/assets/svg-startse.svg'
+import SvgBrasa from '@/app/assets/svg-brasa.svg'
+import SvgMereo from '@/app/assets/svg-mereo.svg'
+import SvgTecnisa from '@/app/assets/svg-tecnisa.svg'
+import SvgNelson from '@/app/assets/svg-nelson.svg'
 
 export function BrandSection() {
   return (
@@ -70,12 +84,12 @@ export function BrandSection() {
                         }}
                         data-framer-background-image-wrapper="true"
                       >
-                        <img
+                        <Image
                           decoding="async"
                           loading="lazy"
                           width="81"
                           height="49"
-                          src="https://framerusercontent.com/images/QOGgJGNU6xVhDXOOFuUePBhbMwo.svg"
+                          src={ImageMarketingNetwork}
                           alt="Logo"
                           style={{
                             display: "block",
@@ -107,12 +121,12 @@ export function BrandSection() {
                         }}
                         data-framer-background-image-wrapper="true"
                       >
-                        <img
+                        <Image
                           decoding="async"
                           loading="lazy"
                           width="254"
                           height="31"
-                          src="https://framerusercontent.com/images/Roz2zPjIX5U1xZZqwoNRlGASjSQ.svg"
+                          src={ImageGoogleStartup}
                           alt="Logo"
                           style={{
                             display: "block",
@@ -147,12 +161,12 @@ export function BrandSection() {
                         }}
                         data-framer-background-image-wrapper="true"
                       >
-                        <img
+                        <Image
                           decoding="async"
                           loading="lazy"
                           width="94"
                           height="39"
-                          src="https://framerusercontent.com/images/0y3NV6OTsz4Wb9XTpDbkCTazBQ.svg"
+                          src={SvgBrazilValley}
                           alt="Logo"
                           style={{
                             display: "block",
@@ -187,12 +201,12 @@ export function BrandSection() {
                         }}
                         data-framer-background-image-wrapper="true"
                       >
-                        <img
+                        <Image
                           decoding="async"
                           loading="lazy"
                           width="96"
                           height="48"
-                          src="https://framerusercontent.com/images/V0zWnncWAwYmRh4vw9WRqG6YuA.svg"
+                          src={SvgForbes}
                           alt="Logo"
                           style={{
                             display: "block",
@@ -227,12 +241,12 @@ export function BrandSection() {
                         }}
                         data-framer-background-image-wrapper="true"
                       >
-                        <img
+                        <Image                         
                           decoding="async"
                           loading="lazy"
                           width="110"
                           height="40"
-                          src="https://framerusercontent.com/images/1AS75B2gtPwl69NrzVSwrARYKYg.svg"
+                          src={SvgLemann}
                           alt="Logo"
                           style={{
                             display: "block",
@@ -264,12 +278,12 @@ export function BrandSection() {
                         }}
                         data-framer-background-image-wrapper="true"
                       >
-                        <img
+                        <Image
                           decoding="async"
                           loading="lazy"
                           width="65"
                           height="49"
-                          src="https://framerusercontent.com/images/hbVRq2WcdIX1YEj90So3LvISa8.svg"
+                          src={SvgEinstein}
                           alt="Logo"
                           style={{
                             display: "block",
@@ -304,12 +318,12 @@ export function BrandSection() {
                         }}
                         data-framer-background-image-wrapper="true"
                       >
-                        <img
+                        <Image
                           decoding="async"
                           loading="lazy"
                           width="75"
                           height="49"
-                          src="https://framerusercontent.com/images/2Md3sxRRmQJuKh4ykxDc1sj6xg.svg"
+                          src={SvgAmbev}
                           alt="Logo"
                           style={{
                             display: "block",
@@ -341,12 +355,12 @@ export function BrandSection() {
                         }}
                         data-framer-background-image-wrapper="true"
                       >
-                        <img
+                        <Image
                           decoding="async"
                           loading="lazy"
                           width="144"
                           height="49"
-                          src="https://framerusercontent.com/images/6kzTzxyIWcWvF3E1nULPXHxxRog.svg"
+                          src={SvgStartse}
                           alt="Logo"
                           style={{
                             display: "block",
@@ -381,12 +395,12 @@ export function BrandSection() {
                         }}
                         data-framer-background-image-wrapper="true"
                       >
-                        <img
+                        <Image
                           decoding="async"
                           loading="lazy"
                           width="101"
                           height="30"
-                          src="https://framerusercontent.com/images/Y3bLnXwSXM48bRdyCRupqMo.svg"
+                          src={SvgBrasa}
                           alt="Logo"
                           style={{
                             display: "block",
@@ -418,12 +432,12 @@ export function BrandSection() {
                         }}
                         data-framer-background-image-wrapper="true"
                       >
-                        <img
+                        <Image
                           decoding="async"
                           loading="lazy"
                           width="193"
                           height="50"
-                          src="https://framerusercontent.com/images/CDWJvCSxdklIGXJEzh9pcJT3o.svg"
+                          src={SvgMereo}
                           alt="Logo"
                           style={{
                             display: "block",
@@ -458,12 +472,12 @@ export function BrandSection() {
                         }}
                         data-framer-background-image-wrapper="true"
                       >
-                        <img
+                        <Image
                           decoding="async"
                           loading="lazy"
                           width="114"
                           height="49"
-                          src="https://framerusercontent.com/images/veHEk8l1mEUCvmyOiNRQdo1fkGw.svg"
+                          src={SvgTecnisa}
                           alt="Logo"
                           style={{
                             display: "block",
@@ -495,12 +509,12 @@ export function BrandSection() {
                         }}
                         data-framer-background-image-wrapper="true"
                       >
-                        <img
+                        <Image
                           decoding="async"
                           loading="lazy"
                           width="81"
                           height="33"
-                          src="https://framerusercontent.com/images/aQZSY0jK2k30p64rTXgEXd5h1o.svg"
+                          src={SvgNelson}
                           alt="Logo"
                           style={{
                             display: "block",
