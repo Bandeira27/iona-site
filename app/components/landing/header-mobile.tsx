@@ -12,7 +12,7 @@ export function LandingHeaderMobile() {
     <>
       {container ? (
         <header
-          className="framer-1bdd2xm"
+          className="framer-1bdd2xm !relative"
           data-framer-name="Header"
           data-framer-layout-hint-center-x="true"
         >
