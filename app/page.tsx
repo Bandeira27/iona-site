@@ -14,6 +14,7 @@ import { Footer } from "./components/landing/footer";
 import { FooterMobile } from "./components/landing/footer-mobile";
 import { FutureSection } from "./components/landing/future-section";
 import { LandingHeader } from "./components/landing/header";
+import { LandingHeaderMobile } from "./components/landing/header-mobile";
 import { HeroSection } from "./components/landing/hero";
 import { Team1Section } from "./components/landing/team-1-section";
 import { Team2Section } from "./components/landing/team-2-section";
@@ -22,7 +23,13 @@ import { VideoSection } from "./components/landing/video-section";
 export default function Landing() {
   return (
     <div>
-      <LandingHeader />
+      <div className="hidden md:block">
+        <LandingHeader />
+      </div>
+
+      <div className="block md:hidden">
+        <LandingHeaderMobile />
+      </div>
       <div
         data-framer-root=""
         className="framer-QrmFE framer-KGwWx framer-2PkMf framer-72rtr7"
