@@ -8,22 +8,22 @@ import { Footer } from "@/app/components/landing/footer";
 import { LandingHeader } from "@/app/components/landing/header";
 
 export default function AboutMe() {
-    return(
-        <div>
-            <LandingHeader />
-            <div
-               data-framer-root=""
-               className="framer-6Uhsu framer-KGwWx framer-KhsFx framer-6Ubzf framer-1qcvg63"
-               style={{ minHeight: "100vh", width: "auto", display: "contents" }}
-            >
-                <BannerSectionAboutMe />
-                <AboutSectionAboutMe />
-                <OverviewSection />
-                <TransformerSection />
-                <AchievementSection />
-                <MissionSection />
-                <Footer />
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <LandingHeader />
+      <div
+        data-framer-root=""
+        className="framer-6Uhsu framer-KGwWx framer-KhsFx framer-6Ubzf framer-1qcvg63"
+        style={{ minHeight: "100vh", width: "auto", display: "contents" }}
+      >
+        <BannerSectionAboutMe />
+        <AboutSectionAboutMe />
+        <OverviewSection />
+        <TransformerSection />
+        <AchievementSection />
+        <MissionSection />
+        <Footer />
+      </div>
+    </div>
+  );
 }

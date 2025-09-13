@@ -1,73 +1,74 @@
 export default function BannerSectionAboutMe() {
   return (
-   <section className="framer-182b2sm" data-framer-name="Banner Section">
-  <div className="framer-1dw50ht" data-framer-name="Container">
-    <div className="ssr-variant hidden-xme965 hidden-p0mfc">
-      <div className="framer-hu1dfk" data-framer-name="Content">
-        <div
-          data-framer-background-image-wrapper="true"
-          style={{
-            position: "absolute",
-            borderRadius: "inherit",
-            inset: 0,
-          }}
-        >
-          <img
-            decoding="async"
-            width={3900}
-            height={1500}
-            sizes="min(100vw - 60px, 1200px)"
-            srcSet="https://framerusercontent.com/images/Q8wjWruVbYhy7d8R6Pwcx81dXo.png?scale-down-to=512 512w,https://framerusercontent.com/images/Q8wjWruVbYhy7d8R6Pwcx81dXo.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/Q8wjWruVbYhy7d8R6Pwcx81dXo.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/Q8wjWruVbYhy7d8R6Pwcx81dXo.png 3900w"
-            src="https://framerusercontent.com/images/Q8wjWruVbYhy7d8R6Pwcx81dXo.png"
-            alt=""
-            style={{
-              display: "block",
-              width: "100%",
-              height: "100%",
-              borderRadius: "inherit",
-              objectPosition: "center center",
-              objectFit: "cover",
-            }}
-          />
-        </div>
-        <div className="framer-127ljvc" data-framer-name="Title Wrapper">
-          <div
-            className="framer-1rq9jw5"
-            data-framer-component-type="RichTextContainer"
-            style={{
-              outline: "none",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "flex-start",
-              flexShrink: 0,
-              transform: "none",
-            }}
-          >
-            <h1
-              className="framer-text"
+    <section className="framer-182b2sm" data-framer-name="Banner Section">
+      <div className="framer-1dw50ht" data-framer-name="Container">
+        <div className="ssr-variant hidden-xme965 hidden-p0mfc">
+          <div className="framer-hu1dfk" data-framer-name="Content">
+            <div
+              data-framer-background-image-wrapper="true"
               style={{
-                "--font-selector": "R0Y7UG9wcGlucy1yZWd1bGFy",
-                "--framer-font-family": `"Poppins", "Poppins Placeholder", sans-serif`,
-                "--framer-font-size": "48px",
-                "--framer-letter-spacing": "-0.03em",
-                "--framer-line-height": "135%",
-                "--framer-text-alignment": "left",
-                "--framer-text-color":
-                  "var(--token-b25fd8ad-c9e3-4471-b11c-08fc2ed02e4e, rgb(17, 17, 51))",
+                position: "absolute",
+                borderRadius: "inherit",
+                inset: 0,
               }}
             >
-              A origem <br className="framer-text" />é humana
-            </h1>
+              <img
+                decoding="async"
+                width={3900}
+                height={1500}
+                sizes="min(100vw - 60px, 1200px)"
+                srcSet="https://framerusercontent.com/images/Q8wjWruVbYhy7d8R6Pwcx81dXo.png?scale-down-to=512 512w,https://framerusercontent.com/images/Q8wjWruVbYhy7d8R6Pwcx81dXo.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/Q8wjWruVbYhy7d8R6Pwcx81dXo.png?scale-down-to=2048 2048w,https://framerusercontent.com/images/Q8wjWruVbYhy7d8R6Pwcx81dXo.png 3900w"
+                src="https://framerusercontent.com/images/Q8wjWruVbYhy7d8R6Pwcx81dXo.png"
+                alt=""
+                style={{
+                  display: "block",
+                  width: "100%",
+                  height: "100%",
+                  borderRadius: "inherit",
+                  objectPosition: "center center",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className="framer-127ljvc" data-framer-name="Title Wrapper">
+              <div
+                className="framer-1rq9jw5"
+                data-framer-component-type="RichTextContainer"
+                style={{
+                  outline: "none",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "flex-start",
+                  flexShrink: 0,
+                  transform: "none",
+                }}
+              >
+                <h1
+                  className="framer-text"
+                  style={{
+                    "--font-selector": "R0Y7UG9wcGlucy1yZWd1bGFy",
+                    "--framer-font-family": `"Poppins", "Poppins Placeholder", sans-serif`,
+                    "--framer-font-size": "48px",
+                    "--framer-letter-spacing": "-0.03em",
+                    "--framer-line-height": "135%",
+                    "--framer-text-alignment": "left",
+                    "--framer-text-color":
+                      "var(--token-b25fd8ad-c9e3-4471-b11c-08fc2ed02e4e, rgb(17, 17, 51))",
+                  }}
+                >
+                  A origem <br className="framer-text" />é humana
+                </h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-  )
+    </section>
+  );
 }
 
-{/* <header className="framer-16kgtac" data-framer-name="Header">
+{
+  /* <header className="framer-16kgtac" data-framer-name="Header">
   <div className="ssr-variant hidden-byxa9d hidden-1acmcks">
     <div className="framer-myqk6f-container">
       <nav
@@ -249,4 +250,5 @@ export default function BannerSectionAboutMe() {
     </div>
   </div>
 </header>
- */}
+ */
+}

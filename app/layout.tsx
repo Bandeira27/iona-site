@@ -3,9 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./extra.css";
 import "./framer.css";
 import "./globals.css";
-import "./declarations.css"
-import "./about-me.css"
-import "./contact.css"
+import "./declarations.css";
+import "./about-me.css";
+import "./contact.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +32,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="framer-UkBuu bg-[#f3f3f3]" data-layout-template="true" style={{ minHeight: "100vh", width: "auto" }}>
+        <div
+          className="framer-UkBuu bg-[#f3f3f3]"
+          data-layout-template="true"
+          style={{ minHeight: "100vh", width: "auto" }}
+        >
           {children}
         </div>
       </body>
