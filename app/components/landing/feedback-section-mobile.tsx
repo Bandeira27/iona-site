@@ -1,4 +1,7 @@
 import React from "react";
+import JuniaGontijo from "../../assets/junia-gontijo.jpg";
+import Image from "next/image";
+import JulianaHadad from "../../assets/juliana-hadad.png";
 
 export function FeedbackSectionMobile() {
   return (
@@ -110,12 +113,12 @@ export function FeedbackSectionMobile() {
                                 inset: 0,
                               }}
                             >
-                              <img
+                              <Image
                                 decoding="async"
                                 width={300}
                                 height={300}
                                 sizes="120px"
-                                src="https://framerusercontent.com/images/RSIc2hWeHLJkWKM2opO6nPP68n4.jpg"
+                                src={JuniaGontijo}
                                 alt="Avater"
                                 style={{
                                   display: "block",
@@ -263,10 +266,7 @@ export function FeedbackSectionMobile() {
                               } as React.CSSProperties
                             }
                           >
-                            " A forma como ela contou essa trajetória dela foi
-                            uma história que me impactou muito. A história
-                            começa com um grande desafio de vida e, a partir
-                            daquilo, existe uma reinvenção da forma de ser. "
+                            {`"A forma como ela contou essa trajetória dela foi uma história que me impactou muito. A história começa com um grande desafio de vida e, a partir daquilo, existe uma reinvenção da forma de ser."`}
                           </h3>
                         </div>
                       </div>
@@ -332,13 +332,12 @@ export function FeedbackSectionMobile() {
                               inset: 0,
                             }}
                           >
-                            <img
+                            <Image
                               decoding="async"
                               width={524}
                               height={524}
                               sizes="120px"
-                              src="https://framerusercontent.com/images/iTD7c2JG4igLtRF3fnWwCB684.png"
-                              srcSet="https://framerusercontent.com/images/iTD7c2JG4igLtRF3fnWwCB684.png?scale-down-to=512 512w,https://framerusercontent.com/images/iTD7c2JG4igLtRF3fnWwCB684.png 524w"
+                              src={JulianaHadad}
                               alt="Avater"
                               style={{
                                 display: "block",
@@ -482,9 +481,7 @@ export function FeedbackSectionMobile() {
                             } as React.CSSProperties
                           }
                         >
-                          " Ela é uma profissional incrível. Aprendi muito com
-                          sua história e sua forma de liderar equipes. Recomendo
-                          fortemente. "
+                          {`"Ela é uma profissional incrível. Aprendi muito com sua história e sua forma de liderar equipes. Recomendo fortemente."`}
                         </h3>
                       </div>
                     </div>
