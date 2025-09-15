@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
 import ImageLeman from "@/app/assets/image-lemann.png";
 import ImageStanford from "@/app/assets/image-stanford.png";
-import ImageBrazilValley from "@/app/assets/image-brazil-valley.svg";
+import ImageBrazilValley from "@/app/assets/image-brazil-valley.png";
 import ImageForbes from "@/app/assets/image-forbes.png";
 import ImageGsv from "@/app/assets/image-gsv.png";
 import ImageTopVoice from "@/app/assets/image-top-voice.png";
