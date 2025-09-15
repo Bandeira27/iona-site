@@ -20,6 +20,7 @@ import { HeroSectionMobile } from "./components/landing/hero-mobile";
 import { Team1Section } from "./components/landing/team-1-section";
 import { Team2Section } from "./components/landing/team-2-section";
 import { VideoSection } from "./components/landing/video-section";
+import { VideoSectionMobile } from "./components/landing/video-section-mobile";
 
 export default function Landing() {
   return (
@@ -47,7 +48,15 @@ export default function Landing() {
         <AboutSection />
         <AboutExtraSection />
         <ExpertiseSection />
-        <VideoSection />
+
+        <div className="hidden lg:block">
+          <VideoSection />
+        </div>
+
+        <div className="block lg:hidden">
+          <VideoSectionMobile />
+        </div>
+
         <FutureSection />
         <Details1Section />
         <Details2Section />
