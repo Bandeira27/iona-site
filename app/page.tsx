@@ -16,6 +16,7 @@ import { FutureSection } from "./components/landing/future-section";
 import { LandingHeader } from "./components/landing/header";
 import { LandingHeaderMobile } from "./components/landing/header-mobile";
 import { HeroSection } from "./components/landing/hero";
+import { HeroSectionMobile } from "./components/landing/hero-mobile";
 import { Team1Section } from "./components/landing/team-1-section";
 import { Team2Section } from "./components/landing/team-2-section";
 import { VideoSection } from "./components/landing/video-section";
@@ -23,11 +24,11 @@ import { VideoSection } from "./components/landing/video-section";
 export default function Landing() {
   return (
     <div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <LandingHeader />
       </div>
 
-      <div className="block md:hidden">
+      <div className="block lg:hidden">
         <LandingHeaderMobile />
       </div>
       <div
@@ -35,7 +36,14 @@ export default function Landing() {
         className="framer-QrmFE framer-KGwWx framer-2PkMf framer-72rtr7"
         style={{ minHeight: "100vh", width: "auto", display: "contents" }}
       >
-        <HeroSection />
+        <div className="hidden lg:block">
+          <HeroSection />
+        </div>
+
+        <div className="block lg:hidden">
+          <HeroSectionMobile />
+        </div>
+
         <AboutSection />
         <AboutExtraSection />
         <ExpertiseSection />
@@ -46,20 +54,20 @@ export default function Landing() {
         <Details3Section />
         <BrandSection />
         <Details4Section />
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <FeedbackSection />
         </div>
-        <div className="block md:hidden">
+        <div className="block lg:hidden">
           <FeedbackSectionMobile />
         </div>
         <Team1Section />
         <Team2Section />
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Footer />
         </div>
 
-        <div className="block md:hidden">
+        <div className="block lg:hidden">
           <FooterMobile />
         </div>
       </div>
