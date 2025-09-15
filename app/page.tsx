@@ -9,6 +9,7 @@ import { Details2Section } from "./components/landing/details-2-section";
 import { Details3Section } from "./components/landing/details-3-section";
 import Details4Section from "./components/landing/details-4-section";
 import { ExpertiseSection } from "./components/landing/expertise-section";
+import { ExpertiseSectionMobile } from "./components/landing/expertise-section-mobile";
 import { FeedbackSection } from "./components/landing/feedback-section";
 import { FeedbackSectionMobile } from "./components/landing/feedback-section-mobile";
 import { Footer } from "./components/landing/footer";
@@ -48,7 +49,14 @@ export default function Landing() {
 
         <AboutSection />
         <AboutExtraSection />
-        <ExpertiseSection />
+
+        <div className="hidden lg:block">
+          <ExpertiseSection />
+        </div>
+
+        <div className="block lg:hidden">
+          <ExpertiseSectionMobile />
+        </div>
 
         <div className="hidden lg:block">
           <VideoSection />
