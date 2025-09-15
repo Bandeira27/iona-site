@@ -139,7 +139,7 @@ export function HeroSection() {
                           borderRadius: "inherit",
                           objectPosition: "center center",
                           objectFit: "contain",
-                          animationDuration: "10000ms",
+                          animationDuration: "18000ms",
                         }}
                       />
                     </div>
