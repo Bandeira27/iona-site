@@ -310,7 +310,7 @@ export function FeedbackSection() {
                                     "--framer-text-alignment": "left",
                                     "--framer-text-color":
                                       "var(--extracted-r6o4lv, var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22)))",
-                                    transition: "transform 0.2s ease",
+                                    transition: "transform 0.25s ease",
                                     transform: moved
                                       ? "translateX(140px)"
                                       : "translateX(0)",
@@ -350,7 +350,7 @@ export function FeedbackSection() {
                                     "--framer-text-alignment": "left",
                                     "--framer-text-color":
                                       "var(--extracted-r6o4lv, var(--token-0ece170e-b6f2-4780-8b57-3a5553a2ea0d, rgb(96, 104, 102)))",
-                                    transition: "transform 0.2s ease",
+                                    transition: "transform 0.25s ease",
                                     transform: moved
                                       ? "translateX(140px)"
                                       : "translateX(0)",
@@ -592,7 +592,7 @@ export function FeedbackSection() {
                                 } as React.CSSProperties
                               }
                             >
-                              <p
+                              <span
                                 className="framer-text"
                                 style={
                                   {
@@ -606,16 +606,19 @@ export function FeedbackSection() {
                                     "--framer-text-color":
                                       "var(--extracted-r6o4lv, var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22)))",
                                     "--framer-text-transform": "uppercase",
-                                    transition: "transform 0.2s ease",
+                                    transition: "transform 0.25s ease",
                                     transform: moved
-                                      ? "translateX(0px)"
-                                      : "translateX(-50)",
-
+                                      ? "translateX(50px)"
+                                      : "translateX(0px)",
                                   } as React.CSSProperties
                                 }
                               >
-                            {!moved ? 'A Revolução no Vale do Silício' : 'depoimento'}   
-                              </p>
+                                {!moved ? (
+                                  <p>A Revolução no Vale do Silício</p>
+                                ) : (
+                                  <p className="-translate-x-13">depoimento</p>
+                                )}
+                              </span>
                             </div>
                           </div>
                           <div
@@ -661,7 +664,9 @@ export function FeedbackSection() {
                                 } as React.CSSProperties
                               }
                             >
-                              {`"A forma como ela contou essa trajetória dela foi uma história que me impactou muito. A história começa com um grande desafio de vida e, a partir daquilo, existe uma reinvenção da forma de ser."`}
+                              {!moved
+                                ? `"A forma como ela contou essa trajetória dela foi uma história que me impactou muito. A história começa com um grande desafio de vida e, a partir daquilo, existe uma reinvenção da forma de ser."`
+                                : `" Apostar na Iona foi uma das melhores decisões que já tomei. Conhecê-la foi transformador. Se você tiver a chance de trabalhar com ela, aprender com ela ou simplesmente estar em sua órbita, agarre essa oportunidade."`}
                             </h3>
                           </div>
                         </div>
