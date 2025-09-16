@@ -481,7 +481,7 @@ export function FeedbackSectionMobile() {
                             } as React.CSSProperties
                           }
                         >
-                          {`"Ela é uma profissional incrível. Aprendi muito com sua história e sua forma de liderar equipes. Recomendo fortemente."`}
+                          {`" Apostar na Iona foi uma das melhores decisões que já tomei. Conhecê-la foi transformador. Se você tiver a chance de trabalhar com ela, aprender com ela ou simplesmente estar em sua órbita, agarre essa oportunidade. "`}
                         </h3>
                       </div>
                     </div>
