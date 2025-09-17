@@ -248,7 +248,7 @@ export function AboutExtraSection() {
                             } as React.CSSProperties
                           }
                         >
-                          Conheça a trajetória completa
+                          Conheça a trajetória completa da Iona
                         </p>
                       </div>
                     </a>

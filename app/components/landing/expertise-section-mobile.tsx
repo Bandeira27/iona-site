@@ -6,7 +6,7 @@ import ImageBrazilValley from "@/app/assets/image-brazil-valley.png";
 import ImageForbes from "@/app/assets/image-forbes.png";
 import ImageGsv from "@/app/assets/image-gsv.png";
 import ImageTopVoice from "@/app/assets/image-top-voice.png";
-export function ExpertiseSection() {
+export function ExpertiseSectionMobile() {
   return (
     <section className="framer-16apv0y" data-framer-name="Expertise Section">
       <ScrollReveal>
@@ -99,7 +99,7 @@ export function ExpertiseSection() {
                             ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
                             ["--framer-font-family"]:
                               '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "18px",
+                            ["--framer-font-size"]: "16px",
                             ["--framer-line-height"]: "150%",
                             ["--framer-text-alignment"]: "center",
                             ["--framer-text-color"]:
@@ -193,7 +193,7 @@ export function ExpertiseSection() {
                             ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
                             ["--framer-font-family"]:
                               '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "18px",
+                            ["--framer-font-size"]: "16px",
                             ["--framer-line-height"]: "150%",
                             ["--framer-text-alignment"]: "center",
                             ["--framer-text-color"]:
@@ -287,7 +287,7 @@ export function ExpertiseSection() {
                             ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
                             ["--framer-font-family"]:
                               '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "18px",
+                            ["--framer-font-size"]: "16px",
                             ["--framer-line-height"]: "150%",
                             ["--framer-text-alignment"]: "center",
                             ["--framer-text-color"]:
@@ -381,7 +381,7 @@ export function ExpertiseSection() {
                             ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
                             ["--framer-font-family"]:
                               '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "18px",
+                            ["--framer-font-size"]: "16px",
                             ["--framer-line-height"]: "150%",
                             ["--framer-text-alignment"]: "center",
                             ["--framer-text-color"]:
@@ -475,7 +475,7 @@ export function ExpertiseSection() {
                             ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
                             ["--framer-font-family"]:
                               '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "18px",
+                            ["--framer-font-size"]: "16px",
                             ["--framer-line-height"]: "150%",
                             ["--framer-text-alignment"]: "center",
                             ["--framer-text-color"]:
@@ -569,7 +569,7 @@ export function ExpertiseSection() {
                             ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
                             ["--framer-font-family"]:
                               '"Poppins", "Poppins Placeholder", sans-serif',
-                            ["--framer-font-size"]: "18px",
+                            ["--framer-font-size"]: "16px",
                             ["--framer-line-height"]: "150%",
                             ["--framer-text-alignment"]: "center",
                             ["--framer-text-color"]:
