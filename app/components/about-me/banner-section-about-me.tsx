@@ -45,13 +45,13 @@ export default function BannerSectionAboutMe() {
               }}
             >
               <h2
-                className="framer-text"
+                className="framer-text !text-left w-60 !leading-[1.35]"
                 style={
                   {
                     "--font-selector": "R0Y7UG9wcGlucy1yZWd1bGFy",
                     "--framer-font-family":
                       '"Poppins", "Poppins Placeholder", sans-serif',
-                    "--framer-font-size": "38px",
+                    "--framer-font-size": "48px",
                     "--framer-letter-spacing": "-0.03em",
                     "--framer-line-height": "48px",
                     "--framer-text-alignment": "center",

@@ -10,6 +10,7 @@ import LectureThree from "@/app/components/lectures-and-workshops/lecture-three"
 import LectureTwo from "@/app/components/lectures-and-workshops/lecture-two";
 import LectureOne from "@/app/components/lectures-and-workshops/lectures-one";
 import { LectureOneMobile } from "@/app/components/lectures-and-workshops/lectures-one-mobile";
+import { LectureThreeMobile } from "@/app/components/lectures-and-workshops/lectures-three-mobile";
 
 export default function LecturesAndWorkshops() {
   return (
@@ -52,7 +53,14 @@ export default function LecturesAndWorkshops() {
           <LectureTwoMobile />
         </div>
 
-        <LectureThree />
+        <div className="hidden lg:block">
+          <LectureThree />
+        </div>
+
+        <div className="block lg:hidden">
+          <LectureThreeMobile />
+        </div>
+
         <div className="hidden lg:block">
           <Footer />
         </div>
