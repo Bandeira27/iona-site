@@ -1,13 +1,13 @@
 import Image from "next/image";
-import ImageMarqueeSecond from "@/app/assets/image-marquee-second.png";
+import IonaLastApresentation from "@/app/assets/iona-image-last-apresentation.png";
 import ImageThing from "@/app/assets/image-thing.png";
 import ImageBook from "@/app/assets/image-book.png";
 import ImageCup from "@/app/assets/image-cup.png";
 import ImageHouse from "@/app/assets/image-house.png";
 
-export function LectureOneMobile() {
+export function LectureTwoMobile() {
   return (
-    <section className="framer-paifu5" data-framer-name="Palestra 01">
+    <section className="framer-paifu5" data-framer-name="Palestra 02">
       <div
         className="framer-1siof1s"
         data-framer-name="Container"
@@ -31,7 +31,7 @@ export function LectureOneMobile() {
                     width="4160"
                     height="2773"
                     sizes="min(100vw - 40px, 1200px)"
-                    src={ImageMarqueeSecond}
+                    src={IonaLastApresentation}
                     alt="Image"
                     style={{
                       display: "block",
@@ -68,7 +68,7 @@ export function LectureOneMobile() {
                     } as React.CSSProperties
                   }
                 >
-                  A Revolução do Vale do Silício
+                  Liderança no Pós-IA
                 </h2>
               </div>
               <div
@@ -93,8 +93,8 @@ export function LectureOneMobile() {
                     } as React.CSSProperties
                   }
                 >
-                  O que aprendi em uma década no maior ecossistema de inovação
-                  do mundo — e por que o Brasil precisa escutar isso agora.
+                  Como conduzir pessoas em um mundo que muda mais rápido do que
+                  nossa certeza
                 </p>
               </div>
             </div>
@@ -211,8 +211,7 @@ export function LectureOneMobile() {
                         } as React.CSSProperties
                       }
                     >
-                      Cultura da inovação, velocidade de decisão e mentalidade
-                      do Vale.
+                      O impacto da IA nas formas de liderar e decidir.
                     </p>
                   </div>
                 </div>
@@ -328,8 +327,8 @@ export function LectureOneMobile() {
                         } as React.CSSProperties
                       }
                     >
-                      Contrasta práticas brasileiras com códigos cultural do
-                      ecossistema do Vale.
+                      Apresenta o líder algorítmico, conceitos autorais e alinha
+                      temas de liderança com disrupção tecnológica.
                     </p>
                   </div>
                 </div>
@@ -445,8 +444,7 @@ export function LectureOneMobile() {
                         } as React.CSSProperties
                       }
                     >
-                      Escolhida por StartSe, Google, Hospital A. Einstein, BTG
-                      Pactual, Ambev, entre outros.
+                      Apresentada no RH Leadership Experience 2025.
                     </p>
                   </div>
                 </div>
@@ -562,8 +560,8 @@ export function LectureOneMobile() {
                         } as React.CSSProperties
                       }
                     >
-                      Fóruns de inovação, tech summits e encontros com
-                      lideranças empresariais.
+                      Encontros de RH, lideranças em transformação, C-levels em
+                      virada estratégica.
                     </p>
                   </div>
                 </div>

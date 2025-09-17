@@ -2,6 +2,7 @@ import { Footer } from "@/app/components/landing/footer";
 import { FooterMobile } from "@/app/components/landing/footer-mobile";
 import { LandingHeader } from "@/app/components/landing/header";
 import { LandingHeaderMobile } from "@/app/components/landing/header-mobile";
+import { LectureTwoMobile } from "@/app/components/landing/lectures-two-mobile";
 import AboutSection from "@/app/components/lectures-and-workshops/about-section";
 import { BannerSectionMobile } from "@/app/components/lectures-and-workshops/about-section-mobile";
 import BannerSection from "@/app/components/lectures-and-workshops/banner-section";
@@ -35,17 +36,22 @@ export default function LecturesAndWorkshops() {
 
         <AboutSection />
 
-   <div className="hidden lg:block">
+        <div className="hidden lg:block">
+          <LectureOne />
+        </div>
 
-        <LectureOne />
-   </div>
+        <div className="block lg:hidden">
+          <LectureOneMobile />
+        </div>
 
+        <div className="hidden lg:block">
+          <LectureTwo />
+        </div>
 
- <div className="block lg:hidden">
-        <LectureOneMobile />
- </div>
+        <div className="block lg:hidden">
+          <LectureTwoMobile />
+        </div>
 
-        <LectureTwo />
         <LectureThree />
         <div className="hidden lg:block">
           <Footer />
