@@ -4,6 +4,7 @@ import { LandingHeader } from "@/app/components/landing/header";
 import { LandingHeaderMobile } from "@/app/components/landing/header-mobile";
 import AboutSection from "@/app/components/lectures-and-workshops/about-section";
 import BannerSection from "@/app/components/lectures-and-workshops/banner-section";
+import LectureThree from "@/app/components/lectures-and-workshops/lecture-three";
 import LectureTwo from "@/app/components/lectures-and-workshops/lecture-two";
 import LectureOne from "@/app/components/lectures-and-workshops/lectures-one";
 
@@ -26,6 +27,7 @@ export default function LecturesAndWorkshops() {
         <AboutSection />
         <LectureOne />
         <LectureTwo />
+        <LectureThree />
         <div className="hidden md:block">
           <Footer />
         </div>
