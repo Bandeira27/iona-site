@@ -70,7 +70,7 @@ export default function LectureThree() {
                       } as React.CSSProperties
                     }
                   >
-                 A Liderança de Si
+                    A Liderança de Si
                   </h2>
                 </div>
                 <div
@@ -95,7 +95,8 @@ export default function LectureThree() {
                       } as React.CSSProperties
                     }
                   >
-                  Desejo, propósito e coragem. Saber como seguir em frente em tempos de incerteza.
+                    Desejo, propósito e coragem. Saber como seguir em frente em
+                    tempos de incerteza.
                   </p>
                 </div>
               </div>
@@ -212,7 +213,9 @@ export default function LectureThree() {
                           } as React.CSSProperties
                         }
                       >
-                      Um convite à autorreflexão como ato político — especialmente em cargos de liderança e em espaços onde é preciso existir com consciência.
+                        Um convite à autorreflexão como ato político —
+                        especialmente em cargos de liderança e em espaços onde é
+                        preciso existir com consciência.
                       </p>
                     </div>
                   </div>
@@ -328,7 +331,9 @@ export default function LectureThree() {
                           } as React.CSSProperties
                         }
                       >
-                       Conecta psicologia, trajetória e poder pessoal para repensar o papel da identidade na tomada de decisão e em lugares de liderança.
+                        Conecta psicologia, trajetória e poder pessoal para
+                        repensar o papel da identidade na tomada de decisão e em
+                        lugares de liderança.
                       </p>
                     </div>
                   </div>
@@ -444,7 +449,8 @@ export default function LectureThree() {
                           } as React.CSSProperties
                         }
                       >
-                      Apresentada no Marketing Network Brasil 2024 para CMOs de grandes empresas.
+                        Apresentada no Marketing Network Brasil 2024 para CMOs
+                        de grandes empresas.
                       </p>
                     </div>
                   </div>
@@ -560,7 +566,10 @@ export default function LectureThree() {
                           } as React.CSSProperties
                         }
                       >
-                      Executivas, lideranças femininas, eventos de transformação cultural, programas de desenvolvimento de lideranças com foco em subjetividade, propósito e autenticidade.
+                        Executivas, lideranças femininas, eventos de
+                        transformação cultural, programas de desenvolvimento de
+                        lideranças com foco em subjetividade, propósito e
+                        autenticidade.
                       </p>
                     </div>
                   </div>
