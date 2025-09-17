@@ -5,14 +5,18 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-export function LandingHeaderMobile() {
+type LandingHeaderMobileType = {
+  className?: string;
+};
+
+export function LandingHeaderMobile({ className }: LandingHeaderMobileType) {
   const router = useRouter();
   const [container, setContainer] = useState(true);
   return (
     <>
       {container ? (
         <header
-          className="framer-1bdd2xm"
+          className={`framer-1bdd2xm ${className}`}
           data-framer-name="Header"
           data-framer-layout-hint-center-x="true"
         >
