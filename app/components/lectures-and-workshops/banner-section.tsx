@@ -46,13 +46,13 @@ export default function BannerSection() {
               }}
             >
               <h1
-                className="framer-text"
+                className="framer-text !text-left w-64 !leading-[1.35]"
                 style={
                   {
                     "--font-selector": "R0Y7UG9wcGlucy0zMDA=",
                     "--framer-font-family":
                       '"Poppins", "Poppins Placeholder", sans-serif',
-                    "--framer-font-size": "24px",
+                    "--framer-font-size": "48px",
                     "--framer-font-weight": 300,
                     "--framer-letter-spacing": "-0.03em",
                     "--framer-line-height": "115%",
