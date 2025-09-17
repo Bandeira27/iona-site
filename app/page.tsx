@@ -21,6 +21,7 @@ import { HeroSection } from "./components/landing/hero";
 import { HeroSectionMobile } from "./components/landing/hero-mobile";
 import { Team1Section } from "./components/landing/team-1-section";
 import { Team2Section } from "./components/landing/team-2-section";
+import Team2SectionMobile from "./components/landing/team-2-section-mobile";
 import { VideoSection } from "./components/landing/video-section";
 import { VideoSectionMobile } from "./components/landing/video-section-mobile";
 
@@ -87,7 +88,14 @@ export default function Landing() {
           <FeedbackSectionMobile />
         </div>
         <Team1Section />
-        <Team2Section />
+
+        <div className="hidden lg:block">
+          <Team2Section />
+        </div>
+
+        <div className="block lg:hidden">
+          <Team2SectionMobile />
+        </div>
 
         <div className="hidden lg:block">
           <Footer />

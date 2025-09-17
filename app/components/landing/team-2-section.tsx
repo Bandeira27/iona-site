@@ -121,7 +121,7 @@ export function Team2Section() {
                   </div>
 
                   {/* Sombra interna ajustada para o card inteiro */}
-                  <div className="absolute bottom-0 left-2.5 w-144 h-full bg-gradient-to-t from-black/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none rounded-b-[10px]" />
+                  <div className="absolute bottom-0 left-1 w-144.5 h-full bg-gradient-to-t from-black/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none rounded-b-[10px]" />
                 </a>
               </div>
             </div>
@@ -226,7 +226,7 @@ export function Team2Section() {
                   </div>
 
                   {/* Sombra interna ajustada para o card inteiro */}
-                  <div className="absolute bottom-0 left-2.5 w-144 h-full bg-gradient-to-t from-black/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none rounded-b-[10px]" />
+                  <div className="absolute bottom-0 left-1 w-144.5 h-full bg-gradient-to-t from-black/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none rounded-b-[10px]" />
                 </a>
               </div>
             </div>
@@ -337,7 +337,7 @@ export function Team2Section() {
                     </div>
 
                     {/* Sombra interna */}
-                    <div className="absolute bottom-0 left-2.5 w-144 h-full bg-gradient-to-t from-black/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none rounded-b-[10px]" />
+                    <div className="absolute bottom-0 left-1 w-144.5 h-full bg-gradient-to-t from-black/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none rounded-b-[10px]" />
                   </a>
                 </div>
               </div>
@@ -441,7 +441,7 @@ export function Team2Section() {
                     </div>
 
                     {/* Sombra interna */}
-                    <div className="absolute bottom-0 left-2.5 w-144 h-full bg-gradient-to-t from-black/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none rounded-b-[10px]" />
+                    <div className="absolute bottom-0 left-1 w-144.5 h-full bg-gradient-to-t from-black/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none rounded-b-[10px]" />
                   </a>
                 </div>
               </div>
@@ -554,7 +554,7 @@ export function Team2Section() {
                     </div>
 
                     {/* Sombra interna */}
-                    <div className="absolute bottom-0 left-2.5 w-144 h-full bg-gradient-to-t from-black/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none rounded-b-[10px]" />
+                    <div className="absolute bottom-0 left-1 w-144.5 h-full bg-gradient-to-t from-black/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none rounded-b-[10px]" />
                   </a>
                 </div>
               </div>
@@ -653,14 +653,14 @@ export function Team2Section() {
                             } as React.CSSProperties
                           }
                         >
-                          Episódio especial sobre inovação e mercado de
-                          tecnologia
+                          Uma década no Vale + os desafios de liderar com
+                          propósito
                         </p>
                       </div>
                     </div>
 
                     {/* Sombra interna */}
-                    <div className="absolute bottom-0 left-2.5 w-144 h-full bg-gradient-to-t from-black/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none rounded-b-[10px]" />
+                    <div className="absolute bottom-0 left-1 w-144.5 h-full bg-gradient-to-t from-black/90 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none rounded-b-[10px]" />
                   </a>
                 </div>
               </div>
