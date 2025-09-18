@@ -1,9 +1,7 @@
-"use client";
-
 import React from "react";
 import { ScrollReveal } from "../scroll-reveal";
 
-export function AboutSectionAboutMe() {
+export function AboutSectionAboutMeMobile() {
   return (
     <ScrollReveal>
       <section className="framer-1b1rka" data-framer-name="About Section">
@@ -35,7 +33,7 @@ export function AboutSectionAboutMe() {
                           "--font-selector": "R0Y7UG9wcGlucy01MDA=",
                           "--framer-font-family":
                             '"Poppins", "Poppins Placeholder", sans-serif',
-                          "--framer-font-size": "32px",
+                          "--framer-font-size": "22px",
                           "--framer-font-weight": 500,
                           "--framer-line-height": "34px",
                           "--framer-text-color":
@@ -66,7 +64,7 @@ export function AboutSectionAboutMe() {
                         }}
                       >
                         <p
-                          className="framer-text framer-styles-preset-34zyjt text-lg"
+                          className="framer-text framer-styles-preset-34zyjt !text-base"
                           data-styles-preset="jIY0P7P2R"
                         >
                           Fui atrás da Psicologia porque queria ajudar as
@@ -93,7 +91,7 @@ export function AboutSectionAboutMe() {
                         }}
                       >
                         <p
-                          className="framer-text !text-lg"
+                          className="framer-text !text-base"
                           style={
                             {
                               "--font-selector": "R0Y7UG9wcGlucy01MDA=",
@@ -124,7 +122,7 @@ export function AboutSectionAboutMe() {
                         }}
                       >
                         <p
-                          className="framer-text !text-lg"
+                          className="framer-text !text-base"
                           style={
                             {
                               "--font-selector": "R0Y7UG9wcGlucy1yZWd1bGFy",
@@ -159,7 +157,7 @@ export function AboutSectionAboutMe() {
                       data-framer-component-type="RichTextContainer"
                     >
                       <p
-                        className="framer-text framer-styles-preset-1o7hytv text-lg"
+                        className="framer-text framer-styles-preset-1o7hytv !text-base"
                         data-styles-preset="n2cKrZU2g"
                         style={
                           {
@@ -184,7 +182,7 @@ export function AboutSectionAboutMe() {
                       data-framer-component-type="RichTextContainer"
                     >
                       <p
-                        className="framer-text framer-styles-preset-34zyjt text-lg"
+                        className="framer-text framer-styles-preset-34zyjt !text-base"
                         data-styles-preset="jIY0P7P2R"
                       >
                         Minha especialidade é na interseção entre cultura,
@@ -204,14 +202,14 @@ export function AboutSectionAboutMe() {
                       data-framer-component-type="RichTextContainer"
                     >
                       <p
-                        className="framer-text framer-styles-preset-34zyjt text-lg"
+                        className="framer-text framer-styles-preset-34zyjt !text-base"
                         data-styles-preset="jIY0P7P2R"
                       >
                         Não a IA dos códigos e do prompt engineering, mas a IA
                         que influencia como decidir, liderar e crescer dentro
                         das empresas. É nesse espaço que eu atuo:{" "}
                         <span
-                          className="framer-text text-lg"
+                          className="framer-text text-base"
                           style={
                             {
                               "--framer-text-color":
@@ -240,7 +238,7 @@ export function AboutSectionAboutMe() {
                         }}
                       >
                         <p
-                          className="framer-text !text-lg"
+                          className="framer-text !text-base"
                           style={
                             {
                               "--font-selector": "R0Y7UG9wcGlucy01MDA=",
@@ -270,7 +268,7 @@ export function AboutSectionAboutMe() {
                       data-framer-component-type="RichTextContainer"
                     >
                       <p
-                        className="framer-text framer-styles-preset-34zyjt text-lg"
+                        className="framer-text framer-styles-preset-34zyjt !text-base"
                         data-styles-preset="jIY0P7P2R"
                       >
                         Sou mestre por Stanford, onde estudei como a tecnologia
@@ -291,7 +289,7 @@ export function AboutSectionAboutMe() {
                       data-framer-component-type="RichTextContainer"
                     >
                       <p
-                        className="framer-text framer-styles-preset-34zyjt text-lg"
+                        className="framer-text framer-styles-preset-34zyjt text-base"
                         data-styles-preset="jIY0P7P2R"
                       >
                         Vivi 11 anos na Califórnia e, desde então, traduzo o que
@@ -312,7 +310,7 @@ export function AboutSectionAboutMe() {
                         }}
                       >
                         <p
-                          className="framer-text !text-[#6E766F] !text-lg"
+                          className="framer-text !text-[#6E766F] !text-base"
                           style={
                             {
                               "--font-selector": "R0Y7UG9wcGlucy1yZWd1bGFy",
@@ -329,7 +327,7 @@ export function AboutSectionAboutMe() {
                             rel="noopener noreferrer"
                           >
                             <span
-                              className="framer-text !text-lg education-journey-important"
+                              className="framer-text !text-base"
                               style={
                                 {
                                   "--framer-text-color":
@@ -342,16 +340,6 @@ export function AboutSectionAboutMe() {
                               Education Journey
                             </span>
                           </a>
-                          <style jsx>{`
-                            .education-journey-important {
-                              --framer-text-color: var(
-                                --token-3696beb0-9bcd-4868-8f06-aad504012b0e,
-                                rgb(21, 21, 22)
-                              ) !important;
-                              --framer-font-family:
-                                "Poppins", "Poppins Placeholder", sans-serif !important;
-                            }
-                          `}</style>
                           , edtech premiada que usa IA para personalizar o
                           aprendizado de equipes em empresas como Ambev, RD
                           Saúde e Tecnisa.

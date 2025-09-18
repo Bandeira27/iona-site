@@ -2,8 +2,8 @@ import ImageHuman from "@/app/assets/image-human.png";
 import Image from "next/image";
 
 export function BannerSectionAboutMeMobile() {
-    return(
-         <section className="framer-182b2sm" data-framer-name="Banner Section">
+  return (
+    <section className="framer-182b2sm" data-framer-name="Banner Section">
       <div className="framer-1dw50ht" data-framer-name="Container">
         <div className="framer-hu1dfk" data-framer-name="Content">
           <div
@@ -64,5 +64,5 @@ export function BannerSectionAboutMeMobile() {
         </div>
       </div>
     </section>
-    )
+  );
 }
