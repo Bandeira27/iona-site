@@ -8,6 +8,7 @@ import MissionSection from "@/app/components/about-me/mission-section";
 import OverviewSection from "@/app/components/about-me/overview-section";
 import { OverviewSectionMobile } from "@/app/components/about-me/overview-section-mobile";
 import TransformerSection from "@/app/components/about-me/transformer-section";
+import TransformerSectionMobile from "@/app/components/about-me/transformer-section-mobile";
 import { Footer } from "@/app/components/landing/footer";
 import { FooterMobile } from "@/app/components/landing/footer-mobile";
 import { LandingHeader } from "@/app/components/landing/header";
@@ -49,7 +50,14 @@ export default function AboutMe() {
         <div className="block lg:hidden">
           <OverviewSectionMobile />
         </div>
-        <TransformerSection />
+
+        <div className="hidden lg:block">
+          <TransformerSection />
+        </div>
+
+        <div className="block lg:hidden">
+          <TransformerSectionMobile />
+        </div>
 
         <div className="hidden lg:block">
           <AchievementSection />
