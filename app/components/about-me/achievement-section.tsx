@@ -131,34 +131,54 @@ const AchievementSection: React.FC = () => {
           "Trabalho com empresas que querem os benefícios da Inteligência Artificial, mas ainda não sabem como agir. É aí que a transformação trava. É aí que eu entro.",
       },
     ],
-    [],
+    []
   );
 
-  const loopedAchievements = [...achievements, ...achievements];
+  const loopedAchievements = useMemo(
+    () => [...achievements, ...achievements],
+    [achievements]
+  );
 
   useEffect(() => {
     const scrollElement = scrollRef.current;
     if (!scrollElement) return;
 
-    let currentTranslateY = 0;
-    const speed = 1;
+    let totalHeight = 0;
+    scrollElement.childNodes.forEach((child) => {
+      if (child instanceof HTMLElement) {
+        totalHeight += child.offsetHeight + 100;
+      }
+    });
 
-    const totalHeight =
-      achievements.reduce((sum, a) => sum + (a.height || 188), 0) +
-      (achievements.length - 1) * 100;
+    let translateY = 0;
+    const speed = 1;
+    let paused = false;
 
     const animate = () => {
-      currentTranslateY -= speed;
-      if (Math.abs(currentTranslateY) >= totalHeight) {
-        currentTranslateY += totalHeight;
+      if (!paused) {
+        translateY -= speed;
+        if (Math.abs(translateY) >= totalHeight / 3) {
+          translateY += totalHeight / 2;
+        }
+        scrollElement.style.transform = `translateY(${translateY}px)`;
       }
-      scrollElement.style.transform = `translateY(${currentTranslateY}px)`;
       requestAnimationFrame(animate);
     };
 
+    const handleMouseEnter = () => (paused = true);
+    const handleMouseLeave = () => (paused = false);
+
+    scrollElement.addEventListener("mouseenter", handleMouseEnter);
+    scrollElement.addEventListener("mouseleave", handleMouseLeave);
+
     const animationId = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(animationId);
-  }, [achievements]);
+
+    return () => {
+      cancelAnimationFrame(animationId);
+      scrollElement.removeEventListener("mouseenter", handleMouseEnter);
+      scrollElement.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, [loopedAchievements]);
 
   return (
     <section className="framer-sani89" data-framer-name="Achievement Section">
@@ -169,11 +189,7 @@ const AchievementSection: React.FC = () => {
         >
           <div
             data-framer-background-image-wrapper="true"
-            style={{
-              position: "absolute",
-              borderRadius: "inherit",
-              inset: 0,
-            }}
+            style={{ position: "absolute", borderRadius: "inherit", inset: 0 }}
           >
             <Image
               src={IonaAchievements}
@@ -207,7 +223,7 @@ const AchievementSection: React.FC = () => {
                 <ul ref={scrollRef} style={scrollListStyle}>
                   {loopedAchievements.map((achievement, index) => (
                     <AchievementCard
-                      key={`main-${index}`}
+                      key={`achievement-${index}`}
                       year={achievement.year}
                       title={achievement.title}
                       description={achievement.description}
