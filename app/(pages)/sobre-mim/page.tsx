@@ -72,7 +72,7 @@ export default function AboutMe() {
           <MissionSection />
         </div>
 
-        <div>
+        <div className="block lg:hidden">
           <MissionSectionMobile />
         </div>
 
