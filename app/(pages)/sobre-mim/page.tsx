@@ -5,6 +5,7 @@ import { AchievementSectionMobile } from "@/app/components/about-me/achievement-
 import BannerSectionAboutMe from "@/app/components/about-me/banner-section-about-me";
 import { BannerSectionAboutMeMobile } from "@/app/components/about-me/banner-section-about-me-mobile";
 import MissionSection from "@/app/components/about-me/mission-section";
+import MissionSectionMobile from "@/app/components/about-me/mission.section-mobile";
 import OverviewSection from "@/app/components/about-me/overview-section";
 import { OverviewSectionMobile } from "@/app/components/about-me/overview-section-mobile";
 import TransformerSection from "@/app/components/about-me/transformer-section";
@@ -66,7 +67,15 @@ export default function AboutMe() {
         <div className="block lg:hidden">
           <AchievementSectionMobile />
         </div>
-        <MissionSection />
+
+        <div className="hidden lg:block">
+          <MissionSection />
+        </div>
+
+        <div>
+          <MissionSectionMobile />
+        </div>
+
         <div className="hidden lg:block">
           <Footer />
         </div>
