@@ -10,6 +10,7 @@ interface AchievementCardProps {
   title: string;
   description: string;
   height?: number;
+  setPaused?: (value: boolean) => void;
 }
 
 const AchievementCard: React.FC<AchievementCardProps> = ({
@@ -17,8 +18,13 @@ const AchievementCard: React.FC<AchievementCardProps> = ({
   title,
   description,
   height = 188,
+  setPaused,
 }) => (
-  <li style={{ width: 508, height }}>
+  <li
+    style={{ width: 508, height }}
+    onMouseEnter={() => setPaused?.(true)}
+    onMouseLeave={() => setPaused?.(false)}
+  >
     <div
       className="framer-card-container"
       style={{ width: 508, height, flexShrink: 0 }}
@@ -84,6 +90,7 @@ const AchievementCard: React.FC<AchievementCardProps> = ({
 
 const AchievementSection: React.FC = () => {
   const scrollRef = useRef<HTMLUListElement>(null);
+  const pausedRef = useRef(false);
 
   const achievements = useMemo(
     () => [
@@ -145,17 +152,14 @@ const AchievementSection: React.FC = () => {
 
     let totalHeight = 0;
     scrollElement.childNodes.forEach((child) => {
-      if (child instanceof HTMLElement) {
-        totalHeight += child.offsetHeight + 100;
-      }
+      if (child instanceof HTMLElement) totalHeight += child.offsetHeight + 100;
     });
 
     let translateY = 0;
     const speed = 1;
-    let paused = false;
 
     const animate = () => {
-      if (!paused) {
+      if (!pausedRef.current) {
         translateY -= speed;
         if (Math.abs(translateY) >= totalHeight / 3) {
           translateY += totalHeight / 2;
@@ -165,19 +169,9 @@ const AchievementSection: React.FC = () => {
       requestAnimationFrame(animate);
     };
 
-    const handleMouseEnter = () => (paused = true);
-    const handleMouseLeave = () => (paused = false);
-
-    scrollElement.addEventListener("mouseenter", handleMouseEnter);
-    scrollElement.addEventListener("mouseleave", handleMouseLeave);
-
     const animationId = requestAnimationFrame(animate);
 
-    return () => {
-      cancelAnimationFrame(animationId);
-      scrollElement.removeEventListener("mouseenter", handleMouseEnter);
-      scrollElement.removeEventListener("mouseleave", handleMouseLeave);
-    };
+    return () => cancelAnimationFrame(animationId);
   }, [loopedAchievements]);
 
   return (
@@ -228,6 +222,7 @@ const AchievementSection: React.FC = () => {
                       title={achievement.title}
                       description={achievement.description}
                       height={achievement.height}
+                      setPaused={(val) => (pausedRef.current = val)}
                     />
                   ))}
                 </ul>
