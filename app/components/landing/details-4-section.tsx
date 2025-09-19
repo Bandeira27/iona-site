@@ -1,6 +1,6 @@
 import React from "react";
 import { ScrollReveal } from "../scroll-reveal";
-import ImageIonaDetails4 from "@/app/assets/image-iona-details-4.jpg";
+import ImageIonaDetails4 from "@/app/assets/image-iona-details-four.png";
 import Image from "next/image";
 
 export default function Details4Section() {
