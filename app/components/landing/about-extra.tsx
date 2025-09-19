@@ -3,6 +3,7 @@
 import { ScrollReveal } from "../scroll-reveal";
 import IonaFirstImage from "../../assets/iona-image-first.jpg";
 import IonaSecondImage from "../../assets/iona-image-second.jpg";
+import IaFirt from "../../assets/ia-first-image.png";
 import Image from "next/image";
 
 export function AboutExtraSection() {
@@ -97,13 +98,22 @@ export function AboutExtraSection() {
                         inset: 0,
                       }}
                     >
-                      <div className="flex font-semibold fel w-full h-full text-2xl items-center justify-center rounded-xl border bg-[#19193A] text-white">
-                        <span className="w-9/12 text-center">
-                          {" "}
-                          Cultura IA-first. Antes da ferramenta,{" "}
-                          <p className="italic"> a cultura.</p>
-                        </span>
-                      </div>
+                      <Image
+                        decoding="async"
+                        loading="lazy"
+                        width="1360"
+                        height="1133"
+                        src={IaFirt}
+                        alt=""
+                        style={{
+                          display: "block",
+                          width: "100%",
+                          height: "100%",
+                          borderRadius: "inherit",
+                          objectPosition: "center bottom",
+                          objectFit: "cover",
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
