@@ -90,8 +90,8 @@ export default function OverviewSection() {
                         i % 3 === 0
                           ? ImageMarqueeFirst
                           : i % 3 === 1
-                          ? ImageMarqueeSecond
-                          : ImageMarqueeThree
+                            ? ImageMarqueeSecond
+                            : ImageMarqueeThree
                       }
                       alt="Image"
                       style={{

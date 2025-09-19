@@ -18,7 +18,7 @@ export function OverviewSectionMobile() {
           className: isFirstImage ? "framer-c5t4yn" : "framer-1y7fqd4",
         };
       }),
-    []
+    [],
   );
 
   useEffect(() => {

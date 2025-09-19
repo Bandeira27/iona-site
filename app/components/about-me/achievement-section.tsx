@@ -138,12 +138,12 @@ const AchievementSection: React.FC = () => {
           "Trabalho com empresas que querem os benefícios da Inteligência Artificial, mas ainda não sabem como agir. É aí que a transformação trava. É aí que eu entro.",
       },
     ],
-    []
+    [],
   );
 
   const loopedAchievements = useMemo(
     () => [...achievements, ...achievements],
-    [achievements]
+    [achievements],
   );
 
   useEffect(() => {
