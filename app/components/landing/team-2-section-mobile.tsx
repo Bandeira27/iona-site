@@ -52,6 +52,7 @@ export default function Team2SectionMobile() {
                       >
                         <Image
                           decoding="async"
+                          unoptimized
                           width={4914}
                           height={2604}
                           sizes="max((min(100vw - 100px, 1200px) - 30px) / 2, 1px)"
@@ -210,7 +211,7 @@ export default function Team2SectionMobile() {
                           decoding="async"
                           width={4914}
                           height={2532}
-                          sizes="max((min(100vw - 100px, 1200px) - 30px) / 2, 1px)"
+                          sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                           src={ImageForbesTech}
                           alt=""
                           style={{
@@ -372,7 +373,7 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={4914}
                         height={2796}
-                        sizes="max((min(100vw - 100px, 1200px) - 30px) / 2, 1px)"
+                        sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                         src={ImageNeofeed}
                         alt=""
                         style={{
@@ -529,7 +530,7 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={4914}
                         height={2796}
-                        sizes="max((min(100vw - 100px, 1200px) - 30px) / 2, 1px)"
+                        sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                         src={ImagePipeline}
                         alt=""
                         style={{
@@ -691,7 +692,7 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={5757}
                         height={2868}
-                        sizes="max((min(100vw - 100px, 1200px) - 30px) / 2, 1px)"
+                        sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                         src={ImageBrazilJournal}
                         alt=""
                         style={{
@@ -846,7 +847,7 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={2946}
                         height={1553}
-                        sizes="max((min(100vw - 100px, 1200px) - 30px) / 2, 1px)"
+                        sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                         src={ImagePodcast}
                         alt=""
                         style={{
