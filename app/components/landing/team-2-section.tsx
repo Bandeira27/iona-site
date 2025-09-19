@@ -106,7 +106,7 @@ export function Team2Section() {
                       </p>
 
                       <p
-                        className="framer-text framer-styles-preset-755d1 !text-2xl max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-40 group-hover:mt-4"
+                        className="framer-text framer-styles-preset-755d1 !text-2xl max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-40 group-hover:mt-4 !normal-case"
                         style={
                           {
                             ["--framer-text-color"]:
@@ -212,7 +212,7 @@ export function Team2Section() {
                       </p>
 
                       <p
-                        className="framer-text framer-styles-preset-755d1 !text-2xl max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-40 group-hover:mt-4"
+                        className="framer-text framer-styles-preset-755d1 !text-2xl max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-40 group-hover:mt-4 !normal-case"
                         style={
                           {
                             ["--framer-text-color"]:
@@ -322,7 +322,7 @@ export function Team2Section() {
                         </p>
                         {/* Texto que aparece no hover */}
                         <p
-                          className="framer-text framer-styles-preset-755d1 !text-2xl max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-40 group-hover:mt-4"
+                          className="framer-text framer-styles-preset-755d1 !text-2xl max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-40 group-hover:mt-4 !normal-case"
                           style={
                             {
                               ["--framer-text-color"]:
@@ -426,7 +426,7 @@ export function Team2Section() {
                         </p>
                         {/* Texto que aparece no hover */}
                         <p
-                          className="framer-text framer-styles-preset-755d1 !text-2xl max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-40 group-hover:mt-4"
+                          className="framer-text framer-styles-preset-755d1 !text-2xl max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-40 group-hover:mt-4 !normal-case"
                           style={
                             {
                               ["--framer-text-color"]:
@@ -539,7 +539,7 @@ export function Team2Section() {
                         </p>
 
                         <p
-                          className="framer-text framer-styles-preset-755d1 !text-2xl max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-40 group-hover:mt-4"
+                          className="framer-text framer-styles-preset-755d1 !text-2xl max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-40 group-hover:mt-4 !normal-case"
                           style={
                             {
                               ["--framer-text-color"]:
@@ -645,7 +645,7 @@ export function Team2Section() {
                         </p>
 
                         <p
-                          className="framer-text framer-styles-preset-755d1 !text-2xl max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-40 group-hover:mt-4"
+                          className="framer-text framer-styles-preset-755d1 !text-2xl max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-40 group-hover:mt-4 !normal-case"
                           style={
                             {
                               ["--framer-text-color"]:
