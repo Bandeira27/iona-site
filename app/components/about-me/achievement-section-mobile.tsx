@@ -107,7 +107,7 @@ export function AchievementSectionMobile() {
                   }}
                 >
                   <p
-                    className="framer-text"
+                    className="framer-text !mb-6"
                     style={
                       {
                         "--font-selector": "R0Y7UG9wcGlucy01MDA=",
@@ -139,7 +139,7 @@ export function AchievementSectionMobile() {
                   }}
                 >
                   <p
-                    className="framer-text"
+                    className="framer-text !mb-6"
                     style={
                       {
                         "--font-selector": "R0Y7UG9wcGlucy01MDA=",
