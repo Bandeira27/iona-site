@@ -147,7 +147,7 @@ export function AchievementSectionMobile() {
                           '"Poppins", "Poppins Placeholder", sans-serif',
                         "--framer-font-size": "22px",
                         "--framer-font-weight": 500,
-                        "--framer-line-height": "100%",
+                        "--framer-line-height": "135%",
                         "--framer-text-alignment": "center",
                         "--framer-text-color":
                           "var(--token-ae325ebd-12af-4f1b-9546-d54d17049faf, rgb(255, 255, 255))",
