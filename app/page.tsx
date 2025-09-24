@@ -7,6 +7,7 @@ import { BrandSection } from "./components/landing/brand-section";
 import { Details1Section } from "./components/landing/details-1-section";
 import { Details1SectionMobile } from "./components/landing/details-1-section-mobile";
 import { Details2Section } from "./components/landing/details-2-section";
+import { Details2SectionMobile } from "./components/landing/details-2-section-mobile";
 import { Details3Section } from "./components/landing/details-3-section";
 import Details4Section from "./components/landing/details-4-section";
 import { ExpertiseSection } from "./components/landing/expertise-section";
@@ -85,7 +86,13 @@ export default function Landing() {
           <Details1SectionMobile />
         </div>
 
+  <div className="hidden lg:block">
+
         <Details2Section />
+  </div>
+  <div className="block lg:hidden">
+    <Details2SectionMobile />
+  </div>
         <Details3Section />
         <BrandSection />
         <Details4Section />

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
 import IonaCoreApresentation from "@/app/assets/iona-core-apresentation.jpeg";
 
-export function Details2Section() {
+export function Details2SectionMobile() {
   return (
     <ScrollReveal>
       <section className="framer-gm64b5" data-framer-name="Details Section">
@@ -174,7 +174,7 @@ export function Details2Section() {
                       width: "100%",
                       height: "100%",
                       borderRadius: "inherit",
-                      objectPosition: "bottom right",
+                      objectPosition: "80% 50%",
                       objectFit: "cover",
                     }}
                   />
