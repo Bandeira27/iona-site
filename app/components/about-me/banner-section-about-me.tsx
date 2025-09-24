@@ -18,8 +18,6 @@ export default function BannerSectionAboutMe() {
               decoding="async"
               width={3449}
               height={1500}
-              sizes="min(1024vw - 60px, 1200px)"
-              unoptimized
               src={ImageHuman}
               alt=""
               style={{
