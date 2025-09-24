@@ -174,7 +174,7 @@ export function Details2SectionMobile() {
                       width: "100%",
                       height: "100%",
                       borderRadius: "inherit",
-                      objectPosition: "80% 50%",
+                      objectPosition: "83% 50%",
                       objectFit: "cover",
                     }}
                   />
