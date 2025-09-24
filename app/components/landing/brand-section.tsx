@@ -17,7 +17,7 @@ import SvgNelson from "@/app/assets/svg-nelson.svg";
 export function BrandSection() {
   return (
     <section className="framer-1bsb92h" data-framer-name="Brand Section">
-      <ScrollReveal>
+      <ScrollReveal className="w-full">
         <div
           className="framer-1t86zwu"
           data-framer-name="Container"
