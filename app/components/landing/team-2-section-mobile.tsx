@@ -374,7 +374,6 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={4914}
                         height={2796}
-                        sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                         src={ImageNeofeed}
                         alt=""
                         style={{
@@ -382,7 +381,7 @@ export default function Team2SectionMobile() {
                           width: "100%",
                           height: "100%",
                           borderRadius: "inherit",
-                          objectPosition: "center top",
+                          objectPosition: "73% top",
                           objectFit: "cover",
                         }}
                       />
