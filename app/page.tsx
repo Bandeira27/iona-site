@@ -86,13 +86,12 @@ export default function Landing() {
           <Details1SectionMobile />
         </div>
 
-  <div className="hidden lg:block">
-
-        <Details2Section />
-  </div>
-  <div className="block lg:hidden">
-    <Details2SectionMobile />
-  </div>
+        <div className="hidden lg:block">
+          <Details2Section />
+        </div>
+        <div className="block lg:hidden">
+          <Details2SectionMobile />
+        </div>
         <Details3Section />
         <BrandSection />
         <Details4Section />

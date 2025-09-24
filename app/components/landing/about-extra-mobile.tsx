@@ -76,7 +76,7 @@ export function AboutExtraMobile() {
                         borderRadius: "inherit",
                         objectPosition: "center -25%",
                         objectFit: "cover",
-                        transform: "translateX(2%)"
+                        transform: "translateX(2%)",
                       }}
                     />
                   </div>

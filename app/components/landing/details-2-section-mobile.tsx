@@ -39,7 +39,7 @@ export function Details2SectionMobile() {
                         data-framer-component-type="RichTextContainer"
                       >
                         <h2
-                          className="framer-text"
+                          className="framer-text !text-[32px]"
                           style={
                             {
                               ["--font-selector"]: "R0Y7UG9wcGlucy1yZWd1bGFy",
