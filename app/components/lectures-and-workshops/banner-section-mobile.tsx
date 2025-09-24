@@ -4,10 +4,13 @@ import Image from "next/image";
 export function BannerSectionMobile() {
   return (
     <section className="framer-1teemmu" data-framer-name="Banner Section">
-      <div className="framer-1j3kn4h !overflow-hidden" data-framer-name="Container">
+      <div
+        className="framer-1j3kn4h !overflow-hidden"
+        data-framer-name="Container"
+      >
         <div className="framer-ghuv6h" data-framer-name="Content">
           <div
-          className="overflow-hidden"
+            className="overflow-hidden"
             data-framer-background-image-wrapper="true"
             style={{
               position: "absolute",
@@ -29,7 +32,7 @@ export function BannerSectionMobile() {
                 borderRadius: "inherit",
                 objectPosition: "54% bottom",
                 objectFit: "cover",
-                transform: 'translateY(12%)'
+                transform: "translateY(12%)",
               }}
             />
           </div>

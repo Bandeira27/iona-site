@@ -32,7 +32,6 @@ export default function LectureTwo() {
                       loading="lazy"
                       width="1188"
                       height="853"
-                      sizes="calc(min(100vw - 60px, 1200px) * 0.4292)"
                       src={IonaLastApresentation}
                       alt="Image"
                       style={{

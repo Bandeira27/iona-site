@@ -241,7 +241,6 @@ export function BrandSectionMobile() {
 
               <div className="framer-a82vs4" data-framer-name="Line" />
 
-
               <div className="w-full">
                 <div
                   className="framer-rqzpdj flex flex-wrap !w-full items-center !justify-center !border-b border-solid border-[#ffffff1a]"

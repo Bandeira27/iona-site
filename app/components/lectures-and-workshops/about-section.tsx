@@ -18,7 +18,7 @@ export default function AboutSection() {
             <div className="framer-1qaytpz" data-framer-name="Image Wrapper">
               <div className="framer-kc2w0b !overflow-hidden">
                 <div
-                className="overflow-hidden"
+                  className="overflow-hidden"
                   data-framer-background-image-wrapper="true"
                   style={{
                     position: "absolute",
@@ -40,7 +40,7 @@ export default function AboutSection() {
                       borderRadius: "inherit",
                       objectPosition: "30.5% center",
                       objectFit: "cover",
-                      transform: 'translateY(-8%)'
+                      transform: "translateY(-8%)",
                     }}
                   />
                 </div>

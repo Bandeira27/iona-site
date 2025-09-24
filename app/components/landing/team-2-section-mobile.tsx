@@ -53,7 +53,7 @@ export default function Team2SectionMobile() {
                         <Image
                           decoding="async"
                           width={4914}
-                          height={2604} 
+                          height={2604}
                           className="scale-108"
                           src={ImageForbesGirl}
                           alt=""
@@ -63,7 +63,7 @@ export default function Team2SectionMobile() {
                             height: "100%",
                             borderRadius: "inherit",
                             objectPosition: "74% bottom",
-                            transform: 'translateY(-2%)',
+                            transform: "translateY(-2%)",
                             objectFit: "cover",
                           }}
                         />
@@ -212,7 +212,7 @@ export default function Team2SectionMobile() {
                           width={4914}
                           height={2532}
                           src={ImageForbesTech}
-                              className="scale-110"
+                          className="scale-110"
                           alt=""
                           style={{
                             display: "block",
@@ -221,7 +221,7 @@ export default function Team2SectionMobile() {
                             borderRadius: "inherit",
                             objectPosition: "74% top",
                             objectFit: "cover",
-                            transform: 'translateY(-4%)'
+                            transform: "translateY(-4%)",
                           }}
                         />
                       </div>

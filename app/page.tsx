@@ -94,14 +94,13 @@ export default function Landing() {
         <div className="block lg:hidden">
           <Details2SectionMobile />
         </div>
-          <div className="hidden lg:block">
+        <div className="hidden lg:block">
+          <Details3Section />
+        </div>
 
-        <Details3Section />
-          </div>
-
- <div className="block lg:hidden">
-  <Details3SectionMobile />
- </div>
+        <div className="block lg:hidden">
+          <Details3SectionMobile />
+        </div>
 
         <div className="hidden lg:block">
           <BrandSection />

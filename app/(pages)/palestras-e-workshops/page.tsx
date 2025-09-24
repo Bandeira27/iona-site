@@ -35,13 +35,12 @@ export default function LecturesAndWorkshops() {
         <div className="block lg:hidden">
           <BannerSectionMobile />
         </div>
-         <div className="hidden lg:block">
-        <AboutSection />
-         </div>
-<div className="block lg:hidden">
-  <AboutSectionMobile />
-</div>
-
+        <div className="hidden lg:block">
+          <AboutSection />
+        </div>
+        <div className="block lg:hidden">
+          <AboutSectionMobile />
+        </div>
 
         <div className="hidden lg:block">
           <LectureOne />
