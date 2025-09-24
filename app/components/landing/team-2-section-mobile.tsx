@@ -337,7 +337,7 @@ export default function Team2SectionMobile() {
       </div>
 
       {/* Second major Content block */}
-      <div className="framer-184cisk" data-framer-name="Content">
+      <div className="framer-184cisk mb-4" data-framer-name="Content">
         <div
           className="framer-1ujcexm"
           data-framer-name="Team Card Wrapper"
@@ -530,7 +530,6 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={4914}
                         height={2796}
-                        sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                         src={ImagePipeline}
                         alt=""
                         style={{
@@ -538,7 +537,7 @@ export default function Team2SectionMobile() {
                           width: "100%",
                           height: "100%",
                           borderRadius: "inherit",
-                          objectPosition: "center top",
+                          objectPosition: "70% top",
                           objectFit: "cover",
                         }}
                       />
