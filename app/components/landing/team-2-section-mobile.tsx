@@ -19,7 +19,7 @@ export default function Team2SectionMobile() {
       >
         <div className="framer-ygmwby" data-framer-name="Content">
           <div
-            className="framer-qbj29l mb-4"
+            className="framer-qbj29l mb-10 "
             data-framer-name="Team Card Wrapper"
           >
             <div className="ssr-variant hidden-dmz5yz hidden-72rtr7">
@@ -195,7 +195,7 @@ export default function Team2SectionMobile() {
                     style={{ opacity: 1 }}
                   >
                     <div
-                      className="framer-1ubxvsl"
+                      className="framer-1ubxvsl overflow-hidden"
                       data-framer-name="Image"
                       style={{ borderRadius: "10px", opacity: 1 }}
                     >
@@ -211,16 +211,17 @@ export default function Team2SectionMobile() {
                           decoding="async"
                           width={4914}
                           height={2532}
-                          sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                           src={ImageForbesTech}
+                              className="scale-110"
                           alt=""
                           style={{
                             display: "block",
                             width: "100%",
                             height: "100%",
                             borderRadius: "inherit",
-                            objectPosition: "center top",
+                            objectPosition: "74% top",
                             objectFit: "cover",
+                            transform: 'translateY(-4%)'
                           }}
                         />
                       </div>
@@ -338,7 +339,7 @@ export default function Team2SectionMobile() {
       {/* Second major Content block */}
       <div className="framer-184cisk" data-framer-name="Content">
         <div
-          className="framer-1ujcexm mb-4"
+          className="framer-1ujcexm"
           data-framer-name="Team Card Wrapper"
         >
           <div className="ssr-variant hidden-dmz5yz hidden-72rtr7">
