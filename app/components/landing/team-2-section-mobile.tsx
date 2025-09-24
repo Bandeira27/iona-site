@@ -691,7 +691,6 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={5757}
                         height={2868}
-                        sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                         src={ImageBrazilJournal}
                         alt=""
                         style={{
@@ -699,7 +698,7 @@ export default function Team2SectionMobile() {
                           width: "100%",
                           height: "100%",
                           borderRadius: "inherit",
-                          objectPosition: "center top",
+                          objectPosition: "70% top",
                           objectFit: "cover",
                         }}
                       />
