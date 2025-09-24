@@ -4,9 +4,10 @@ import Image from "next/image";
 export function BannerSectionMobile() {
   return (
     <section className="framer-1teemmu" data-framer-name="Banner Section">
-      <div className="framer-1j3kn4h" data-framer-name="Container">
+      <div className="framer-1j3kn4h !overflow-hidden" data-framer-name="Container">
         <div className="framer-ghuv6h" data-framer-name="Content">
           <div
+          className="overflow-hidden"
             data-framer-background-image-wrapper="true"
             style={{
               position: "absolute",
@@ -18,7 +19,7 @@ export function BannerSectionMobile() {
               decoding="async"
               width="3118"
               height="1551"
-              sizes="min(100vw - 40px, 1200px)"
+              className="scale-132"
               src={ImageWorkshopBanner}
               alt=""
               style={{
@@ -26,8 +27,9 @@ export function BannerSectionMobile() {
                 width: "100%",
                 height: "100%",
                 borderRadius: "inherit",
-                objectPosition: "center center",
+                objectPosition: "54% bottom",
                 objectFit: "cover",
+                transform: 'translateY(12%)'
               }}
             />
           </div>
