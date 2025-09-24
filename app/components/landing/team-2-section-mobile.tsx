@@ -845,7 +845,6 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={2946}
                         height={1553}
-                        sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                         src={ImagePodcast}
                         alt=""
                         style={{
@@ -853,7 +852,7 @@ export default function Team2SectionMobile() {
                           width: "100%",
                           height: "100%",
                           borderRadius: "inherit",
-                          objectPosition: "center top",
+                          objectPosition: "1% top",
                           objectFit: "cover",
                         }}
                       />
