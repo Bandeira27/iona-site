@@ -19,7 +19,6 @@ export default function BannerSection() {
               decoding="async"
               width="3118"
               height="1551"
-              sizes="min(100vw - 40px, 1200px)"
               src={ImageWorkshopBanner}
               alt=""
               style={{
@@ -27,7 +26,7 @@ export default function BannerSection() {
                 width: "100%",
                 height: "100%",
                 borderRadius: "inherit",
-                objectPosition: "center center",
+                objectPosition: "center 29%",
                 objectFit: "cover",
               }}
             />
@@ -88,7 +87,7 @@ export default function BannerSection() {
                   "--framer-font-family":
                     '"Poppins", "Poppins Placeholder", sans-serif',
                   "--framer-font-size": "20px",
-                  "--framer-line-height": "150%",
+                  "--framer-line-height": "135%",
                   "--framer-text-color":
                     "var(--token-ae325ebd-12af-4f1b-9546-d54d17049faf, rgb(255, 255, 255))",
                 } as React.CSSProperties
