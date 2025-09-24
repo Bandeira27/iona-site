@@ -4,13 +4,14 @@ import { LandingHeader } from "@/app/components/landing/header";
 import { LandingHeaderMobile } from "@/app/components/landing/header-mobile";
 import { LectureTwoMobile } from "@/app/components/landing/lectures-two-mobile";
 import AboutSection from "@/app/components/lectures-and-workshops/about-section";
-import { BannerSectionMobile } from "@/app/components/lectures-and-workshops/about-section-mobile";
+import { BannerSectionMobile } from "@/app/components/lectures-and-workshops/banner-section-mobile";
 import BannerSection from "@/app/components/lectures-and-workshops/banner-section";
 import LectureThree from "@/app/components/lectures-and-workshops/lecture-three";
 import LectureTwo from "@/app/components/lectures-and-workshops/lecture-two";
 import LectureOne from "@/app/components/lectures-and-workshops/lectures-one";
 import { LectureOneMobile } from "@/app/components/lectures-and-workshops/lectures-one-mobile";
 import { LectureThreeMobile } from "@/app/components/lectures-and-workshops/lectures-three-mobile";
+import AboutSectionMobile from "@/app/components/lectures-and-workshops/about-section-mobile";
 
 export default function LecturesAndWorkshops() {
   return (
@@ -34,8 +35,13 @@ export default function LecturesAndWorkshops() {
         <div className="block lg:hidden">
           <BannerSectionMobile />
         </div>
-
+         <div className="hidden lg:block">
         <AboutSection />
+         </div>
+<div className="block lg:hidden">
+  <AboutSectionMobile />
+</div>
+
 
         <div className="hidden lg:block">
           <LectureOne />
