@@ -33,12 +33,12 @@ export default function Team2SectionMobile() {
                   style={{ width: "100%", opacity: 1 }}
                 >
                   <div
-                    className="framer-1901xld"
+                    className="framer-1901xld !overflow-hidden"
                     data-framer-name="Image Wrapper"
                     style={{ opacity: 1 }}
                   >
                     <div
-                      className="framer-1ubxvsl"
+                      className="framer-1ubxvsl !overflow-hidden"
                       data-framer-name="Image"
                       style={{ borderRadius: "10px", opacity: 1 }}
                     >
@@ -52,10 +52,9 @@ export default function Team2SectionMobile() {
                       >
                         <Image
                           decoding="async"
-                          unoptimized
                           width={4914}
-                          height={2604}
-                          sizes="max((min(100vw - 100px, 1200px) - 30px) / 2, 1px)"
+                          height={2604} 
+                          className="scale-108"
                           src={ImageForbesGirl}
                           alt=""
                           style={{
@@ -63,7 +62,8 @@ export default function Team2SectionMobile() {
                             width: "100%",
                             height: "100%",
                             borderRadius: "inherit",
-                            objectPosition: "center top",
+                            objectPosition: "74% bottom",
+                            transform: 'translateY(-2%)',
                             objectFit: "cover",
                           }}
                         />
