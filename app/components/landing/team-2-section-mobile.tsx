@@ -19,7 +19,7 @@ export default function Team2SectionMobile() {
       >
         <div className="framer-ygmwby" data-framer-name="Content">
           <div
-            className="framer-qbj29l mb-10 "
+            className="framer-qbj29l mb-10"
             data-framer-name="Team Card Wrapper"
           >
             <div className="ssr-variant hidden-dmz5yz hidden-72rtr7">
@@ -339,7 +339,7 @@ export default function Team2SectionMobile() {
       {/* Second major Content block */}
       <div className="framer-184cisk mb-4" data-framer-name="Content">
         <div
-          className="framer-1ujcexm"
+          className="framer-1ujcexm mb-10"
           data-framer-name="Team Card Wrapper"
         >
           <div className="ssr-variant hidden-dmz5yz hidden-72rtr7">
