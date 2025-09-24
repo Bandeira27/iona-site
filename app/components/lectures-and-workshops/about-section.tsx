@@ -38,9 +38,9 @@ export default function AboutSection() {
                       width: "100%",
                       height: "100%",
                       borderRadius: "inherit",
-                      objectPosition: "30% center",
+                      objectPosition: "30.5% center",
                       objectFit: "cover",
-                      transform: 'translateY(-7%)'
+                      transform: 'translateY(-8%)'
                     }}
                   />
                 </div>
@@ -63,7 +63,6 @@ export default function AboutSection() {
                       decoding="async"
                       width={6461}
                       height={6000}
-                      sizes="250px"
                       src={ImageIonaApresentationReverse}
                       alt="Image"
                       style={{
@@ -71,7 +70,7 @@ export default function AboutSection() {
                         width: "100%",
                         height: "100%",
                         borderRadius: "inherit",
-                        objectPosition: "center center",
+                        objectPosition: "42.5% center",
                         objectFit: "cover",
                       }}
                     />

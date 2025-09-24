@@ -71,7 +71,7 @@ export default function AboutSectionMobile() {
                         width: "100%",
                         height: "100%",
                         borderRadius: "inherit",
-                        objectPosition: "center center",
+                        objectPosition: "40% center",
                         objectFit: "cover",
                       }}
                     />
