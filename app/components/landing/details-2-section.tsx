@@ -166,7 +166,6 @@ export function Details2Section() {
                     loading="lazy"
                     width="3069"
                     height="2773"
-                    sizes="500px"
                     src={IonaCoreApresentation}
                     alt=""
                     style={{

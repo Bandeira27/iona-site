@@ -30,7 +30,6 @@ export function Details3Section() {
                     loading="lazy"
                     width="3101"
                     height="2030"
-                    sizes="500px"
                     className="scale-100"
                     src={ImageWorkshopBanner}
                     alt=""
