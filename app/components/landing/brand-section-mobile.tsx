@@ -14,10 +14,10 @@ import SvgMereo from "@/app/assets/svg-mereo.svg";
 import SvgTecnisa from "@/app/assets/svg-tecnisa.svg";
 import SvgNelson from "@/app/assets/svg-nelson.svg";
 
-export function BrandSection() {
+export function BrandSectionMobile() {
   return (
     <section className="framer-1bsb92h" data-framer-name="Brand Section">
-      <ScrollReveal>
+      <ScrollReveal className="w-full">
         <div
           className="framer-1t86zwu"
           data-framer-name="Container"
@@ -73,8 +73,11 @@ export function BrandSection() {
               data-framer-name="Logos"
             >
               {/* Top Row */}
-              <div className="framer-8l1wwg" data-framer-name="Top Row">
-                <div className="framer-54wrb5" data-framer-name="Logo Wrapper">
+              <div className="flex flex-wrap justify-between w-full">
+                <div
+                  className="flex flex-wrap !w-full items-center !justify-center framer-54wrb5 !border-b border-solid border-[#ffffff1a]"
+                  data-framer-name="Logo Wrapper"
+                >
                   <div className="ssr-variant hidden-gmy0uk">
                     <div className="framer-oh5ixy">
                       <div
@@ -111,7 +114,10 @@ export function BrandSection() {
 
                 <div className="framer-o2hzgd" data-framer-name="Line" />
 
-                <div className="framer-1ejdauz" data-framer-name="Logo Wrapper">
+                <div
+                  className="framer-1ejdauz flex flex-wrap !w-full items-center !justify-center !border-b border-solid border-[#ffffff1a]"
+                  data-framer-name="Logo Wrapper"
+                >
                   <div className="ssr-variant hidden-gmy0uk">
                     <div className="framer-6c0n8">
                       <div
@@ -151,7 +157,10 @@ export function BrandSection() {
                   data-framer-name="Line"
                 />
 
-                <div className="framer-a4xyzc" data-framer-name="Logo Wrapper">
+                <div
+                  className="framer-a4xyzc flex flex-wrap !w-full items-center !justify-center !border-b border-solid border-[#ffffff1a]"
+                  data-framer-name="Logo Wrapper"
+                >
                   <div className="ssr-variant hidden-gmy0uk">
                     <div className="framer-15af7jk">
                       <div
@@ -191,7 +200,10 @@ export function BrandSection() {
                   data-framer-name="Line"
                 />
 
-                <div className="framer-a4qzhr" data-framer-name="Logo Wrapper">
+                <div
+                  className="framer-a4qzhr flex flex-wrap !w-full items-center !justify-center !border-b border-solid border-[#ffffff1a]"
+                  data-framer-name="Logo Wrapper"
+                >
                   <div className="ssr-variant hidden-gmy0uk">
                     <div className="framer-1ys34bc">
                       <div
@@ -229,9 +241,12 @@ export function BrandSection() {
 
               <div className="framer-a82vs4" data-framer-name="Line" />
 
-              {/* Middle Row */}
-              <div className="framer-1wi44y9" data-framer-name="Bottom Row">
-                <div className="framer-rqzpdj" data-framer-name="Logo Wrapper">
+
+              <div className="w-full">
+                <div
+                  className="framer-rqzpdj flex flex-wrap !w-full items-center !justify-center !border-b border-solid border-[#ffffff1a]"
+                  data-framer-name="Logo Wrapper"
+                >
                   <div className="ssr-variant hidden-gmy0uk">
                     <div className="framer-1s4okaa">
                       <div
@@ -268,7 +283,10 @@ export function BrandSection() {
 
                 <div className="framer-6zptqo" data-framer-name="Line" />
 
-                <div className="framer-9kdb3z" data-framer-name="Logo Wrapper">
+                <div
+                  className="framer-9kdb3z flex flex-wrap !w-full items-center !justify-center !border-b border-solid border-[#ffffff1a]"
+                  data-framer-name="Logo Wrapper"
+                >
                   <div className="ssr-variant hidden-gmy0uk">
                     <div className="framer-kregau">
                       <div
@@ -308,7 +326,10 @@ export function BrandSection() {
                   data-framer-name="Line"
                 />
 
-                <div className="framer-1gpovfi" data-framer-name="Logo Wrapper">
+                <div
+                  className="framer-1gpovfi flex flex-wrap !w-full items-center !justify-center !border-b border-solid border-[#ffffff1a]"
+                  data-framer-name="Logo Wrapper"
+                >
                   <div className="ssr-variant hidden-gmy0uk">
                     <div className="framer-rq1p33">
                       <div
@@ -345,7 +366,10 @@ export function BrandSection() {
 
                 <div className="framer-1etcwgd" data-framer-name="Line" />
 
-                <div className="framer-ymn58h" data-framer-name="Logo Wrapper">
+                <div
+                  className="framer-ymn58h flex flex-wrap !w-full items-center !justify-center !border-b border-solid border-[#ffffff1a]"
+                  data-framer-name="Logo Wrapper"
+                >
                   <div className="ssr-variant hidden-gmy0uk">
                     <div className="framer-1f5txqm">
                       <div
@@ -384,8 +408,11 @@ export function BrandSection() {
               <div className="framer-152w91" data-framer-name="Line" />
 
               {/* Bottom Row */}
-              <div className="framer-70jd3h" data-framer-name="Bottom Row">
-                <div className="framer-1owwp1o" data-framer-name="Logo Wrapper">
+              <div className="w-full">
+                <div
+                  className="framer-1owwp1o flex flex-wrap !w-full items-center !justify-center !border-b border-solid border-[#ffffff1a]"
+                  data-framer-name="Logo Wrapper"
+                >
                   <div className="ssr-variant hidden-gmy0uk">
                     <div className="framer-n4xbe">
                       <div
@@ -422,7 +449,10 @@ export function BrandSection() {
 
                 <div className="framer-sw12e9" data-framer-name="Line" />
 
-                <div className="framer-ekawf7" data-framer-name="Logo Wrapper">
+                <div
+                  className="framer-ekawf7 flex flex-wrap !w-full items-center !justify-center !border-b border-solid border-[#ffffff1a]"
+                  data-framer-name="Logo Wrapper"
+                >
                   <div className="ssr-variant hidden-gmy0uk">
                     <div className="framer-114chsy">
                       <div
@@ -462,7 +492,10 @@ export function BrandSection() {
                   data-framer-name="Line"
                 />
 
-                <div className="framer-1ggbybz" data-framer-name="Logo Wrapper">
+                <div
+                  className="framer-1ggbybz flex flex-wrap !w-full items-center !justify-center !border-b border-solid border-[#ffffff1a]"
+                  data-framer-name="Logo Wrapper"
+                >
                   <div className="ssr-variant hidden-gmy0uk">
                     <div className="framer-1hjzyph">
                       <div
@@ -499,7 +532,10 @@ export function BrandSection() {
 
                 <div className="framer-1e6i4dw" data-framer-name="Line" />
 
-                <div className="framer-r2vhzx" data-framer-name="Logo Wrapper">
+                <div
+                  className="framer-r2vhzx flex flex-wrap !w-full items-center !justify-center !border-b border-solid border-[#ffffff1a]"
+                  data-framer-name="Logo Wrapper"
+                >
                   <div className="ssr-variant hidden-gmy0uk">
                     <div className="framer-7ybnqv">
                       <div
