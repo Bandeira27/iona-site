@@ -174,7 +174,7 @@ export function Details2Section() {
                       width: "100%",
                       height: "100%",
                       borderRadius: "inherit",
-                      objectPosition: "bottom right",
+                      objectPosition: "93% 50%",
                       objectFit: "cover",
                     }}
                   />
