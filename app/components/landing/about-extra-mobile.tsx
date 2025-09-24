@@ -65,6 +65,7 @@ export function AboutExtraMobile() {
                       loading="lazy"
                       width={4534}
                       height={5374}
+                      className="scale-120"
                       sizes="min(100vw - 40px, 1200px)"
                       src={IonaSecondImage}
                       alt="Image"
@@ -73,8 +74,9 @@ export function AboutExtraMobile() {
                         width: "100%",
                         height: "100%",
                         borderRadius: "inherit",
-                        objectPosition: "center center",
+                        objectPosition: "center -25%",
                         objectFit: "cover",
+                        transform: "translateX(2%)"
                       }}
                     />
                   </div>
