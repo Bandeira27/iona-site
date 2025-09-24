@@ -68,6 +68,7 @@ export function AboutExtraSection() {
                         decoding="async"
                         loading="lazy"
                         width="4534"
+                        className="scale-150"
                         height="5374"
                         sizes="min(100vw - 40px, 1200px)"
                         src={IonaSecondImage}
@@ -77,8 +78,9 @@ export function AboutExtraSection() {
                           width: "100%",
                           height: "100%",
                           borderRadius: "inherit",
-                          objectPosition: "center center",
+                          objectPosition: "center top",
                           objectFit: "cover",
+                          transform: "translateX(2%) translateY(15%)",
                         }}
                       />
                     </div>

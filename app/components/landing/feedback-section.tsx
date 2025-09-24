@@ -404,7 +404,6 @@ export function FeedbackSection() {
                                   decoding="async"
                                   width="4160"
                                   height="2773"
-                                  sizes="calc(min(100vw - 60px, 1200px) * 0.5833)"
                                   src={IonaFeedbackSectionFirst}
                                   alt="Image"
                                   style={{
@@ -421,7 +420,6 @@ export function FeedbackSection() {
                                   decoding="async"
                                   width="3876"
                                   height="2281"
-                                  sizes="calc(min(100vw - 60px, 1200px) * 0.5833)"
                                   src={IonaFeedbackSectionSecond}
                                   alt="Image"
                                   style={{

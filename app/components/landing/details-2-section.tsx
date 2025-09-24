@@ -166,7 +166,6 @@ export function Details2Section() {
                     loading="lazy"
                     width="3069"
                     height="2773"
-                    sizes="500px"
                     src={IonaCoreApresentation}
                     alt=""
                     style={{
@@ -174,7 +173,7 @@ export function Details2Section() {
                       width: "100%",
                       height: "100%",
                       borderRadius: "inherit",
-                      objectPosition: "center",
+                      objectPosition: "93% 50%",
                       objectFit: "cover",
                     }}
                   />

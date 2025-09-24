@@ -19,7 +19,7 @@ export default function Team2SectionMobile() {
       >
         <div className="framer-ygmwby" data-framer-name="Content">
           <div
-            className="framer-qbj29l mb-4"
+            className="framer-qbj29l mb-10"
             data-framer-name="Team Card Wrapper"
           >
             <div className="ssr-variant hidden-dmz5yz hidden-72rtr7">
@@ -33,12 +33,12 @@ export default function Team2SectionMobile() {
                   style={{ width: "100%", opacity: 1 }}
                 >
                   <div
-                    className="framer-1901xld"
+                    className="framer-1901xld !overflow-hidden"
                     data-framer-name="Image Wrapper"
                     style={{ opacity: 1 }}
                   >
                     <div
-                      className="framer-1ubxvsl"
+                      className="framer-1ubxvsl !overflow-hidden"
                       data-framer-name="Image"
                       style={{ borderRadius: "10px", opacity: 1 }}
                     >
@@ -52,10 +52,9 @@ export default function Team2SectionMobile() {
                       >
                         <Image
                           decoding="async"
-                          unoptimized
                           width={4914}
                           height={2604}
-                          sizes="max((min(100vw - 100px, 1200px) - 30px) / 2, 1px)"
+                          className="scale-108"
                           src={ImageForbesGirl}
                           alt=""
                           style={{
@@ -63,7 +62,8 @@ export default function Team2SectionMobile() {
                             width: "100%",
                             height: "100%",
                             borderRadius: "inherit",
-                            objectPosition: "center top",
+                            objectPosition: "74% bottom",
+                            transform: "translateY(-2%)",
                             objectFit: "cover",
                           }}
                         />
@@ -195,7 +195,7 @@ export default function Team2SectionMobile() {
                     style={{ opacity: 1 }}
                   >
                     <div
-                      className="framer-1ubxvsl"
+                      className="framer-1ubxvsl overflow-hidden"
                       data-framer-name="Image"
                       style={{ borderRadius: "10px", opacity: 1 }}
                     >
@@ -211,16 +211,17 @@ export default function Team2SectionMobile() {
                           decoding="async"
                           width={4914}
                           height={2532}
-                          sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                           src={ImageForbesTech}
+                          className="scale-110"
                           alt=""
                           style={{
                             display: "block",
                             width: "100%",
                             height: "100%",
                             borderRadius: "inherit",
-                            objectPosition: "center top",
+                            objectPosition: "74% top",
                             objectFit: "cover",
+                            transform: "translateY(-4%)",
                           }}
                         />
                       </div>
@@ -336,9 +337,9 @@ export default function Team2SectionMobile() {
       </div>
 
       {/* Second major Content block */}
-      <div className="framer-184cisk" data-framer-name="Content">
+      <div className="framer-184cisk mb-4" data-framer-name="Content">
         <div
-          className="framer-1ujcexm mb-4"
+          className="framer-1ujcexm mb-10"
           data-framer-name="Team Card Wrapper"
         >
           <div className="ssr-variant hidden-dmz5yz hidden-72rtr7">
@@ -373,7 +374,6 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={4914}
                         height={2796}
-                        sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                         src={ImageNeofeed}
                         alt=""
                         style={{
@@ -381,7 +381,7 @@ export default function Team2SectionMobile() {
                           width: "100%",
                           height: "100%",
                           borderRadius: "inherit",
-                          objectPosition: "center top",
+                          objectPosition: "73% top",
                           objectFit: "cover",
                         }}
                       />
@@ -530,7 +530,6 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={4914}
                         height={2796}
-                        sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                         src={ImagePipeline}
                         alt=""
                         style={{
@@ -538,7 +537,7 @@ export default function Team2SectionMobile() {
                           width: "100%",
                           height: "100%",
                           borderRadius: "inherit",
-                          objectPosition: "center top",
+                          objectPosition: "70% top",
                           objectFit: "cover",
                         }}
                       />
@@ -692,7 +691,6 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={5757}
                         height={2868}
-                        sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                         src={ImageBrazilJournal}
                         alt=""
                         style={{
@@ -700,7 +698,7 @@ export default function Team2SectionMobile() {
                           width: "100%",
                           height: "100%",
                           borderRadius: "inherit",
-                          objectPosition: "center top",
+                          objectPosition: "70% top",
                           objectFit: "cover",
                         }}
                       />
@@ -847,7 +845,6 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={2946}
                         height={1553}
-                        sizes="max((min(1024vw - 100px, 1200px) - 30px) / 2, 1px)"
                         src={ImagePodcast}
                         alt=""
                         style={{
@@ -855,7 +852,7 @@ export default function Team2SectionMobile() {
                           width: "100%",
                           height: "100%",
                           borderRadius: "inherit",
-                          objectPosition: "center top",
+                          objectPosition: "1% top",
                           objectFit: "cover",
                         }}
                       />

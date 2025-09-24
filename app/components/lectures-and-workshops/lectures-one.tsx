@@ -34,7 +34,6 @@ export default function LectureOne() {
                       loading="lazy"
                       width={4160}
                       height={2773}
-                      sizes="calc(min(100vw - 60px, 1200px) * 0.4292)"
                       src={ImageMarqueeSecond}
                       alt="Image"
                       style={{

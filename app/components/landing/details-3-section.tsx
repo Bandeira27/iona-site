@@ -30,7 +30,7 @@ export function Details3Section() {
                     loading="lazy"
                     width="3101"
                     height="2030"
-                    sizes="500px"
+                    className="scale-100"
                     src={ImageWorkshopBanner}
                     alt=""
                     style={{
@@ -38,7 +38,7 @@ export function Details3Section() {
                       width: "100%",
                       height: "100%",
                       borderRadius: "inherit",
-                      objectPosition: "center",
+                      objectPosition: "56% 50%",
                       objectFit: "cover",
                     }}
                   />

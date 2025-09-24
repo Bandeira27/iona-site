@@ -16,8 +16,9 @@ export default function AboutSection() {
         >
           <div className="framer-1idpkp8" data-framer-name="Content">
             <div className="framer-1qaytpz" data-framer-name="Image Wrapper">
-              <div className="framer-kc2w0b">
+              <div className="framer-kc2w0b !overflow-hidden">
                 <div
+                  className="overflow-hidden"
                   data-framer-background-image-wrapper="true"
                   style={{
                     position: "absolute",
@@ -29,16 +30,17 @@ export default function AboutSection() {
                     decoding="async"
                     width={8894}
                     height={6827}
-                    sizes="275px"
                     src={ImageIonaAbout}
                     alt="Image"
+                    className="scale-120"
                     style={{
                       display: "block",
                       width: "100%",
                       height: "100%",
                       borderRadius: "inherit",
-                      objectPosition: "center center",
+                      objectPosition: "30.5% center",
                       objectFit: "cover",
+                      transform: "translateY(-8%)",
                     }}
                   />
                 </div>
@@ -61,7 +63,6 @@ export default function AboutSection() {
                       decoding="async"
                       width={6461}
                       height={6000}
-                      sizes="250px"
                       src={ImageIonaApresentationReverse}
                       alt="Image"
                       style={{
@@ -69,7 +70,7 @@ export default function AboutSection() {
                         width: "100%",
                         height: "100%",
                         borderRadius: "inherit",
-                        objectPosition: "center center",
+                        objectPosition: "42.5% center",
                         objectFit: "cover",
                       }}
                     />

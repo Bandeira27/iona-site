@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
-import IonaLastMnb from "@/app/assets/iona-image-mnb.png";
+import IonaLastMnb from "@/app/assets/iona-image-mnb.jpeg";
 import ImageThing from "@/app/assets/image-thing.png";
 import ImageBook from "@/app/assets/image-book.png";
 import ImageCup from "@/app/assets/image-cup.png";
@@ -32,7 +32,6 @@ export default function LectureThree() {
                       loading="lazy"
                       width="1188"
                       height="853"
-                      sizes="calc(min(100vw - 60px, 1200px) * 0.4292)"
                       src={IonaLastMnb}
                       alt="Image"
                       style={{
