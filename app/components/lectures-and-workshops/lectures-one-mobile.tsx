@@ -30,7 +30,6 @@ export function LectureOneMobile() {
                     loading="lazy"
                     width="4160"
                     height="2773"
-                    sizes="min(100vw - 40px, 1200px)"
                     src={ImageMarqueeSecond}
                     alt="Image"
                     style={{

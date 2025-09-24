@@ -1,5 +1,5 @@
 import Image from "next/image";
-import IonaMnb from "@/app/assets/iona-image-mnb.png";
+import IonaMnb from "@/app/assets/iona-image-mnb.jpeg";
 import ImageThing from "@/app/assets/image-thing.png";
 import ImageBook from "@/app/assets/image-book.png";
 import ImageCup from "@/app/assets/image-cup.png";
@@ -30,7 +30,6 @@ export function LectureThreeMobile() {
                     loading="lazy"
                     width="4160"
                     height="2773"
-                    sizes="min(100vw - 40px, 1200px)"
                     src={IonaMnb}
                     alt="Image"
                     style={{

@@ -30,7 +30,6 @@ export function LectureTwoMobile() {
                     loading="lazy"
                     width="4160"
                     height="2773"
-                    sizes="min(100vw - 40px, 1200px)"
                     src={IonaLastApresentation}
                     alt="Image"
                     style={{
