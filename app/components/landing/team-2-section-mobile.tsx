@@ -5,8 +5,8 @@ import ImageForbesGirl from "@/app/assets/image-forbes-woman.png";
 import ImageForbesTech from "@/app/assets/image-forbes-tech.png";
 import ImageNeofeed from "@/app/assets/image-neofeed.png";
 import ImagePipeline from "@/app/assets/image-pipeline.png";
-import ImageBrazilJournal from "@/app/assets/image-brazil-journal.png";
-import ImagePodcast from "@/app/assets/image-podcast.png";
+import IonaMereioTalks from '@/app/assets/iona-mereo-talks.png'
+import IoanPowerCast from '@/app/assets/iona-power-cast.png'
 import Image from "next/image";
 
 export default function Team2SectionMobile() {
@@ -691,14 +691,14 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={5757}
                         height={2868}
-                        src={ImageBrazilJournal}
+                        src={IonaMereioTalks}
                         alt=""
                         style={{
                           display: "block",
                           width: "100%",
                           height: "100%",
                           borderRadius: "inherit",
-                          objectPosition: "70% top",
+                          objectPosition: "center top",
                           objectFit: "cover",
                         }}
                       />
@@ -845,14 +845,14 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={2946}
                         height={1553}
-                        src={ImagePodcast}
+                        src={IoanPowerCast}
                         alt=""
                         style={{
                           display: "block",
                           width: "100%",
                           height: "100%",
                           borderRadius: "inherit",
-                          objectPosition: "1% top",
+                          objectPosition: "center top",
                           objectFit: "cover",
                         }}
                       />
