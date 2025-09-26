@@ -336,7 +336,6 @@ export default function Team2SectionMobile() {
         </div>
       </div>
 
-      {/* Second major Content block */}
       <div className="framer-184cisk mb-4" data-framer-name="Content">
         <div
           className="framer-1ujcexm mb-10"
@@ -656,7 +655,6 @@ export default function Team2SectionMobile() {
         </div>
       </div>
 
-      {/* Third major Content block */}
       <div className="framer-cqbptt" data-framer-name="Content">
         <div className="framer-e11vzm" data-framer-name="Team Card Wrapper">
           <div className="ssr-variant hidden-dmz5yz hidden-72rtr7">
