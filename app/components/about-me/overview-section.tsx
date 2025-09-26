@@ -14,7 +14,7 @@ export default function OverviewSection() {
     if (!track) return;
 
     let translateX = 0;
-    const speed = 1.4;
+    const speed = 1;
 
     const animate = () => {
       translateX -= speed;

@@ -156,7 +156,7 @@ const AchievementSection: React.FC = () => {
     });
 
     let translateY = 0;
-    const speed = 0.9;
+    const speed = 0.7;
 
     const animate = () => {
       if (!pausedRef.current) {

@@ -31,7 +31,7 @@ export function OverviewSectionMobile() {
     });
 
     let translateX = 0;
-    const speed = 1;
+    const speed = 0.6;
 
     const animate = () => {
       if (!pausedRef.current) {
