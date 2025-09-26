@@ -99,7 +99,8 @@ export default function OverviewSection() {
                         width: "100%",
                         height: "100%",
                         borderRadius: "inherit",
-                        objectPosition: i % 3 === 2 ? "70% center" : "center center",
+                        objectPosition:
+                          i % 3 === 2 ? "70% center" : "center center",
                         objectFit: "cover",
                       }}
                     />

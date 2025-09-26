@@ -5,8 +5,8 @@ import ImageForbesGirl from "@/app/assets/image-forbes-woman.png";
 import ImageForbesTech from "@/app/assets/image-forbes-tech.png";
 import ImageNeofeed from "@/app/assets/image-neofeed.png";
 import ImagePipeline from "@/app/assets/image-pipeline.png";
-import IonaMereioTalks from '@/app/assets/iona-mereo-talks.png'
-import IoanPowerCast from '@/app/assets/iona-power-cast.png'
+import IonaMereioTalks from "@/app/assets/iona-mereo-talks.png";
+import IoanPowerCast from "@/app/assets/iona-power-cast.png";
 import Image from "next/image";
 
 export default function Team2SectionMobile() {

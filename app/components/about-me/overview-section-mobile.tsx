@@ -27,7 +27,7 @@ export function OverviewSectionMobile() {
 
     let totalWidth = 0;
     scrollElement.childNodes.forEach((child) => {
-      if (child instanceof HTMLElement) totalWidth += child.offsetWidth + 20; 
+      if (child instanceof HTMLElement) totalWidth += child.offsetWidth + 20;
     });
 
     let translateX = 0;
