@@ -1,7 +1,9 @@
 import { ContactType } from "@/app/type/contact-type";
 import axios from "axios";
 
-export async function createContactEmail(data: ContactType) {
-    const response = await axios.post<ContactType>("/api/contract", data)
+type ContactResponse = { success: boolean }
+
+export async function createContactEmail(data: ContactType): Promise<ContactResponse> {
+    const response = await axios.post<ContactResponse>("/api/contact", data)
     return response.data
 }
