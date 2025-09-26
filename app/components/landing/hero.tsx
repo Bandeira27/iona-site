@@ -1,8 +1,8 @@
 import Image from "next/image";
-import ImageIonaBadge from "@/app/assets/image-iona-badge.png";
-import ImageIonaTextBadge from "@/app/assets/image-iona-text-badge.svg";
-import ImageAsteriskBadge from "@/app/assets/image-asterisk-badge.svg";
-import IonaCoreBanner from "@/app//assets/iona-core-banner.png";
+import ImageIonaBadge from "@/app/assets/images/image-iona-badge.png";
+import ImageIonaTextBadge from "@/app/assets/svg/image-iona-text-badge.svg";
+import ImageAsteriskBadge from "@/app/assets/svg/image-asterisk-badge.svg";
+import IonaCoreBanner from "@/app/assets/images/iona-core-banner.png";
 import { useEffect, useRef, useState } from "react";
 
 export function HeroSection() {

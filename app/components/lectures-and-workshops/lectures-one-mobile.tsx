@@ -1,9 +1,9 @@
 import Image from "next/image";
-import ImageMarqueeSecond from "@/app/assets/image-marquee-second.png";
-import ImageThing from "@/app/assets/image-thing.png";
-import ImageBook from "@/app/assets/image-book.png";
-import ImageCup from "@/app/assets/image-cup.png";
-import ImageHouse from "@/app/assets/image-house.png";
+import ImageMarqueeSecond from "@/app/assets/images/image-marquee-second.png";
+import ImageThing from "@/app/assets/images/image-thing.png";
+import ImageBook from "@/app/assets/images/image-book.png";
+import ImageCup from "@/app/assets/images/image-cup.png";
+import ImageHouse from "@/app/assets/images/image-house.png";
 
 export function LectureOneMobile() {
   return (

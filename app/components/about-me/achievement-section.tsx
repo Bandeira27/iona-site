@@ -3,7 +3,7 @@
 import React, { useMemo, useEffect, useRef } from "react";
 import { ScrollReveal } from "../scroll-reveal";
 import Image from "next/image";
-import IonaAchievements from "@/app/assets/iona-achievements.png";
+import IonaAchievements from "@/app/assets/images/iona-achievements.png";
 
 interface AchievementCardProps {
   year: string;

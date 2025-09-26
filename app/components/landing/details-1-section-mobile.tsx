@@ -1,4 +1,4 @@
-import ImageIonaApresentation from "@/app/assets/image-iona-apresentation.png";
+import ImageIonaApresentation from "@/app/assets/images/image-iona-apresentation.png";
 import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
 

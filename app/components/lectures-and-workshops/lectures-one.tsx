@@ -1,12 +1,12 @@
 import React from "react";
 import { ScrollReveal } from "../scroll-reveal";
 
-import ImageMarqueeSecond from "@/app/assets/image-marquee-second.png";
-import ImageThing from "@/app/assets/image-thing.png";
-import ImageBook from "@/app/assets/image-book.png";
-import ImageCup from "@/app/assets/image-cup.png";
+import ImageMarqueeSecond from "@/app/assets/images/image-marquee-second.png";
+import ImageThing from "@/app/assets/images/image-thing.png";
+import ImageBook from "@/app/assets/images/image-book.png";
+import ImageCup from "@/app/assets/images/image-cup.png";
 import Image from "next/image";
-import ImageHouse from "@/app/assets/image-house.png";
+import ImageHouse from "@/app/assets/images/image-house.png";
 
 export default function LectureOne() {
   return (

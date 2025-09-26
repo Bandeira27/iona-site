@@ -1,7 +1,7 @@
 import { ScrollReveal } from "../scroll-reveal";
-import IonaFirstImage from "../../assets/iona-image-first.jpg";
-import IonaSecondImage from "../../assets/iona-image-second.jpg";
-import IaFirt from "../../assets/ia-first-image.png";
+import IonaFirstImage from "@/app/assets/images/iona-image-first.jpg";
+import IonaSecondImage from "@/app/assets/images/iona-image-second.jpg";
+import IaFirt from "@/app/assets/images/ia-first-image.png";
 import Image from "next/image";
 
 export function AboutExtraMobile() {

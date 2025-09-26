@@ -1,9 +1,9 @@
-import ImageForbesGirl from "@/app/assets/image-forbes-woman.png";
-import ImageForbesTech from "@/app/assets/image-forbes-tech.png";
-import ImageNeofeed from "@/app/assets/image-neofeed.png";
-import ImagePipeline from "@/app/assets/image-pipeline.png";
-import ImageBrazilJournal from "@/app/assets/image-brazil-journal.png";
-import ImagePodcast from "@/app/assets/image-podcast.png";
+import ImageForbesGirl from "@/app/assets/images/image-forbes-woman.png";
+import ImageForbesTech from "@/app/assets/images/image-forbes-tech.png";
+import ImageNeofeed from "@/app/assets/images/image-neofeed.png";
+import ImagePipeline from "@/app/assets/images/image-pipeline.png";
+import ImageBrazilJournal from "@/app/assets/images/image-brazil-journal.png";
+import ImagePodcast from "@/app/assets/images/image-podcast.png";
 import Image from "next/image";
 
 export function Team2Section() {

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
-import IonaLastApresentation from "@/app/assets/iona-image-last-apresentation.png";
-import ImageThing from "@/app/assets/image-thing.png";
-import ImageBook from "@/app/assets/image-book.png";
-import ImageCup from "@/app/assets/image-cup.png";
-import ImageHouse from "@/app/assets/image-house.png";
+import IonaLastApresentation from "@/app/assets/images/iona-image-last-apresentation.png";
+import ImageThing from "@/app/assets/images/image-thing.png";
+import ImageBook from "@/app/assets/images/image-book.png";
+import ImageCup from "@/app/assets/images/image-cup.png";
+import ImageHouse from "@/app/assets/images/image-house.png";
 
 export default function LectureTwo() {
   return (

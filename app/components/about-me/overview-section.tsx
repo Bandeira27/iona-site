@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import ImageMarqueeFirst from "@/app/assets/image-marquee-first.jpg";
-import ImageMarqueeSecond from "@/app/assets/image-marquee-second.png";
-import ImageMarqueeThree from "@/app/assets/image-marquee-three.jpg";
+import ImageMarqueeFirst from "@/app/assets/images/image-marquee-first.jpg";
+import ImageMarqueeSecond from "@/app/assets/images/image-marquee-second.png";
+import ImageMarqueeThree from "@/app/assets/images/image-marquee-three.jpg";
 import Image from "next/image";
 
 export default function OverviewSection() {

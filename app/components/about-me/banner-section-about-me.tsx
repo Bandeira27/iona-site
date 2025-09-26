@@ -1,4 +1,4 @@
-import ImageHuman from "@/app/assets/image-human.png";
+import ImageHuman from "@/app/assets/images/image-human.png";
 import Image from "next/image";
 
 export default function BannerSectionAboutMe() {

@@ -1,7 +1,7 @@
 import React from "react";
-import JuniaGontijo from "../../assets/junia-gontijo.jpg";
+import JuniaGontijo from "@/app/assets/images/junia-gontijo.jpg";
 import Image from "next/image";
-import JulianaHadad from "../../assets/juliana-hadad.png";
+import JulianaHadad from "@/app/assets/images/juliana-hadad.png";
 
 export function FeedbackSectionMobile() {
   return (

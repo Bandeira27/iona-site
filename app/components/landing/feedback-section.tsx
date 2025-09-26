@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import { ScrollReveal } from "../scroll-reveal";
-import JuniaGontijo from "../../assets/junia-gontijo.jpg";
-import JulianaHadad from "../../assets/juliana-hadad.png";
-import IonaFeedbackSectionFirst from "../../assets/iona-feedback-section-first.png";
-import IonaFeedbackSectionSecond from "../../assets/iona-feedback-section-second.png";
-import PlayIcon from "../../assets/play-icon.svg";
+import JuniaGontijo from "@/app/assets/images/junia-gontijo.jpg";
+import JulianaHadad from "@/app/assets/images/juliana-hadad.png";
+import IonaFeedbackSectionFirst from "@/app/assets/images/iona-feedback-section-first.png";
+import IonaFeedbackSectionSecond from "@/app/assets/images/iona-feedback-section-second.png";
+import PlayIcon from "../../assets/svg/play-icon.svg";
 import Image from "next/image";
 import { YoutubeEmbed } from "../video-play/youtube-embed";
 

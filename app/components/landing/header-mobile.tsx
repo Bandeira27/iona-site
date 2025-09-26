@@ -1,6 +1,6 @@
 "use client";
 
-import IonaLogoNameDark from "@/app/assets/iona-logo-name-dark.svg";
+import IonaLogoNameDark from "@/app/assets/svg/iona-logo-name-dark.svg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

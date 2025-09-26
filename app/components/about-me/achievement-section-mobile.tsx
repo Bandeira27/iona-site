@@ -1,5 +1,5 @@
 import Image from "next/image";
-import IonaAchievements from "@/app/assets/iona-achievements.png";
+import IonaAchievements from "@/app/assets/images/iona-achievements.png";
 import { ScrollReveal } from "../scroll-reveal";
 
 interface Achievement {

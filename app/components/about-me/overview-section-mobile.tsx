@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useMemo, useEffect, useRef } from "react";
-import ImageMarqueeFirst from "@/app/assets/image-marquee-first.jpg";
-import ImageMarqueeSecond from "@/app/assets/image-marquee-second.png";
+import ImageMarqueeFirst from "@/app/assets/images/image-marquee-first.jpg";
+import ImageMarqueeSecond from "@/app/assets/images/image-marquee-second.png";
 import Image from "next/image";
 
 export function OverviewSectionMobile() {
