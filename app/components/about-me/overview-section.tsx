@@ -14,7 +14,7 @@ export default function OverviewSection() {
     if (!track) return;
 
     let translateX = 0;
-    const speed = 1.4;
+    const speed = 1;
 
     const animate = () => {
       translateX -= speed;
@@ -99,7 +99,8 @@ export default function OverviewSection() {
                         width: "100%",
                         height: "100%",
                         borderRadius: "inherit",
-                        objectPosition: i % 3 === 2 ? "70% center" : "center center",
+                        objectPosition:
+                          i % 3 === 2 ? "70% center" : "center center",
                         objectFit: "cover",
                       }}
                     />
