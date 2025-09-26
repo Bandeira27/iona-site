@@ -6,6 +6,7 @@ import "@/app/css/globals.css";
 import "@/app/css/declarations.css";
 import "@/app/css/about-me.css";
 import "@/app/css/contact.css";
+import QueryProvider from "./providers/query-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,13 +33,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div
-          className="framer-UkBuu bg-[#f3f3f3]"
-          data-layout-template="true"
-          style={{ minHeight: "100vh", width: "auto" }}
-        >
-          {children}
-        </div>
+        <QueryProvider>
+          <div
+            className="framer-UkBuu bg-[#f3f3f3]"
+            data-layout-template="true"
+            style={{ minHeight: "100vh", width: "auto" }}
+          >
+            {children}
+          </div>
+        </QueryProvider>
       </body>
     </html>
   );
