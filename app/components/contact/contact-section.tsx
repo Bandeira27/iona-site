@@ -1,7 +1,24 @@
+"use client";
+
 import React from "react";
 import { ScrollReveal } from "../scroll-reveal";
+import { useForm } from "react-hook-form";
+import { ContactType } from "@/app/type/contact-type";
+import { useCreateContactEmailMutation } from "@/app/http/react-query";
 
 export default function ContactSection() {
+  const { register, handleSubmit, reset } = useForm<ContactType>();
+  const { createEmailAsync, isCreatingEmailAsync } =
+    useCreateContactEmailMutation();
+
+  async function onSubmit(data: ContactType) {
+    try {
+      await createEmailAsync(data);
+      reset();
+    } catch (err) {
+      console.log(err);
+    }
+  }
   return (
     <ScrollReveal>
       <section className="framer-1x2p2r7" data-framer-name="Contact Section">
@@ -46,7 +63,7 @@ export default function ContactSection() {
               </div>
             </div>
             <div className="framer-v0q1sa" data-framer-name="Title and image">
-              <form className="framer-o1m8dc">
+              <form className="framer-o1m8dc" onSubmit={handleSubmit(onSubmit)}>
                 <label className="framer-1gi4oni">
                   <div
                     className="framer-1cm3nte"
@@ -72,7 +89,7 @@ export default function ContactSection() {
                     <input
                       type="text"
                       required
-                      name="Name"
+                      {...register("fullName")}
                       placeholder="Nome e sobrenome"
                       className="framer-form-input framer-form-input-empty"
                     />
@@ -103,7 +120,7 @@ export default function ContactSection() {
                     <input
                       type="text"
                       required
-                      name="Empresa"
+                      {...register("company")}
                       placeholder="Empresa"
                       className="framer-form-input framer-form-input-empty"
                     />
@@ -134,7 +151,7 @@ export default function ContactSection() {
                     <input
                       type="email"
                       required
-                      name="Phone"
+                      {...register("email")}
                       placeholder="E-mail"
                       className="framer-form-input framer-form-input-empty"
                     />
@@ -165,7 +182,7 @@ export default function ContactSection() {
                     <input
                       type="text"
                       required
-                      name="Phone"
+                      {...register("participationType")}
                       placeholder="(Palestra, Workshop, Mentoria, outro)"
                       className="framer-form-input framer-form-input-empty"
                     />
@@ -196,7 +213,7 @@ export default function ContactSection() {
                     <input
                       type="date"
                       required
-                      name="Subject"
+                      {...register("estimatedDate")}
                       placeholder="Subject"
                       className="framer-form-input framer-form-input-empty"
                     />
@@ -225,7 +242,7 @@ export default function ContactSection() {
                   </div>
                   <div className="framer-form-text-input framer-form-input-wrapper framer-173pzw1">
                     <textarea
-                      name="Message"
+                      {...register("message")}
                       placeholder="Sua mensagem"
                       className="framer-form-input"
                     ></textarea>
@@ -236,6 +253,7 @@ export default function ContactSection() {
                     type="submit"
                     className="framer-fB1Zb framer-dxjT0 framer-18gumxh framer-v-18gumxh"
                     data-framer-name="Default"
+                    disabled={isCreatingEmailAsync}
                     data-reset="button"
                     style={{
                       backgroundColor: "rgb(255, 255, 255)",
@@ -268,7 +286,7 @@ export default function ContactSection() {
                           color: "rgb(21, 21, 22)",
                         }}
                       >
-                        Enviar
+                        {isCreatingEmailAsync ? "Enviando..." : "Enviar"}
                       </p>
                     </div>
                   </button>
