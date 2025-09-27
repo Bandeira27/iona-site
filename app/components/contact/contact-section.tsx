@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import spinner from "@/app/assets/svg/spinner.svg";
 import { ScrollReveal } from "../scroll-reveal";
 import { useForm } from "react-hook-form";
@@ -10,8 +10,24 @@ import clsx from "clsx";
 
 export default function ContactSection() {
   const { register, handleSubmit } = useForm<ContactType>();
-  const { createEmailAsync, isCreatingEmailAsync } =
+  const { createEmailAsync, isCreatingEmailAsync, isSuccess, reset } =
     useCreateContactEmailMutation();
+
+  const [shouldResetOnChange, setShouldResetOnChange] = React.useState(false);
+
+  // Quando o envio for bem-sucedido, habilita o reset no próximo change
+  useEffect(() => {
+    if (isSuccess) {
+      setShouldResetOnChange(true);
+    }
+  }, [isSuccess]);
+
+  const handleInputChange = () => {
+    if (shouldResetOnChange) {
+      reset();
+      setShouldResetOnChange(false);
+    }
+  };
 
   async function onSubmit(data: ContactType) {
     try {
@@ -20,6 +36,7 @@ export default function ContactSection() {
       console.log(err);
     }
   }
+
   return (
     <ScrollReveal>
       <section className="framer-1x2p2r7" data-framer-name="Contact Section">
@@ -91,11 +108,13 @@ export default function ContactSection() {
                       type="text"
                       required
                       {...register("fullName")}
+                      onChange={handleInputChange}
                       placeholder="Nome e sobrenome"
                       className="framer-form-input framer-form-input-empty"
                     />
                   </div>
                 </label>
+
                 <label className="framer-gftoqz">
                   <div
                     className="framer-qp7v44"
@@ -122,11 +141,13 @@ export default function ContactSection() {
                       type="text"
                       required
                       {...register("company")}
+                      onChange={handleInputChange}
                       placeholder="Empresa"
                       className="framer-form-input framer-form-input-empty"
                     />
                   </div>
                 </label>
+
                 <label className="framer-17l29x0">
                   <div
                     className="framer-kma8en"
@@ -153,11 +174,13 @@ export default function ContactSection() {
                       type="email"
                       required
                       {...register("email")}
+                      onChange={handleInputChange}
                       placeholder="E-mail"
                       className="framer-form-input framer-form-input-empty"
                     />
                   </div>
                 </label>
+
                 <label className="framer-usosm9">
                   <div
                     className="framer-sk23iu"
@@ -184,11 +207,13 @@ export default function ContactSection() {
                       type="text"
                       required
                       {...register("participationType")}
+                      onChange={handleInputChange}
                       placeholder="(Palestra, Workshop, Mentoria, outro)"
                       className="framer-form-input framer-form-input-empty"
                     />
                   </div>
                 </label>
+
                 <label className="framer-m1u8xk">
                   <div
                     className="framer-o81pkn"
@@ -215,11 +240,12 @@ export default function ContactSection() {
                       type="date"
                       required
                       {...register("estimatedDate")}
-                      placeholder="Subject"
+                      onChange={handleInputChange}
                       className="framer-form-input framer-form-input-empty"
                     />
                   </div>
                 </label>
+
                 <label className="framer-1m0vyun">
                   <div
                     className="framer-1jutc0u"
@@ -244,21 +270,26 @@ export default function ContactSection() {
                   <div className="framer-form-text-input framer-form-input-wrapper framer-173pzw1">
                     <textarea
                       {...register("message")}
+                      onChange={handleInputChange}
                       placeholder="Sua mensagem"
                       className="framer-form-input"
                     ></textarea>
                   </div>
                 </label>
+
                 <div className="framer-1fxt0mj-container">
                   <button
                     type="submit"
-                     className={clsx(
-    "framer-fB1Zb framer-dxjT0 framer-18gumxh framer-v-18gumxh transition-all duration-300 ease-in-out",
-    isCreatingEmailAsync ? "!w-44" : "w-64"
-  )}
-                    data-creating={!isCreatingEmailAsync}
+                    className={clsx(
+                      "framer-fB1Zb framer-dxjT0 framer-18gumxh framer-v-18gumxh transition-[width] duration-250 ease-in-out",
+                      isCreatingEmailAsync
+                        ? "!w-38"
+                        : isSuccess
+                          ? "!w-53 pointer-events-none"
+                          : "!w-27.5",
+                    )}
+                    disabled={isCreatingEmailAsync || isSuccess}
                     data-framer-name="Default"
-                    disabled={isCreatingEmailAsync}
                     data-reset="button"
                     style={{
                       backgroundColor: "rgb(255, 255, 255)",
@@ -270,79 +301,72 @@ export default function ContactSection() {
                     }}
                     tabIndex={0}
                   >
-                    {!isCreatingEmailAsync ? (
-                      <div
-                        className="framer-186o7v"
-                        style={{
-                          outline: "none",
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "flex-start",
-                          flexShrink: 0,
-                          transform: "none",
-                          opacity: 1,
-                        }}
-                        data-framer-component-type="RichTextContainer"
-                      >
-                        <p
-                          className="framer-text framer-styles-preset-1ivuj08"
-                          data-styles-preset="W_sgoDppc"
-                          style={{
-                            textAlign: "center",
-                            color: "rgb(21, 21, 22)",
-                          }}
-                        >
-                          {isCreatingEmailAsync ? "Enviando..." : "Enviar"}
-                        </p>
-                      </div>
-                    ) : (
+                    {isCreatingEmailAsync ? (
                       <>
                         <div
                           className="framer-av556y"
                           data-framer-name="Spinner"
                           style={{
                             mask: `url(${spinner.src}) center center / cover no-repeat alpha`,
-                            transform:
-                              "translate3d(1.63474px, 0px, 0px) scale(1.0218, 1) scale(1, 1)",
-                            transformOrigin: "50% 50% 0px",
+                            animation: "spin 1s linear infinite",
                           }}
                         >
                           <div
                             className="framer-92y8ji"
-                            data-framer-name="Conic"
                             style={{
                               background:
-                                "conic-gradient(from 0deg at 50% 50%, rgba(255, 255, 255, 0) 7.208614864864882deg, var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22)) 342deg)",
+                                "conic-gradient(from 0deg at 50% 50%, rgba(255, 255, 255, 0) 7deg, rgb(21, 21, 22) 342deg)",
                               mask: `url(${spinner.src}) center center / cover no-repeat alpha`,
-                              willChange: "auto",
                               opacity: 1,
-                              transform: "rotate(59.04deg)",
-                              transformOrigin: "50% 50% 0px",
-                              animation: "spin 1s linear infinite",
                             }}
-                          >
-                            <div
-                              className="framer-1wx4az7"
-                              data-framer-name="Rounding"
-                              style={{
-                                backgroundColor:
-                                  "var(--token-a3c1e9b9-e8ac-4688-91db-1f11e12741f4, rgb(22, 58, 25))",
-                                borderRadius: "50%",
-                                transform: "translateX(-50%)",
-                                transformOrigin: "50% 50% 0px",
-                              }}
-                            ></div>
-                          </div>
+                          ></div>
                         </div>
                         <style>
                           {`
-      @keyframes spin {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-    `}
+          @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+          }
+        `}
                         </style>
                       </>
+                    ) : isSuccess ? (
+                      <div
+                        className="framer-186o7v"
+                        data-framer-component-type="RichTextContainer"
+                        style={
+                          {
+                            outline: "none",
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "flex-start",
+                            flexShrink: 0,
+                            transform: "none",
+                            transformOrigin: "50% 50% 0px",
+                            "--extracted-r6o4lv":
+                              "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
+                            "--framer-link-text-color": "rgb(0, 153, 255)",
+                            "--framer-link-text-decoration": "underline",
+                          } as React.CSSProperties
+                        }
+                      >
+                        <p
+                          className="framer-text framer-styles-preset-1ivuj08"
+                          data-styles-preset="W_sgoDppc"
+                        >
+                          Mensagem enviada!
+                        </p>
+                      </div>
+                    ) : (
+                      <p
+                        className="framer-text framer-styles-preset-1ivuj08"
+                        style={{
+                          textAlign: "center",
+                          color: "rgb(21, 21, 22)",
+                        }}
+                      >
+                        Enviar
+                      </p>
                     )}
                   </button>
                 </div>
