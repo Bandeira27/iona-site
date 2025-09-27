@@ -1,20 +1,21 @@
 "use client";
 
 import React from "react";
+import spinner from "@/app/assets/svg/spinner.svg";
 import { ScrollReveal } from "../scroll-reveal";
 import { useForm } from "react-hook-form";
 import { ContactType } from "@/app/type/contact-type";
 import { useCreateContactEmailMutation } from "@/app/http/react-query";
+import clsx from "clsx";
 
 export default function ContactSection() {
-  const { register, handleSubmit, reset } = useForm<ContactType>();
+  const { register, handleSubmit } = useForm<ContactType>();
   const { createEmailAsync, isCreatingEmailAsync } =
     useCreateContactEmailMutation();
 
   async function onSubmit(data: ContactType) {
     try {
       await createEmailAsync(data);
-      reset();
     } catch (err) {
       console.log(err);
     }
@@ -251,7 +252,11 @@ export default function ContactSection() {
                 <div className="framer-1fxt0mj-container">
                   <button
                     type="submit"
-                    className="framer-fB1Zb framer-dxjT0 framer-18gumxh framer-v-18gumxh"
+                     className={clsx(
+    "framer-fB1Zb framer-dxjT0 framer-18gumxh framer-v-18gumxh transition-all duration-300 ease-in-out",
+    isCreatingEmailAsync ? "!w-44" : "w-64"
+  )}
+                    data-creating={!isCreatingEmailAsync}
                     data-framer-name="Default"
                     disabled={isCreatingEmailAsync}
                     data-reset="button"
@@ -265,30 +270,80 @@ export default function ContactSection() {
                     }}
                     tabIndex={0}
                   >
-                    <div
-                      className="framer-186o7v"
-                      style={{
-                        outline: "none",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "flex-start",
-                        flexShrink: 0,
-                        transform: "none",
-                        opacity: 1,
-                      }}
-                      data-framer-component-type="RichTextContainer"
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1ivuj08"
-                        data-styles-preset="W_sgoDppc"
+                    {!isCreatingEmailAsync ? (
+                      <div
+                        className="framer-186o7v"
                         style={{
-                          textAlign: "center",
-                          color: "rgb(21, 21, 22)",
+                          outline: "none",
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "flex-start",
+                          flexShrink: 0,
+                          transform: "none",
+                          opacity: 1,
                         }}
+                        data-framer-component-type="RichTextContainer"
                       >
-                        {isCreatingEmailAsync ? "Enviando..." : "Enviar"}
-                      </p>
-                    </div>
+                        <p
+                          className="framer-text framer-styles-preset-1ivuj08"
+                          data-styles-preset="W_sgoDppc"
+                          style={{
+                            textAlign: "center",
+                            color: "rgb(21, 21, 22)",
+                          }}
+                        >
+                          {isCreatingEmailAsync ? "Enviando..." : "Enviar"}
+                        </p>
+                      </div>
+                    ) : (
+                      <>
+                        <div
+                          className="framer-av556y"
+                          data-framer-name="Spinner"
+                          style={{
+                            mask: `url(${spinner.src}) center center / cover no-repeat alpha`,
+                            transform:
+                              "translate3d(1.63474px, 0px, 0px) scale(1.0218, 1) scale(1, 1)",
+                            transformOrigin: "50% 50% 0px",
+                          }}
+                        >
+                          <div
+                            className="framer-92y8ji"
+                            data-framer-name="Conic"
+                            style={{
+                              background:
+                                "conic-gradient(from 0deg at 50% 50%, rgba(255, 255, 255, 0) 7.208614864864882deg, var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22)) 342deg)",
+                              mask: `url(${spinner.src}) center center / cover no-repeat alpha`,
+                              willChange: "auto",
+                              opacity: 1,
+                              transform: "rotate(59.04deg)",
+                              transformOrigin: "50% 50% 0px",
+                              animation: "spin 1s linear infinite",
+                            }}
+                          >
+                            <div
+                              className="framer-1wx4az7"
+                              data-framer-name="Rounding"
+                              style={{
+                                backgroundColor:
+                                  "var(--token-a3c1e9b9-e8ac-4688-91db-1f11e12741f4, rgb(22, 58, 25))",
+                                borderRadius: "50%",
+                                transform: "translateX(-50%)",
+                                transformOrigin: "50% 50% 0px",
+                              }}
+                            ></div>
+                          </div>
+                        </div>
+                        <style>
+                          {`
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    `}
+                        </style>
+                      </>
+                    )}
                   </button>
                 </div>
               </form>
