@@ -1,7 +1,42 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
+import spinner from "@/app/assets/svg/spinner.svg";
 import { ScrollReveal } from "../scroll-reveal";
+import { useForm } from "react-hook-form";
+import { ContactType } from "@/app/type/contact-type";
+import { useCreateContactEmailMutation } from "@/app/http/react-query";
+import clsx from "clsx";
 
 export default function ContactSection() {
+  const { register, handleSubmit } = useForm<ContactType>();
+  const { createEmailAsync, isCreatingEmailAsync, isSuccess, reset } =
+    useCreateContactEmailMutation();
+
+  const [shouldResetOnChange, setShouldResetOnChange] = React.useState(false);
+
+  // Quando o envio for bem-sucedido, habilita o reset no próximo change
+  useEffect(() => {
+    if (isSuccess) {
+      setShouldResetOnChange(true);
+    }
+  }, [isSuccess]);
+
+  const handleInputChange = () => {
+    if (shouldResetOnChange) {
+      reset();
+      setShouldResetOnChange(false);
+    }
+  };
+
+  async function onSubmit(data: ContactType) {
+    try {
+      await createEmailAsync(data);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
   return (
     <ScrollReveal>
       <section className="framer-1x2p2r7" data-framer-name="Contact Section">
@@ -46,7 +81,7 @@ export default function ContactSection() {
               </div>
             </div>
             <div className="framer-v0q1sa" data-framer-name="Title and image">
-              <form className="framer-o1m8dc">
+              <form className="framer-o1m8dc" onSubmit={handleSubmit(onSubmit)}>
                 <label className="framer-1gi4oni">
                   <div
                     className="framer-1cm3nte"
@@ -72,12 +107,14 @@ export default function ContactSection() {
                     <input
                       type="text"
                       required
-                      name="Name"
+                      {...register("fullName")}
+                      onChange={handleInputChange}
                       placeholder="Nome e sobrenome"
                       className="framer-form-input framer-form-input-empty"
                     />
                   </div>
                 </label>
+
                 <label className="framer-gftoqz">
                   <div
                     className="framer-qp7v44"
@@ -103,12 +140,14 @@ export default function ContactSection() {
                     <input
                       type="text"
                       required
-                      name="Empresa"
+                      {...register("company")}
+                      onChange={handleInputChange}
                       placeholder="Empresa"
                       className="framer-form-input framer-form-input-empty"
                     />
                   </div>
                 </label>
+
                 <label className="framer-17l29x0">
                   <div
                     className="framer-kma8en"
@@ -134,12 +173,14 @@ export default function ContactSection() {
                     <input
                       type="email"
                       required
-                      name="Phone"
+                      {...register("email")}
+                      onChange={handleInputChange}
                       placeholder="E-mail"
                       className="framer-form-input framer-form-input-empty"
                     />
                   </div>
                 </label>
+
                 <label className="framer-usosm9">
                   <div
                     className="framer-sk23iu"
@@ -165,12 +206,14 @@ export default function ContactSection() {
                     <input
                       type="text"
                       required
-                      name="Phone"
+                      {...register("participationType")}
+                      onChange={handleInputChange}
                       placeholder="(Palestra, Workshop, Mentoria, outro)"
                       className="framer-form-input framer-form-input-empty"
                     />
                   </div>
                 </label>
+
                 <label className="framer-m1u8xk">
                   <div
                     className="framer-o81pkn"
@@ -196,12 +239,13 @@ export default function ContactSection() {
                     <input
                       type="date"
                       required
-                      name="Subject"
-                      placeholder="Subject"
+                      {...register("estimatedDate")}
+                      onChange={handleInputChange}
                       className="framer-form-input framer-form-input-empty"
                     />
                   </div>
                 </label>
+
                 <label className="framer-1m0vyun">
                   <div
                     className="framer-1jutc0u"
@@ -225,16 +269,26 @@ export default function ContactSection() {
                   </div>
                   <div className="framer-form-text-input framer-form-input-wrapper framer-173pzw1">
                     <textarea
-                      name="Message"
+                      {...register("message")}
+                      onChange={handleInputChange}
                       placeholder="Sua mensagem"
                       className="framer-form-input"
                     ></textarea>
                   </div>
                 </label>
+
                 <div className="framer-1fxt0mj-container">
                   <button
                     type="submit"
-                    className="framer-fB1Zb framer-dxjT0 framer-18gumxh framer-v-18gumxh"
+                    className={clsx(
+                      "framer-fB1Zb framer-dxjT0 framer-18gumxh framer-v-18gumxh transition-[width] duration-250 ease-in-out",
+                      isCreatingEmailAsync
+                        ? "!w-38"
+                        : isSuccess
+                          ? "!w-53 pointer-events-none"
+                          : "!w-27.5",
+                    )}
+                    disabled={isCreatingEmailAsync || isSuccess}
                     data-framer-name="Default"
                     data-reset="button"
                     style={{
@@ -247,22 +301,65 @@ export default function ContactSection() {
                     }}
                     tabIndex={0}
                   >
-                    <div
-                      className="framer-186o7v"
-                      style={{
-                        outline: "none",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "flex-start",
-                        flexShrink: 0,
-                        transform: "none",
-                        opacity: 1,
-                      }}
-                      data-framer-component-type="RichTextContainer"
-                    >
+                    {isCreatingEmailAsync ? (
+                      <>
+                        <div
+                          className="framer-av556y"
+                          data-framer-name="Spinner"
+                          style={{
+                            mask: `url(${spinner.src}) center center / cover no-repeat alpha`,
+                            animation: "spin 1s linear infinite",
+                          }}
+                        >
+                          <div
+                            className="framer-92y8ji"
+                            style={{
+                              background:
+                                "conic-gradient(from 0deg at 50% 50%, rgba(255, 255, 255, 0) 7deg, rgb(21, 21, 22) 342deg)",
+                              mask: `url(${spinner.src}) center center / cover no-repeat alpha`,
+                              opacity: 1,
+                            }}
+                          ></div>
+                        </div>
+                        <style>
+                          {`
+          @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+          }
+        `}
+                        </style>
+                      </>
+                    ) : isSuccess ? (
+                      <div
+                        className="framer-186o7v"
+                        data-framer-component-type="RichTextContainer"
+                        style={
+                          {
+                            outline: "none",
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "flex-start",
+                            flexShrink: 0,
+                            transform: "none",
+                            transformOrigin: "50% 50% 0px",
+                            "--extracted-r6o4lv":
+                              "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
+                            "--framer-link-text-color": "rgb(0, 153, 255)",
+                            "--framer-link-text-decoration": "underline",
+                          } as React.CSSProperties
+                        }
+                      >
+                        <p
+                          className="framer-text framer-styles-preset-1ivuj08"
+                          data-styles-preset="W_sgoDppc"
+                        >
+                          Mensagem enviada!
+                        </p>
+                      </div>
+                    ) : (
                       <p
                         className="framer-text framer-styles-preset-1ivuj08"
-                        data-styles-preset="W_sgoDppc"
                         style={{
                           textAlign: "center",
                           color: "rgb(21, 21, 22)",
@@ -270,7 +367,7 @@ export default function ContactSection() {
                       >
                         Enviar
                       </p>
-                    </div>
+                    )}
                   </button>
                 </div>
               </form>

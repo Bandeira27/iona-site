@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import ImageForbesGirl from "@/app/assets/image-forbes-woman.png";
-import ImageForbesTech from "@/app/assets/image-forbes-tech.png";
-import ImageNeofeed from "@/app/assets/image-neofeed.png";
-import ImagePipeline from "@/app/assets/image-pipeline.png";
-import IonaMereioTalks from "@/app/assets/iona-mereo-talks.png";
-import IoanPowerCast from "@/app/assets/iona-power-cast.png";
+import ImageForbesGirl from "@/app/assets/images/image-forbes-woman.png";
+import ImageForbesTech from "@/app/assets/images/image-forbes-tech.png";
+import ImageNeofeed from "@/app/assets/images/image-neofeed.png";
+import ImagePipeline from "@/app/assets/images/image-pipeline.png";
+import IonaMereioTalks from "@/app/assets/images/iona-mereo-talks.png";
+import IoanPowerCast from "@/app/assets/images/iona-power-cast.png";
 import Image from "next/image";
 
 export default function Team2SectionMobile() {

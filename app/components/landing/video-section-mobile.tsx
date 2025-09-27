@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import PlayIcon from "@/app/assets/play-icon.svg";
-import ImageIonaStarse from "@/app/assets/image-iona-startse.png";
+import PlayIcon from "@/app/assets/svg/play-icon.svg";
+import ImageIonaStarse from "@/app/assets/images/image-iona-startse.png";
 
 export function VideoSectionMobile() {
   const [previewVideo, setPreviewVideo] = useState(false);

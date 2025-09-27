@@ -1,5 +1,5 @@
 import React from "react";
-import ImageWorkshopBanner from "@/app/assets/image-workshop-banner.png";
+import ImageWorkshopBanner from "@/app/assets/images/image-workshop-banner.png";
 import Image from "next/image";
 
 export default function BannerSection() {

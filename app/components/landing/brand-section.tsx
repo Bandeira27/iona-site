@@ -1,18 +1,18 @@
 import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
 
-import ImageMarketingNetwork from "@/app/assets/image-marketing-network.svg";
-import ImageGoogleStartup from "@/app/assets/image-google-startup.svg";
-import SvgBrazilValley from "@/app/assets/image-brazil-valley.svg";
-import SvgForbes from "@/app/assets/svg-forbes.svg";
-import SvgLemann from "@/app/assets/svg-lemann.svg";
-import SvgEinstein from "@/app/assets/svg-einstein.svg";
-import SvgAmbev from "@/app/assets/svg-ambev.svg";
-import SvgStartse from "@/app/assets/svg-startse.svg";
-import SvgBrasa from "@/app/assets/svg-brasa.svg";
-import SvgMereo from "@/app/assets/svg-mereo.svg";
-import SvgTecnisa from "@/app/assets/svg-tecnisa.svg";
-import SvgNelson from "@/app/assets/svg-nelson.svg";
+import ImageMarketingNetwork from "@/app/assets/svg/image-marketing-network.svg";
+import ImageGoogleStartup from "@/app/assets/svg/image-google-startup.svg";
+import SvgBrazilValley from "@/app/assets/svg/image-brazil-valley.svg";
+import SvgForbes from "@/app/assets/svg/svg-forbes.svg";
+import SvgLemann from "@/app/assets/svg/svg-lemann.svg";
+import SvgEinstein from "@/app/assets/svg/svg-einstein.svg";
+import SvgAmbev from "@/app/assets/svg/svg-ambev.svg";
+import SvgStartse from "@/app/assets/svg/svg-startse.svg";
+import SvgBrasa from "@/app/assets/svg/svg-brasa.svg";
+import SvgMereo from "@/app/assets/svg/svg-mereo.svg";
+import SvgTecnisa from "@/app/assets/svg/svg-tecnisa.svg";
+import SvgNelson from "@/app/assets/svg/svg-nelson.svg";
 
 export function BrandSection() {
   return (

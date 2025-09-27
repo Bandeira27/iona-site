@@ -1,4 +1,4 @@
-import IonaLogoName from "@/app/assets/iona-logo-name.svg";
+import IonaLogoName from "@/app/assets/svg/iona-logo-name.svg";
 import Image from "next/image";
 
 export function FooterMobile() {

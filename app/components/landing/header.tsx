@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import IonaLogoNameDark from "@/app/assets/iona-logo-name-dark.svg";
+import IonaLogoNameDark from "@/app/assets/svg/iona-logo-name-dark.svg";
 import Link from "next/link";
 
 interface NavLink {

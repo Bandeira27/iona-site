@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
-import IonaCoreApresentation from "@/app/assets/iona-core-apresentation.jpeg";
+import IonaCoreApresentation from "@/app/assets/images/iona-core-apresentation.jpeg";
 
 export function Details2Section() {
   return (

@@ -1,9 +1,9 @@
 import Image from "next/image";
-import IonaMnb from "@/app/assets/iona-image-mnb.jpeg";
-import ImageThing from "@/app/assets/image-thing.png";
-import ImageBook from "@/app/assets/image-book.png";
-import ImageCup from "@/app/assets/image-cup.png";
-import ImageHouse from "@/app/assets/image-house.png";
+import IonaMnb from "@/app/assets/images/iona-image-mnb.jpeg";
+import ImageThing from "@/app/assets/images/image-thing.png";
+import ImageBook from "@/app/assets/images/image-book.png";
+import ImageCup from "@/app/assets/images/image-cup.png";
+import ImageHouse from "@/app/assets/images/image-house.png";
 
 export function LectureThreeMobile() {
   return (
