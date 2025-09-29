@@ -211,7 +211,7 @@ const AchievementSection: React.FC = () => {
         style={{ willChange: "transform", opacity: 1, transform: "none" }}
       >
         <div className="framer-1a2l1r7" data-framer-name="Content">
-          <div className="framer-1qdesfq-container hidden-xme965">
+          <div className="framer-1qdesfq-container hidden-xme965 !w-[550px]">
             <section style={scrollSectionStyle}>
               <ScrollReveal>
                 <ul ref={scrollRef} style={scrollListStyle}>
