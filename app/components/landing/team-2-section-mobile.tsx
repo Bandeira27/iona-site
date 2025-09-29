@@ -6,7 +6,7 @@ import ImageForbesTech from "@/app/assets/images/image-forbes-tech.png";
 import ImageNeofeed from "@/app/assets/images/image-neofeed.png";
 import ImagePipeline from "@/app/assets/images/image-pipeline.png";
 import IonaMereioTalks from "@/app/assets/images/iona-mereo-talks.png";
-import IoanPowerCast from "@/app/assets/images/iona-power-cast.png";
+import ImageBrazilJournal from "@/app/assets/images/image-brazil-journal.png";
 import Image from "next/image";
 
 export default function Team2SectionMobile() {
@@ -843,14 +843,14 @@ export default function Team2SectionMobile() {
                         decoding="async"
                         width={2946}
                         height={1553}
-                        src={IoanPowerCast}
+                        src={ImageBrazilJournal}
                         alt=""
                         style={{
                           display: "block",
                           width: "100%",
                           height: "100%",
                           borderRadius: "inherit",
-                          objectPosition: "center top",
+                          objectPosition: "70% top",
                           objectFit: "cover",
                         }}
                       />
