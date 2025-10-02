@@ -1,3 +1,6 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import { Footer } from "@/app/components/landing/footer";
 import { FooterMobile } from "@/app/components/landing/footer-mobile";
 import { LandingHeader } from "@/app/components/landing/header";
@@ -14,66 +17,55 @@ import { LectureThreeMobile } from "@/app/components/lectures-and-workshops/lect
 import AboutSectionMobile from "@/app/components/lectures-and-workshops/about-section-mobile";
 
 export default function LecturesAndWorkshops() {
+  const [mounted, setMounted] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+    setIsMobile(window.innerWidth < 1024)
+    
+    const handleResize = () => setIsMobile(window.innerWidth < 1024)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
+
   return (
     <div>
-      <div className="hidden lg:block">
-        <LandingHeader />
-      </div>
-
-      <div className="block lg:hidden">
+      {isMobile ? (
         <LandingHeaderMobile className="!relative" />
-      </div>
+      ) : (
+        <LandingHeader />
+      )}
+      
       <div
         data-framer-root
         className="framer-4IXK3 framer-stvsG framer-2PkMf framer-KGwWx framer-sodpwb"
         style={{ minHeight: "100vh", width: "auto", display: "contents" }}
       >
-        <div className="hidden lg:block">
-          <BannerSection />
-        </div>
-
-        <div className="block lg:hidden">
-          <BannerSectionMobile />
-        </div>
-        <div className="hidden lg:block">
-          <AboutSection />
-        </div>
-        <div className="block lg:hidden">
-          <AboutSectionMobile />
-        </div>
-
-        <div className="hidden lg:block">
-          <LectureOne />
-        </div>
-
-        <div className="block lg:hidden">
-          <LectureOneMobile />
-        </div>
-
-        <div className="hidden lg:block">
-          <LectureTwo />
-        </div>
-
-        <div className="block lg:hidden">
-          <LectureTwoMobile />
-        </div>
-
-        <div className="hidden lg:block">
-          <LectureThree />
-        </div>
-
-        <div className="block lg:hidden">
-          <LectureThreeMobile />
-        </div>
-
-        <div className="hidden lg:block">
-          <Footer />
-        </div>
-
-        <div className="block lg:hidden">
-          <FooterMobile />
-        </div>
+        {isMobile ? (
+          <>
+            <BannerSectionMobile />
+            <AboutSectionMobile />
+            <LectureOneMobile />
+            <LectureTwoMobile />
+            <LectureThreeMobile />
+            <FooterMobile />
+          </>
+        ) : (
+          <>
+            <BannerSection />
+            <AboutSection />
+            <LectureOne />
+            <LectureTwo />
+            <LectureThree />
+            <Footer />
+          </>
+        )}
       </div>
     </div>
-  );
+  )
 }
