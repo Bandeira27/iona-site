@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from "react";
 import { Footer } from "@/app/components/landing/footer";
 import { FooterMobile } from "@/app/components/landing/footer-mobile";
 import { LandingHeader } from "@/app/components/landing/header";
@@ -16,21 +16,82 @@ import { LectureOneMobile } from "@/app/components/lectures-and-workshops/lectur
 import { LectureThreeMobile } from "@/app/components/lectures-and-workshops/lectures-three-mobile";
 import AboutSectionMobile from "@/app/components/lectures-and-workshops/about-section-mobile";
 
-export default function LecturesAndWorkshops() {
-  const [mounted, setMounted] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
+function useMediaQuery(query: string) {
+  const [matches, setMatches] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-    setIsMobile(window.innerWidth < 1024)
-    
-    const handleResize = () => setIsMobile(window.innerWidth < 1024)
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
+    setMounted(true);
+    const media = window.matchMedia(query);
+
+    setMatches(media.matches);
+
+    let timeoutId: NodeJS.Timeout;
+    const listener = (e: MediaQueryListEvent) => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        setMatches(e.matches);
+      }, 100);
+    };
+
+    media.addEventListener("change", listener);
+
+    return () => {
+      clearTimeout(timeoutId);
+      media.removeEventListener("change", listener);
+    };
+  }, [query]);
+
+  return { matches, mounted };
+}
+
+export default function LecturesAndWorkshops() {
+  const { matches: isMobile, mounted } = useMediaQuery("(max-width: 1023px)");
+
+  const content = useMemo(() => {
+    if (isMobile) {
+      return (
+        <>
+          <BannerSectionMobile />
+          <AboutSectionMobile />
+          <LectureOneMobile />
+          <LectureTwoMobile />
+          <LectureThreeMobile />
+          <FooterMobile />
+        </>
+      );
+    }
+
+    return (
+      <>
+        <BannerSection />
+        <AboutSection />
+        <LectureOne />
+        <LectureTwo />
+        <LectureThree />
+        <Footer />
+      </>
+    );
+  }, [isMobile]);
 
   if (!mounted) {
-    return null
+    return (
+      <div>
+        <LandingHeader />
+        <div
+          data-framer-root
+          className="framer-4IXK3 framer-stvsG framer-2PkMf framer-KGwWx framer-sodpwb"
+          style={{ minHeight: "100vh", width: "auto", display: "contents" }}
+        >
+          <BannerSection />
+          <AboutSection />
+          <LectureOne />
+          <LectureTwo />
+          <LectureThree />
+          <Footer />
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -40,32 +101,14 @@ export default function LecturesAndWorkshops() {
       ) : (
         <LandingHeader />
       )}
-      
+
       <div
         data-framer-root
         className="framer-4IXK3 framer-stvsG framer-2PkMf framer-KGwWx framer-sodpwb"
         style={{ minHeight: "100vh", width: "auto", display: "contents" }}
       >
-        {isMobile ? (
-          <>
-            <BannerSectionMobile />
-            <AboutSectionMobile />
-            <LectureOneMobile />
-            <LectureTwoMobile />
-            <LectureThreeMobile />
-            <FooterMobile />
-          </>
-        ) : (
-          <>
-            <BannerSection />
-            <AboutSection />
-            <LectureOne />
-            <LectureTwo />
-            <LectureThree />
-            <Footer />
-          </>
-        )}
+        {content}
       </div>
     </div>
-  )
+  );
 }

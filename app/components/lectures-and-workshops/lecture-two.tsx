@@ -1,10 +1,139 @@
-import Image from "next/image";
+import React, { memo } from "react";
+import Image, { StaticImageData } from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
+
 import IonaLastApresentation from "@/app/assets/images/iona-image-last-apresentation.png";
 import ImageThing from "@/app/assets/images/image-thing.png";
 import ImageBook from "@/app/assets/images/image-book.png";
 import ImageCup from "@/app/assets/images/image-cup.png";
 import ImageHouse from "@/app/assets/images/image-house.png";
+
+interface CardData {
+  id: number;
+  image: StaticImageData;
+  title: string;
+  description: string;
+}
+
+const CARDS_DATA: CardData[] = [
+  {
+    id: 1,
+    image: ImageThing,
+    title: "Eixo Temático",
+    description: "O impacto da IA nas formas de liderar e decidir.",
+  },
+  {
+    id: 2,
+    image: ImageBook,
+    title: "Fundamento Conceitual",
+    description:
+      "Apresenta o líder algorítmico, conceitos autorais e alinha temas de liderança com disrupção tecnológica.",
+  },
+  {
+    id: 3,
+    image: ImageCup,
+    title: "Reconhecimento Institucional",
+    description: "Apresentada no RH Leadership Experience 2025.",
+  },
+  {
+    id: 4,
+    image: ImageHouse,
+    title: "Público-Alvo Estratégico",
+    description:
+      "Encontros de RH, lideranças em transformação, C-levels em virada estratégica.",
+  },
+];
+
+interface LectureCardProps {
+  image: StaticImageData;
+  title: string;
+  description: string;
+}
+
+const LectureCard = memo(({ image, title, description }: LectureCardProps) => (
+  <div className="framer-1udx6ng-container">
+    <div
+      className="framer-afWiu framer-Aw0u9 framer-KGwWx framer-iswrvd framer-v-iswrvd framer-que2da"
+      data-border="true"
+      style={{
+        width: "100%",
+        borderRadius: "10px",
+        opacity: 1,
+        border: "1px solid rgba(44, 44, 45, 0.12)",
+      }}
+    >
+      <div className="framer-1ewonq7" style={{ opacity: 1 }}>
+        <div
+          data-framer-background-image-wrapper="true"
+          style={{
+            position: "absolute",
+            borderRadius: "inherit",
+            inset: "0px",
+          }}
+        >
+          <Image
+            src={image}
+            alt={title}
+            width={240}
+            height={240}
+            sizes="60px"
+            loading="lazy"
+            style={{
+              display: "block",
+              width: "100%",
+              height: "100%",
+              borderRadius: "inherit",
+              objectFit: "cover",
+              objectPosition: "center center",
+            }}
+          />
+        </div>
+      </div>
+      <div className="framer-1evl0dt" style={{ opacity: 1 }}>
+        <div
+          className="framer-1pdfg4f"
+          data-framer-component-type="RichTextContainer"
+          style={{
+            outline: "none",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex-start",
+            flexShrink: 0,
+            transform: "none",
+          }}
+        >
+          <h5
+            className="framer-text framer-styles-preset-nqnhcn"
+            style={{ color: "rgb(21, 21, 22)", textAlign: "left" }}
+          >
+            {title}
+          </h5>
+        </div>
+        <div
+          className="framer-s18yz4"
+          data-framer-component-type="RichTextContainer"
+          style={{
+            outline: "none",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex-start",
+            flexShrink: 0,
+            transform: "none",
+          }}
+        >
+          <p
+            className="framer-text framer-styles-preset-34zyjt"
+            style={{ color: "rgb(106, 114, 111)" }}
+          >
+            {description}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+));
+
+LectureCard.displayName = "LectureCard";
 
 export default function LectureTwo() {
   return (
@@ -28,19 +157,18 @@ export default function LectureTwo() {
                     }}
                   >
                     <Image
-                      decoding="async"
-                      loading="lazy"
-                      width="1188"
-                      height="853"
                       src={IonaLastApresentation}
-                      alt="Image"
+                      alt="Liderança no Pós-IA"
+                      width={1600}
+                      height={1299}
+                      loading="lazy"
                       style={{
                         display: "block",
                         width: "100%",
                         height: "100%",
                         borderRadius: "inherit",
-                        objectPosition: "center center",
                         objectFit: "cover",
+                        objectPosition: "center center",
                       }}
                     />
                   </div>
@@ -61,13 +189,7 @@ export default function LectureTwo() {
                 >
                   <h2
                     className="framer-text framer-styles-preset-14xqye4"
-                    data-styles-preset="n6MKWMgGa"
-                    style={
-                      {
-                        "--framer-text-color":
-                          "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                      } as React.CSSProperties
-                    }
+                    style={{ color: "rgb(21, 21, 22)" }}
                   >
                     Liderança no Pós-IA
                   </h2>
@@ -86,13 +208,7 @@ export default function LectureTwo() {
                 >
                   <p
                     className="framer-text framer-styles-preset-34zyjt"
-                    data-styles-preset="jIY0P7P2R"
-                    style={
-                      {
-                        "--framer-text-color":
-                          "var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111))",
-                      } as React.CSSProperties
-                    }
+                    style={{ color: "rgb(106, 114, 111)" }}
                   >
                     Como conduzir pessoas em um mundo que muda mais rápido do
                     que nossa certeza
@@ -100,474 +216,16 @@ export default function LectureTwo() {
                 </div>
               </div>
             </div>
+
             <div className="framer-1i1xgrz" data-framer-name="Card Wrapper">
-              <div className="framer-1udx6ng-container">
-                <a
-                  className="framer-afWiu framer-Aw0u9 framer-KGwWx framer-iswrvd framer-v-iswrvd framer-que2da"
-                  data-border="true"
-                  data-framer-name="Why Choose Us Card 01"
-                  href="./"
-                  style={
-                    {
-                      "--border-bottom-width": "1px",
-                      "--border-color": "rgba(44, 44, 45, 0.12)",
-                      "--border-left-width": "1px",
-                      "--border-right-width": "1px",
-                      "--border-style": "solid",
-                      "--border-top-width": "1px",
-                      width: "100%",
-                      borderRadius: "10px",
-                      opacity: 1,
-                    } as React.CSSProperties
-                  }
-                >
-                  <div className="framer-1ewonq7" style={{ opacity: 1 }}>
-                    <div
-                      data-framer-background-image-wrapper="true"
-                      style={{
-                        position: "absolute",
-                        borderRadius: "inherit",
-                        inset: "0px",
-                      }}
-                    >
-                      <Image
-                        decoding="async"
-                        loading="lazy"
-                        width="240"
-                        height="240"
-                        sizes="60px"
-                        src={ImageThing}
-                        alt=""
-                        style={{
-                          display: "block",
-                          width: "100%",
-                          height: "100%",
-                          borderRadius: "inherit",
-                          objectPosition: "center center",
-                          objectFit: "cover",
-                        }}
-                      />
-                    </div>
-                  </div>
-                  <div className="framer-1evl0dt" style={{ opacity: 1 }}>
-                    <div
-                      className="framer-1pdfg4f"
-                      data-framer-name="Rotational grazing"
-                      data-framer-component-type="RichTextContainer"
-                      style={
-                        {
-                          outline: "none",
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "flex-start",
-                          flexShrink: 0,
-                          "--extracted-1lwpl3i":
-                            "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                          "--framer-paragraph-spacing": "0px",
-                          transform: "none",
-                          opacity: 1,
-                        } as React.CSSProperties
-                      }
-                    >
-                      <h5
-                        className="framer-text framer-styles-preset-nqnhcn"
-                        data-styles-preset="ZQFNhUXsq"
-                        style={
-                          {
-                            "--framer-text-alignment": "left",
-                            "--framer-text-color":
-                              "var(--extracted-1lwpl3i, var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22)))",
-                          } as React.CSSProperties
-                        }
-                      >
-                        Eixo Temático
-                      </h5>
-                    </div>
-                    <div
-                      className="framer-s18yz4"
-                      data-framer-name="Cattle are rotated across pastures to prevent overgran, promote soil health, and sequester carbon."
-                      data-framer-component-type="RichTextContainer"
-                      style={
-                        {
-                          outline: "none",
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "flex-start",
-                          flexShrink: 0,
-                          "--extracted-r6o4lv":
-                            "var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111))",
-                          "--framer-paragraph-spacing": "0px",
-                          transform: "none",
-                          opacity: 1,
-                        } as React.CSSProperties
-                      }
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-34zyjt"
-                        data-styles-preset="jIY0P7P2R"
-                        style={
-                          {
-                            "--framer-text-color":
-                              "var(--extracted-r6o4lv, var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111)))",
-                          } as React.CSSProperties
-                        }
-                      >
-                        O impacto da IA nas formas de liderar e decidir.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="framer-bi4imu-container">
-                <a
-                  className="framer-afWiu framer-Aw0u9 framer-KGwWx framer-iswrvd framer-v-iswrvd framer-que2da"
-                  data-border="true"
-                  data-framer-name="Why Choose Us Card 01"
-                  style={
-                    {
-                      "--border-bottom-width": "1px",
-                      "--border-color": "rgba(44, 44, 45, 0.12)",
-                      "--border-left-width": "1px",
-                      "--border-right-width": "1px",
-                      "--border-style": "solid",
-                      "--border-top-width": "1px",
-                      width: "100%",
-                      borderRadius: "10px",
-                      opacity: 1,
-                    } as React.CSSProperties
-                  }
-                >
-                  <div className="framer-1ewonq7" style={{ opacity: 1 }}>
-                    <div
-                      data-framer-background-image-wrapper="true"
-                      style={{
-                        position: "absolute",
-                        borderRadius: "inherit",
-                        inset: "0px",
-                      }}
-                    >
-                      <Image
-                        decoding="async"
-                        loading="lazy"
-                        width="240"
-                        height="240"
-                        sizes="60px"
-                        src={ImageBook}
-                        alt=""
-                        style={{
-                          display: "block",
-                          width: "100%",
-                          height: "100%",
-                          borderRadius: "inherit",
-                          objectPosition: "center center",
-                          objectFit: "cover",
-                        }}
-                      />
-                    </div>
-                  </div>
-                  <div className="framer-1evl0dt" style={{ opacity: 1 }}>
-                    <div
-                      className="framer-1pdfg4f"
-                      data-framer-name="Rotational grazing"
-                      data-framer-component-type="RichTextContainer"
-                      style={
-                        {
-                          outline: "none",
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "flex-start",
-                          flexShrink: 0,
-                          "--extracted-1lwpl3i":
-                            "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                          "--framer-paragraph-spacing": "0px",
-                          transform: "none",
-                          opacity: 1,
-                        } as React.CSSProperties
-                      }
-                    >
-                      <h5
-                        className="framer-text framer-styles-preset-nqnhcn"
-                        data-styles-preset="ZQFNhUXsq"
-                        style={
-                          {
-                            "--framer-text-alignment": "left",
-                            "--framer-text-color":
-                              "var(--extracted-1lwpl3i, var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22)))",
-                          } as React.CSSProperties
-                        }
-                      >
-                        Fundamento Conceitual
-                      </h5>
-                    </div>
-                    <div
-                      className="framer-s18yz4"
-                      data-framer-name="Cattle are rotated across pastures to prevent overgran, promote soil health, and sequester carbon."
-                      data-framer-component-type="RichTextContainer"
-                      style={
-                        {
-                          outline: "none",
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "flex-start",
-                          flexShrink: 0,
-                          "--extracted-r6o4lv":
-                            "var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111))",
-                          "--framer-paragraph-spacing": "0px",
-                          transform: "none",
-                          opacity: 1,
-                        } as React.CSSProperties
-                      }
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-34zyjt"
-                        data-styles-preset="jIY0P7P2R"
-                        style={
-                          {
-                            "--framer-text-color":
-                              "var(--extracted-r6o4lv, var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111)))",
-                          } as React.CSSProperties
-                        }
-                      >
-                        Apresenta o líder algorítmico, conceitos autorais e
-                        alinha temas de liderança com disrupção tecnológica.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="framer-1jbkfia-container">
-                <a
-                  className="framer-afWiu framer-Aw0u9 framer-KGwWx framer-iswrvd framer-v-iswrvd framer-que2da"
-                  data-border="true"
-                  data-framer-name="Why Choose Us Card 01"
-                  style={
-                    {
-                      "--border-bottom-width": "1px",
-                      "--border-color": "rgba(44, 44, 45, 0.12)",
-                      "--border-left-width": "1px",
-                      "--border-right-width": "1px",
-                      "--border-style": "solid",
-                      "--border-top-width": "1px",
-                      width: "100%",
-                      borderRadius: "10px",
-                      opacity: 1,
-                    } as React.CSSProperties
-                  }
-                >
-                  <div className="framer-1ewonq7" style={{ opacity: 1 }}>
-                    <div
-                      data-framer-background-image-wrapper="true"
-                      style={{
-                        position: "absolute",
-                        borderRadius: "inherit",
-                        inset: "0px",
-                      }}
-                    >
-                      <Image
-                        decoding="async"
-                        loading="lazy"
-                        width="240"
-                        height="240"
-                        sizes="60px"
-                        src={ImageCup}
-                        alt=""
-                        style={{
-                          display: "block",
-                          width: "100%",
-                          height: "100%",
-                          borderRadius: "inherit",
-                          objectPosition: "center center",
-                          objectFit: "cover",
-                        }}
-                      />
-                    </div>
-                  </div>
-                  <div className="framer-1evl0dt" style={{ opacity: 1 }}>
-                    <div
-                      className="framer-1pdfg4f"
-                      data-framer-name="Rotational grazing"
-                      data-framer-component-type="RichTextContainer"
-                      style={
-                        {
-                          outline: "none",
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "flex-start",
-                          flexShrink: 0,
-                          "--extracted-1lwpl3i":
-                            "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                          "--framer-paragraph-spacing": "0px",
-                          transform: "none",
-                          opacity: 1,
-                        } as React.CSSProperties
-                      }
-                    >
-                      <h5
-                        className="framer-text framer-styles-preset-nqnhcn"
-                        data-styles-preset="ZQFNhUXsq"
-                        style={
-                          {
-                            "--framer-text-alignment": "left",
-                            "--framer-text-color":
-                              "var(--extracted-1lwpl3i, var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22)))",
-                          } as React.CSSProperties
-                        }
-                      >
-                        Reconhecimento Institucional
-                      </h5>
-                    </div>
-                    <div
-                      className="framer-s18yz4"
-                      data-framer-name="Cattle are rotated across pastures to prevent overgran, promote soil health, and sequester carbon."
-                      data-framer-component-type="RichTextContainer"
-                      style={
-                        {
-                          outline: "none",
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "flex-start",
-                          flexShrink: 0,
-                          "--extracted-r6o4lv":
-                            "var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111))",
-                          "--framer-paragraph-spacing": "0px",
-                          transform: "none",
-                          opacity: 1,
-                        } as React.CSSProperties
-                      }
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-34zyjt"
-                        data-styles-preset="jIY0P7P2R"
-                        style={
-                          {
-                            "--framer-text-color":
-                              "var(--extracted-r6o4lv, var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111)))",
-                          } as React.CSSProperties
-                        }
-                      >
-                        Apresentada no RH Leadership Experience 2025.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="framer-w0vvnb-container">
-                <a
-                  className="framer-afWiu framer-Aw0u9 framer-KGwWx framer-iswrvd framer-v-iswrvd framer-que2da"
-                  data-border="true"
-                  data-framer-name="Why Choose Us Card 01"
-                  style={
-                    {
-                      "--border-bottom-width": "1px",
-                      "--border-color": "rgba(44, 44, 45, 0.12)",
-                      "--border-left-width": "1px",
-                      "--border-right-width": "1px",
-                      "--border-style": "solid",
-                      "--border-top-width": "1px",
-                      width: "100%",
-                      borderRadius: "10px",
-                      opacity: 1,
-                    } as React.CSSProperties
-                  }
-                >
-                  <div className="framer-1ewonq7" style={{ opacity: 1 }}>
-                    <div
-                      data-framer-background-image-wrapper="true"
-                      style={{
-                        position: "absolute",
-                        borderRadius: "inherit",
-                        inset: "0px",
-                      }}
-                    >
-                      <Image
-                        decoding="async"
-                        loading="lazy"
-                        width="240"
-                        height="240"
-                        sizes="60px"
-                        src={ImageHouse}
-                        alt=""
-                        style={{
-                          display: "block",
-                          width: "100%",
-                          height: "100%",
-                          borderRadius: "inherit",
-                          objectPosition: "center center",
-                          objectFit: "cover",
-                        }}
-                      />
-                    </div>
-                  </div>
-                  <div className="framer-1evl0dt" style={{ opacity: 1 }}>
-                    <div
-                      className="framer-1pdfg4f"
-                      data-framer-name="Rotational grazing"
-                      data-framer-component-type="RichTextContainer"
-                      style={
-                        {
-                          outline: "none",
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "flex-start",
-                          flexShrink: 0,
-                          "--extracted-1lwpl3i":
-                            "var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22))",
-                          "--framer-paragraph-spacing": "0px",
-                          transform: "none",
-                          opacity: 1,
-                        } as React.CSSProperties
-                      }
-                    >
-                      <h5
-                        className="framer-text framer-styles-preset-nqnhcn"
-                        data-styles-preset="ZQFNhUXsq"
-                        style={
-                          {
-                            "--framer-text-alignment": "left",
-                            "--framer-text-color":
-                              "var(--extracted-1lwpl3i, var(--token-3696beb0-9bcd-4868-8f06-aad504012b0e, rgb(21, 21, 22)))",
-                          } as React.CSSProperties
-                        }
-                      >
-                        Público-Alvo Estratégico
-                      </h5>
-                    </div>
-                    <div
-                      className="framer-s18yz4"
-                      data-framer-name="Cattle are rotated across pastures to prevent overgran, promote soil health, and sequester carbon."
-                      data-framer-component-type="RichTextContainer"
-                      style={
-                        {
-                          outline: "none",
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "flex-start",
-                          flexShrink: 0,
-                          "--extracted-r6o4lv":
-                            "var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111))",
-                          "--framer-paragraph-spacing": "0px",
-                          transform: "none",
-                          opacity: 1,
-                        } as React.CSSProperties
-                      }
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-34zyjt"
-                        data-styles-preset="jIY0P7P2R"
-                        style={
-                          {
-                            "--framer-text-color":
-                              "var(--extracted-r6o4lv, var(--token-cc72b569-df95-4e7e-8fbb-1b3bdc7da143, rgb(106, 114, 111)))",
-                          } as React.CSSProperties
-                        }
-                      >
-                        Encontros de RH, lideranças em transformação, C-levels
-                        em virada estratégica.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
+              {CARDS_DATA.map((card) => (
+                <LectureCard
+                  key={card.id}
+                  image={card.image}
+                  title={card.title}
+                  description={card.description}
+                />
+              ))}
             </div>
           </div>
         </div>

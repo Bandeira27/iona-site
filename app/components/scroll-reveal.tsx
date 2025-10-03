@@ -33,14 +33,14 @@ export function ScrollReveal({
           }
         }
       },
-      { 
+      {
         threshold: 0,
         rootMargin: "300px 0px 300px 0px",
       },
     );
 
     observer.observe(el);
-    
+
     return () => {
       observer.disconnect();
       if (timeoutId) clearTimeout(timeoutId);
@@ -56,8 +56,9 @@ export function ScrollReveal({
       if (!el) return;
 
       const rect = el.getBoundingClientRect();
-      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-      
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+
       // Se o elemento está parcialmente visível
       if (rect.top < windowHeight && rect.bottom > 0) {
         setVisible(true);
@@ -70,11 +71,11 @@ export function ScrollReveal({
       scrollTimeout = setTimeout(checkVisibility, 100);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
     checkVisibility();
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
       clearTimeout(scrollTimeout);
     };
   }, [visible]);
@@ -86,7 +87,8 @@ export function ScrollReveal({
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(20px)",
-        transition: "opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+        transition:
+          "opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
         willChange: visible ? "auto" : "opacity, transform",
       }}
     >
