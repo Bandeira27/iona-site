@@ -34,6 +34,7 @@ export function BannerSectionMobile() {
                 objectFit: "cover",
                 transform: "translateY(12%)",
               }}
+              priority
             />
           </div>
 

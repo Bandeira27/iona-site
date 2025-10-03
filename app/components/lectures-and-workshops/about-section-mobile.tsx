@@ -28,8 +28,8 @@ export default function AboutSectionMobile() {
                 >
                   <Image
                     decoding="async"
-                    width={1600}
-                    height={1229}
+                    width={805}   
+  height={537}
                     src={ImageIonaAbout}
                     alt="Image"
                     className="scale-120"

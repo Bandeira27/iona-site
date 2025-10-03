@@ -29,6 +29,7 @@ export default function BannerSection() {
                 objectPosition: "center 29%",
                 objectFit: "cover",
               }}
+              priority
             />
           </div>
           <div className="framer-eeaog6" data-framer-name="Title Wrapper">

@@ -24,8 +24,8 @@ export default function AboutSection() {
                 >
                   <Image
                     decoding="async"
-                    width={1600}
-                    height={1229}
+                    width={975}
+                    height={650}
                     src={ImageIonaAbout}
                     alt="Image"
                     className="scale-120"
