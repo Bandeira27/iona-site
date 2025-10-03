@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ScrollReveal } from "../scroll-reveal";
-import ImageWorkshopBanner from "@/app/assets/images/image-workshop-banner.png";
+import ImageWorkshopBanner from "@/app/assets/images/image-workshop-banner.avif";
 
 export function Details3SectionMobile() {
   return (

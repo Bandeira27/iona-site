@@ -2,11 +2,11 @@ import React, { memo } from "react";
 import { ScrollReveal } from "../scroll-reveal";
 import Image, { StaticImageData } from "next/image";
 
-import IonaLastMnb from "@/app/assets/images/iona-image-mnb.jpeg";
-import ImageThing from "@/app/assets/images/image-thing.png";
-import ImageBook from "@/app/assets/images/image-book.png";
-import ImageCup from "@/app/assets/images/image-cup.png";
-import ImageHouse from "@/app/assets/images/image-house.png";
+import IonaLastMnb from "@/app/assets/images/iona-image-mnb.avif";
+import ImageThing from "@/app/assets/images/image-thing.avif";
+import ImageBook from "@/app/assets/images/image-book.avif";
+import ImageCup from "@/app/assets/images/image-cup.avif";
+import ImageHouse from "@/app/assets/images/image-house.avif";
 
 interface CardData {
   id: number;

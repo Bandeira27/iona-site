@@ -1,9 +1,9 @@
 import Image, { StaticImageData } from "next/image";
-import IonaLastApresentation from "@/app/assets/images/iona-image-last-apresentation.png";
-import ImageThing from "@/app/assets/images/image-thing.png";
-import ImageBook from "@/app/assets/images/image-book.png";
-import ImageCup from "@/app/assets/images/image-cup.png";
-import ImageHouse from "@/app/assets/images/image-house.png";
+import IonaLastApresentation from "@/app/assets/images/iona-image-last-apresentation.avif";
+import ImageThing from "@/app/assets/images/image-thing.avif";
+import ImageBook from "@/app/assets/images/image-book.avif";
+import ImageCup from "@/app/assets/images/image-cup.avif";
+import ImageHouse from "@/app/assets/images/image-house.avif";
 
 type CardProps = {
   image: StaticImageData;

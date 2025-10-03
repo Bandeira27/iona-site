@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import ImageMarqueeFirst from "@/app/assets/images/image-marquee-first.jpg";
-import ImageMarqueeSecond from "@/app/assets/images/image-marquee-second.png";
+import ImageMarqueeSecond from "@/app/assets/images/image-marquee-second.avif";
 import ImageMarqueeThree from "@/app/assets/images/image-marquee-three.jpg";
 import Image from "next/image";
 
