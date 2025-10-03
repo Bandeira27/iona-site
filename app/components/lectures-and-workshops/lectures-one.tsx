@@ -172,8 +172,8 @@ export default function LectureOne() {
                     <Image
                       src={ImageMarqueeSecond}
                       alt="A Revolução do Vale do Silício"
-                      width={1600}
-                      height={1299}
+                      width={433}
+                      height={289}
                       loading="lazy"
                       quality={85}
                       placeholder="blur"
