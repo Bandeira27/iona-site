@@ -30,6 +30,7 @@ export default function BannerSection() {
                 objectFit: "cover",
               }}
               priority
+              fetchPriority="high"
             />
           </div>
           <div className="framer-eeaog6" data-framer-name="Title Wrapper">

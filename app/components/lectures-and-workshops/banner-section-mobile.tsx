@@ -35,6 +35,7 @@ export function BannerSectionMobile() {
                 transform: "translateY(12%)",
               }} 
               priority
+              fetchPriority="high"
             />
           </div>
 
