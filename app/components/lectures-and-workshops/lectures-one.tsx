@@ -10,7 +10,7 @@ import ImageHouse from "@/app/assets/images/image-house.png";
 
 export default function LectureOne() {
   return (
-    <ScrollReveal>
+  
       <section className="framer-paifu5" data-framer-name="Palestra 01">
         <div
           className="framer-1siof1s"
@@ -591,6 +591,6 @@ export default function LectureOne() {
           </div>
         </div>
       </section>
-    </ScrollReveal>
+
   );
 }

@@ -8,7 +8,7 @@ import ImageHouse from "@/app/assets/images/image-house.png";
 
 export default function LectureThree() {
   return (
-    <ScrollReveal>
+  
       <section className="framer-1footcr" data-framer-name="Palestra 02">
         <div
           className="framer-4ubn89"
@@ -578,6 +578,6 @@ export default function LectureThree() {
           </div>
         </div>
       </section>
-    </ScrollReveal>
+  
   );
 }

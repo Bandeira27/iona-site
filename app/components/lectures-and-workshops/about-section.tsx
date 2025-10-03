@@ -7,7 +7,7 @@ import ImageFormat from "@/app/assets/images/image-format.png";
 
 export default function AboutSection() {
   return (
-    <ScrollReveal>
+  
       <section className="framer-1m5km5u" data-framer-name="About Section">
         <div
           className="framer-1j9r4m4"
@@ -538,6 +538,6 @@ export default function AboutSection() {
           </div>
         </div>
       </section>
-    </ScrollReveal>
+
   );
 }
