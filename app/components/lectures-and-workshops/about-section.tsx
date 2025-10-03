@@ -9,10 +9,7 @@ export default function AboutSection() {
   return (
     <ScrollReveal>
       <section className="framer-1m5km5u" data-framer-name="About Section">
-        <div
-          className="framer-1j9r4m4"
-          data-framer-name="Container"
-        >
+        <div className="framer-1j9r4m4" data-framer-name="Container">
           <div className="framer-1idpkp8" data-framer-name="Content">
             <div className="framer-1qaytpz" data-framer-name="Image Wrapper">
               <div className="framer-kc2w0b !overflow-hidden">
