@@ -32,8 +32,8 @@ export default function LectureOne() {
                     <Image
                       decoding="async"
                       loading="lazy"
-                      width={4160}
-                      height={2773}
+                      width={1600}
+                      height={1299}
                       src={ImageMarqueeSecond}
                       alt="Image"
                       style={{
@@ -45,6 +45,7 @@ export default function LectureOne() {
                         objectFit: "cover",
                       }}
                     />
+                    sajfjsifjsai
                   </div>
                 </div>
               </div>

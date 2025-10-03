@@ -28,8 +28,8 @@ export function LectureOneMobile() {
                   <Image
                     decoding="async"
                     loading="lazy"
-                    width="4160"
-                    height="2773"
+                    width="1600"
+                    height="1229"
                     src={ImageMarqueeSecond}
                     alt="Image"
                     style={{

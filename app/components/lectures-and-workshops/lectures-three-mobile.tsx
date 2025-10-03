@@ -28,8 +28,8 @@ export function LectureThreeMobile() {
                   <Image
                     decoding="async"
                     loading="lazy"
-                    width="4160"
-                    height="2773"
+                    width="1600"
+                    height="1299"
                     src={IonaMnb}
                     alt="Image"
                     style={{

@@ -20,8 +20,8 @@ export function BannerSectionMobile() {
           >
             <Image
               decoding="async"
-              width="3118"
-              height="1551"
+              width="1600"
+              height="1229"
               className="scale-132"
               src={ImageWorkshopBanner}
               alt=""
