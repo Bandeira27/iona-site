@@ -12,7 +12,6 @@ export default function AboutSection() {
         <div
           className="framer-1j9r4m4"
           data-framer-name="Container"
-          style={{ willChange: "transform", opacity: 1, transform: "none" }}
         >
           <div className="framer-1idpkp8" data-framer-name="Content">
             <div className="framer-1qaytpz" data-framer-name="Image Wrapper">
@@ -30,6 +29,7 @@ export default function AboutSection() {
                     decoding="async"
                     width={1600}
                     height={1229}
+                    quality={75}
                     src={ImageIonaAbout}
                     alt="Image"
                     className="scale-120"
@@ -64,6 +64,7 @@ export default function AboutSection() {
                       width={1600}
                       height={1229}
                       src={ImageIonaApresentationReverse}
+                      quality={75}
                       alt="Image"
                       style={{
                         display: "block",
