@@ -79,9 +79,8 @@ const LectureCard = memo(({ image, title, description }: LectureCardProps) => (
             alt={title}
             width={240}
             height={240}
-            sizes="60px"
             loading="lazy"
-            quality={85}
+            quality={70}
             style={{
               display: "block",
               width: "100%",

@@ -47,8 +47,8 @@ function LectureCard({ image, title, description, href = "./" }: CardProps) {
             loading="lazy"
             width={240}
             height={240}
-            sizes="40px"
             src={image}
+            quality={70}
             alt=""
             style={{
               display: "block",
