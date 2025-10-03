@@ -17,8 +17,9 @@ export default function BannerSection() {
           >
             <Image
               decoding="async"
-              width={1600}
-              height={1229}
+              width={1920}
+              height={1080}
+              quality={100}
               src={ImageWorkshopBanner}
               alt=""
               style={{

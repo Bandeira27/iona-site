@@ -24,8 +24,8 @@ export default function AboutSection() {
                 >
                   <Image
                     decoding="async"
-                    width={1600}
-                    height={1229}
+                    width={1920}
+                    height={1020}
                     src={ImageIonaAbout}
                     alt="Image"
                     className="scale-120"
@@ -57,8 +57,8 @@ export default function AboutSection() {
                   >
                     <Image
                       decoding="async"
-                      width={1600}
-                      height={1229}
+                      width={1900}
+                      height={1020}
                       src={ImageIonaApresentationReverse}
                       quality={75}
                       alt="Image"
