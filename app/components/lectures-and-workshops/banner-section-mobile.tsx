@@ -33,7 +33,8 @@ export function BannerSectionMobile() {
                 objectPosition: "54% bottom",
                 objectFit: "cover",
                 transform: "translateY(12%)",
-              }}
+              }} 
+              priority
             />
           </div>
 
