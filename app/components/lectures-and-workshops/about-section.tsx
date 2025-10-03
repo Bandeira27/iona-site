@@ -1,9 +1,9 @@
 import React from "react";
 import { ScrollReveal } from "../scroll-reveal";
-import ImageIonaAbout from "@/app/assets/images/image-iona-about.png";
+import ImageIonaAbout from "@/app/assets/images/image-iona-about.avif";
 import Image from "next/image";
-import ImageIonaApresentationReverse from "@/app/assets/images/image-iona-apresentation-reverse.png";
-import ImageFormat from "@/app/assets/images/image-format.png";
+import ImageIonaApresentationReverse from "@/app/assets/images/image-iona-apresentation-reverse.avif";
+import ImageFormat from "@/app/assets/images/image-format.avif";
 
 export default function AboutSection() {
   return (
@@ -29,7 +29,6 @@ export default function AboutSection() {
                     decoding="async"
                     width={1600}
                     height={1229}
-                    quality={75}
                     src={ImageIonaAbout}
                     alt="Image"
                     className="scale-120"

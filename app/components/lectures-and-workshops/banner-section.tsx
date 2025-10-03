@@ -1,5 +1,5 @@
 import React from "react";
-import ImageWorkshopBanner from "@/app/assets/images/image-workshop-banner.png";
+import ImageWorkshopBanner from "@/app/assets/images/image-workshop-banner.avif";
 import Image from "next/image";
 
 export default function BannerSection() {
@@ -20,7 +20,6 @@ export default function BannerSection() {
               width={1600}
               height={1229}
               src={ImageWorkshopBanner}
-              quality={75}
               alt=""
               style={{
                 display: "block",
