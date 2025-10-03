@@ -7,6 +7,7 @@ import "@/app/css/declarations.css";
 import "@/app/css/about-me.css";
 import "@/app/css/contact.css";
 import QueryProvider from "./providers/query-provider";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +43,7 @@ export default function RootLayout({
             {children}
           </div>
         </QueryProvider>
+        <SpeedInsights/>
       </body>
     </html>
   );
