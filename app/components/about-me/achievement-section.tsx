@@ -190,7 +190,6 @@ const AchievementSection: React.FC = () => {
               alt="Image"
               width={3240}
               height={3240}
-              sizes="650px"
               style={{
                 display: "block",
                 width: "100%",
